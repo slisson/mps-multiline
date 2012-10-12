@@ -12,6 +12,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.CellActionType;
 import jetbrains.mps.nodeEditor.EditorCellKeyMap;
+import org.apache.commons.lang.StringEscapeUtils;
 import jetbrains.mps.smodel.NodeReadAccessInEditorListener;
 import jetbrains.mps.util.Pair;
 import jetbrains.mps.smodel.NodeReadAccessCasterInEditor;
@@ -79,6 +80,7 @@ public class EditorCell_Word extends EditorCell_Property {
   }
 
   public void insertText(String text) {
+    text = StringEscapeUtils.unescapeJava(text);
     EditorCell_Multiline mlCell = getParentMultiline();
     if (mlCell != null) {
       int newCaretPos = mlCell.getCaretPosition() + text.length();

@@ -74,6 +74,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.NodeReadAccessInEditorListener" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.util.Pair" />
+    <classNode dependClassName="org.apache.commons.lang.StringEscapeUtils" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.MultilineText" file="MultilineText.java">
