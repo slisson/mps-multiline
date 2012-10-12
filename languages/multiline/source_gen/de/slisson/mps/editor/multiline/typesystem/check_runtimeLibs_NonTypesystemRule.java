@@ -7,43 +7,47 @@ import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.smodel.ModuleRepositoryFacade;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
+import jetbrains.mps.project.IModule;
+import jetbrains.mps.smodel.MPSModuleRepository;
+import jetbrains.mps.project.ModuleId;
 import jetbrains.mps.project.structure.modules.ModuleReference;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
-import jetbrains.mps.project.Solution;
-import java.io.File;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
+import jetbrains.mps.errors.BaseQuickFixProvider;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class check_runtimeLibs_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
   public check_runtimeLibs_NonTypesystemRule() {
   }
 
-  public void applyRule(final SNode usingLangModule, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+  public void applyRule(final SNode multiline, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    SNode usingLangModule = SModelOperations.getModuleStub(SNodeOperations.getModel(multiline));
     Language usingLang = ModuleRepositoryFacade.getInstance().getModule(INamedConcept_Behavior.call_getFqName_1213877404258(usingLangModule), Language.class);
     if (usingLang != null) {
-      for (ModuleReference langRef : CollectionSequence.fromCollection(usingLang.getUsedLanguagesReferences())) {
-        Language usedLang = ModuleRepositoryFacade.getInstance().getModule(langRef.getModuleFqName(), Language.class);
-        for (ModuleReference runtimeSolutionRef : CollectionSequence.fromCollection(usedLang.getRuntimeModulesReferences())) {
-          Solution runtimeSolution = ModuleRepositoryFacade.getInstance().getModule(runtimeSolutionRef, Solution.class);
-          String runtimeSolutionSourcesPath = runtimeSolution.getGeneratorOutputPath();
-          Iterable<File> designTimeSources = Sequence.fromIterable(Sequence.fromArray(usingLang.getSourcePaths().toArray(new String[]{}))).select(new ISelector<String, File>() {
-            public File select(String it) {
-              return new File(it);
-            }
-          });
-
-          if (!(Sequence.fromIterable(designTimeSources).contains(new File(runtimeSolutionSourcesPath)))) {
-            {
-              MessageTarget errorTarget = new NodeMessageTarget();
-              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(usingLangModule, "Not in design time sources: " + runtimeSolutionSourcesPath, "r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(de.slisson.mps.editor.multiline.typesystem)", "9030445917800629776", null, errorTarget);
-            }
+      IModule moduleToInclude = MPSModuleRepository.getInstance().getModuleById(ModuleId.fromString("dc038ceb-b7ea-4fea-ac12-55f7400e97ba"));
+      boolean isIncluded = false;
+      for (ModuleReference runtimeModule : CollectionSequence.fromCollection(usingLang.getRuntimeModulesReferences())) {
+        if (eq_ti1slt_a0a0c0c0a(runtimeModule.getModuleFqName(), moduleToInclude.getModuleFqName())) {
+          isIncluded = true;
+          break;
+        }
+      }
+      if (!(isIncluded)) {
+        {
+          MessageTarget errorTarget = new NodeMessageTarget();
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(multiline, "Runtime Solution " + moduleToInclude.getModuleFqName() + " is not included. Go to Module Properties and add the Solution to the Runtime tab.", "r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(de.slisson.mps.editor.multiline.typesystem)", "8291359990510634060", null, errorTarget);
+          {
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("de.slisson.mps.editor.multiline.typesystem.fix_Runtime_QuickFix", true);
+            intentionProvider.putArgument("language", usingLang);
+            intentionProvider.putArgument("moduleToAdd", moduleToInclude.getModuleReference());
+            _reporter_2309309498.addIntentionProvider(intentionProvider);
           }
         }
       }
@@ -51,7 +55,7 @@ public class check_runtimeLibs_NonTypesystemRule extends AbstractNonTypesystemRu
   }
 
   public String getApplicableConceptFQName() {
-    return "jetbrains.mps.lang.project.structure.Module";
+    return "de.slisson.mps.editor.multiline.structure.CellModel_Multiline";
   }
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
@@ -63,5 +67,12 @@ public class check_runtimeLibs_NonTypesystemRule extends AbstractNonTypesystemRu
 
   public boolean overrides() {
     return false;
+  }
+
+  private static boolean eq_ti1slt_a0a0c0c0a(Object a, Object b) {
+    return (a != null ?
+      a.equals(b) :
+      a == b
+    );
   }
 }

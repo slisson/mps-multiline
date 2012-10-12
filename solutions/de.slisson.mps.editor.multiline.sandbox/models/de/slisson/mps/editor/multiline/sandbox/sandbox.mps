@@ -9,6 +9,12 @@
   <root id="9030445917800606920">
     <node role="conceptA" roleId="kyaz.8006371471054143777" type="kyaz.ConceptA" typeId="kyaz.8006371471054141137" id="9030445917800607904">
       <property name="text" nameId="kyaz.8006371471054141138" value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\nAt vero eos et accusam et justo duo dolores et ea rebum.\nStet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\nAt vero eos et accusam et justo duo dolores et ea rebum.\nStet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." />
+      <node role="conceptB" roleId="kyaz.5701977940639193207" type="kyaz.ConceptB" typeId="kyaz.5701977940639193194" id="5701977940639420588">
+        <property name="text" nameId="kyaz.5701977940639193195" value="abc" />
+      </node>
+      <node role="conceptB" roleId="kyaz.5701977940639193207" type="kyaz.ConceptB" typeId="kyaz.5701977940639193194" id="5701977940639420589">
+        <property name="text" nameId="kyaz.5701977940639193195" value="def" />
+      </node>
     </node>
   </root>
 </model>
