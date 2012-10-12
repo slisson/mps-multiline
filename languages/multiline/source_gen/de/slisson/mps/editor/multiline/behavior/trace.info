@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="24" endPosition="0" unitName="de.slisson.mps.editor.multiline.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="CellModel_Multiline_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="de.slisson.mps.editor.multiline.behavior.CellModel_Multiline_BehaviorDescriptor" />
+  <root nodeId="8006371471054141225" modelId="r:c28b9bb1-a62c-4771-abc6-3b0cab74455d(de.slisson.mps.editor.multiline.behavior)">
+    <nodeInfo nodeId="8006371471054143379" fileName="CellModel_Multiline_Behavior.java" startLine="12" startPosition="77" endLine="13" endPosition="158" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8006371471054141225" fileName="CellModel_Multiline_Behavior.java" startLine="8" startPosition="43" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="8006371471054141225" fileName="CellModel_Multiline_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getClosingText_1220339738643#(Ljetbrains/mps/smodel/SNode;)Ljava/lang/String;" />
+    <scopeInfo nodeId="8006371471054141227" fileName="CellModel_Multiline_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+    <scopeInfo nodeId="8006371471054141265" fileName="CellModel_Multiline_Behavior.java" startLine="12" startPosition="77" endLine="13" endPosition="158" />
+    <scopeInfo nodeId="8006371471054141225" fileName="CellModel_Multiline_Behavior.java" startLine="8" startPosition="43" endLine="11" endPosition="0">
+      <varInfo nodeId="8006371471054141225" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8006371471054141225" fileName="CellModel_Multiline_Behavior.java" startLine="11" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="8006371471054141225" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="8006371471054141225" fileName="CellModel_Multiline_Behavior.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="de.slisson.mps.editor.multiline.behavior.CellModel_Multiline_Behavior" />
+  </root>
+</debugInfo>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="de.slisson.mps.editor.multiline.typesystem.TypesystemDescriptor" />
+  <root nodeId="9030445917800610868" modelId="r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(de.slisson.mps.editor.multiline.typesystem)">
+    <nodeInfo nodeId="9030445917800627203" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="28" startPosition="128" endLine="29" endPosition="158" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6722517096586322648" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="31" startPosition="113" endLine="32" endPosition="118" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800627375" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="33" startPosition="126" endLine="34" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800627383" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="34" startPosition="120" endLine="35" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800629717" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="37" startPosition="43" endLine="38" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="9030445917800627616" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="40" startPosition="13" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="9030445917800629776" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="43" startPosition="13" endLine="44" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800629776" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="44" startPosition="66" endLine="45" endPosition="294" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="53" startPosition="46" endLine="54" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="58" startPosition="5" endLine="59" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="59" startPosition="117" endLine="60" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="64" startPosition="30" endLine="65" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="24" startPosition="129" endLine="26" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="check_runtimeLibs_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="9030445917800629715" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="36" startPosition="177" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Ljava/lang/String;)Ljava/io/File;" />
+    <nodeInfo nodeId="9030445917800629776" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="42" startPosition="107" endLine="46" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="52" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="57" startPosition="68" endLine="61" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="63" startPosition="0" endLine="67" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="9030445917800629691" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="35" startPosition="87" endLine="40" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="9030445917800629674" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="41" startPosition="0" endLine="47" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="56" startPosition="0" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Ljetbrains/mps/smodel/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="9030445917800627343" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="32" startPosition="118" endLine="48" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="9030445917800611113" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="30" startPosition="28" endLine="49" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="9030445917800627285" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="29" startPosition="158" endLine="50" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="27" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Ljetbrains/mps/smodel/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="25" startPosition="48" endLine="25" endPosition="48" />
+    <scopeInfo nodeId="9030445917800629716" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="37" startPosition="43" endLine="38" endPosition="34" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="53" startPosition="46" endLine="54" endPosition="57" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="64" startPosition="30" endLine="65" endPosition="17" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="24" startPosition="129" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="9030445917800629776" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="43" startPosition="13" endLine="45" endPosition="294">
+      <varInfo nodeId="9030445917800629776" varName="_reporter_2309309498" />
+      <varInfo nodeId="9030445917800629776" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="58" startPosition="5" endLine="60" endPosition="45">
+      <varInfo nodeId="9030445917800610868" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800629715" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="36" startPosition="177" endLine="40" endPosition="0">
+      <varInfo nodeId="9030445917800629715" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800629675" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="42" startPosition="107" endLine="46" endPosition="13" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="52" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="57" startPosition="68" endLine="61" endPosition="5" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="56" startPosition="0" endLine="63" endPosition="0">
+      <varInfo nodeId="9030445917800610868" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800627346" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="33" startPosition="126" endLine="47" endPosition="11">
+      <varInfo nodeId="9030445917800629692" varName="designTimeSources" />
+      <varInfo nodeId="9030445917800627376" varName="runtimeSolution" />
+      <varInfo nodeId="9030445917800627384" varName="runtimeSolutionSourcesPath" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800627343" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="32" startPosition="118" endLine="48" endPosition="9">
+      <varInfo nodeId="9030445917800627343" varName="runtimeSolutionRef" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800611116" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="31" startPosition="113" endLine="48" endPosition="9">
+      <varInfo nodeId="6722517096586322649" varName="usedLang" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800611113" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="30" startPosition="28" endLine="49" endPosition="7">
+      <varInfo nodeId="9030445917800611113" varName="langRef" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800627286" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="30" startPosition="28" endLine="49" endPosition="7" />
+    <scopeInfo nodeId="9030445917800610869" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="28" startPosition="128" endLine="50" endPosition="5">
+      <varInfo nodeId="9030445917800627204" varName="usingLang" />
+    </scopeInfo>
+    <scopeInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="27" startPosition="0" endLine="52" endPosition="0">
+      <varInfo nodeId="9030445917800610868" varName="status" />
+      <varInfo nodeId="9030445917800610868" varName="typeCheckingContext" />
+      <varInfo nodeId="9030445917800610868" varName="usingLangModule" />
+    </scopeInfo>
+    <unitInfo nodeId="9030445917800629715" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="36" startPosition="150" endLine="40" endPosition="11" unitName="de.slisson.mps.editor.multiline.typesystem.check_runtimeLibs_NonTypesystemRule$1" />
+    <unitInfo nodeId="9030445917800610868" fileName="check_runtimeLibs_NonTypesystemRule.java" startLine="24" startPosition="0" endLine="68" endPosition="0" unitName="de.slisson.mps.editor.multiline.typesystem.check_runtimeLibs_NonTypesystemRule" />
+  </root>
+</debugInfo>
+
