@@ -127,8 +127,15 @@ public class EditorCell_Word extends EditorCell_Property {
   }
 
   @Override
+  public String getRole() {
+    // This is required for processing the INSERT action (the user presses ENTER). 
+    // Otherwise the action is passed to the next children collection cell. 
+    return "";
+  }
+
+  @Override
   public void synchronizeViewWithModel() {
-    check_xru0dp_a0a31(getParentMultiline(), this);
+    check_xru0dp_a0a41(getParentMultiline(), this);
   }
 
   private static void addPropertyDependenciesToEditor(NodeReadAccessInEditorListener listener, EditorCell_Word result) {
@@ -158,7 +165,7 @@ public class EditorCell_Word extends EditorCell_Property {
     return null;
   }
 
-  private static void check_xru0dp_a0a31(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
+  private static void check_xru0dp_a0a41(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }
