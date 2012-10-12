@@ -10,7 +10,6 @@ import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.style.Style;
-import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.CellActionType;
 import jetbrains.mps.nodeEditor.EditorCellKeyMap;
 import jetbrains.mps.smodel.NodeReadAccessInEditorListener;
@@ -28,7 +27,6 @@ public class EditorCell_Word extends EditorCell_Property {
     setEditable(true);
     setDefaultText("");
     Style style = this.getStyle();
-    style.set(StyleAttributes.PADDING_RIGHT, FULL_SPACE_PADDING);
     setAction(CellActionType.INSERT, new NewLineAction(this));
     setAction(CellActionType.INSERT_BEFORE, new NewLineAction(this));
 
@@ -99,15 +97,15 @@ public class EditorCell_Word extends EditorCell_Property {
   }
 
   public void removeLeftPadding() {
-    getStyle().set(StyleAttributes.PADDING_LEFT, (Padding) null);
+    // <node> 
   }
 
   public void removeRightPadding() {
-    getStyle().set(StyleAttributes.PADDING_RIGHT, (Padding) null);
+    // <node> 
   }
 
   public void setRightPadding() {
-    getStyle().set(StyleAttributes.PADDING_RIGHT, FULL_SPACE_PADDING);
+    // <node> 
   }
 
   @Override

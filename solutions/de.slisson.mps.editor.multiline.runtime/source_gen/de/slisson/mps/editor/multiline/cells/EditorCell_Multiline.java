@@ -8,12 +8,13 @@ import jetbrains.mps.logging.Logger;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 import org.apache.commons.lang.StringEscapeUtils;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Iterator;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ISelector;
@@ -26,14 +27,15 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   private MultilineText multilineText;
 
   protected EditorCell_Multiline(EditorContext context, ModelAccessor accessor, SNode node) {
-    super(context, node, new CellLayout_Vertical(), null);
+    super(context, node, new CellLayout_Indent(), null);
     myModelAccessor = accessor;
+
     multilineText = new MultilineText(unescapeText(accessor.getText()));
     multilineText.addListener(MultilineText.PROPERTY_TEXT, new PropertyChangeListener() {
       public void propertyChange(PropertyChangeEvent e) {
         String oldText = myModelAccessor.getText();
         String newText = ((String) e.getNewValue());
-        if (neq_v798xa_a0c0a0a1a0d0a(oldText, newText)) {
+        if (neq_v798xa_a0c0a0a1a0e0a(oldText, newText)) {
           myModelAccessor.setText(escapeText(newText));
         }
       }
@@ -56,7 +58,6 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   @Override
   public void synchronizeViewWithModel() {
-    LOG.info("Multiline: loading property");
     multilineText.setTextSilently(unescapeText(myModelAccessor.getText()));
     modelToView();
   }
@@ -84,6 +85,12 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     while (getCellsCount() < count) {
       addEditorCell(newLineCell(getCellsCount()));
     }
+    Sequence.fromIterable(getLineCells()).visitAll(new IVisitor<EditorCell_Line>() {
+      public void visit(EditorCell_Line it) {
+        it.setIndentLayoutNewLine(true);
+      }
+    });
+    check_v798xa_a3a4(Sequence.fromIterable(getLineCells()).last(), this);
   }
 
   public int getCaretPosition() {
@@ -185,6 +192,13 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
+  private static void check_v798xa_a3a4(EditorCell_Line checkedDotOperand, EditorCell_Multiline checkedDotThisExpression) {
+    if (null != checkedDotOperand) {
+      checkedDotOperand.setIndentLayoutNewLine(false);
+    }
+
+  }
+
   private static String check_v798xa_a0a0l(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
@@ -206,7 +220,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return null;
   }
 
-  private static boolean neq_v798xa_a0c0a0a1a0d0a(Object a, Object b) {
+  private static boolean neq_v798xa_a0c0a0a1a0e0a(Object a, Object b) {
     return !((a != null ?
       a.equals(b) :
       a == b

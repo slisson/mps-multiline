@@ -5,7 +5,8 @@ package de.slisson.mps.editor.multiline.cells;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Flow;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -20,14 +21,21 @@ public class EditorCell_Line extends EditorCell_Collection {
   private int myLineNum;
 
   public EditorCell_Line(EditorContext editorContext, SNode node, int lineNum) {
-    super(editorContext, node, new CellLayout_Flow(), null);
+    super(editorContext, node, new CellLayout_Indent(), null);
     myLineNum = lineNum;
+    getStyle().set(StyleAttributes.INDENT_LAYOUT_INDENT_ANCHOR, false);
+    getStyle().set(StyleAttributes.INDENT_LAYOUT_WRAP_ANCHOR, true);
+
+  }
+
+  public void setIndentLayoutNewLine(boolean value) {
+    getStyle().set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, value);
   }
 
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_xrqfoi_a0a0a0a0a(check_xrqfoi_a0a0a0a0a0(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_xrqfoi_a0a0a0a0b(check_xrqfoi_a0a0a0a0a1(cell)));
 
     }
     super.addCellAt(i, cell, b);
@@ -83,7 +91,7 @@ public class EditorCell_Line extends EditorCell_Collection {
       while (cell_it.hasNext() && word_it.hasNext()) {
         cell_var = cell_it.next();
         word_var = word_it.next();
-        if (neq_xrqfoi_a0c0e0b0f(cell_var.getText(), word_var)) {
+        if (neq_xrqfoi_a0c0e0b0g(cell_var.getText(), word_var)) {
           cell_var.setText(word_var);
         }
       }
@@ -102,12 +110,12 @@ public class EditorCell_Line extends EditorCell_Collection {
         it.setRightPadding();
       }
     });
-    check_xrqfoi_a3a6(Sequence.fromIterable(getWordCells()).last(), this);
+    check_xrqfoi_a3a7(Sequence.fromIterable(getWordCells()).last(), this);
   }
 
   @Override
   public void synchronizeViewWithModel() {
-    check_xrqfoi_a0a7(getParent(), this);
+    check_xrqfoi_a0a8(getParent(), this);
   }
 
   @Override
@@ -115,35 +123,35 @@ public class EditorCell_Line extends EditorCell_Collection {
     return (EditorCell_Multiline) super.getParent();
   }
 
-  private static String check_xrqfoi_a0a0a0a0a(Class<?> checkedDotOperand) {
+  private static String check_xrqfoi_a0a0a0a0b(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_xrqfoi_a0a0a0a0a0(EditorCell checkedDotOperand) {
+  private static Class<?> check_xrqfoi_a0a0a0a0a1(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
     return null;
   }
 
-  private static void check_xrqfoi_a3a6(EditorCell_Word checkedDotOperand, EditorCell_Line checkedDotThisExpression) {
+  private static void check_xrqfoi_a3a7(EditorCell_Word checkedDotOperand, EditorCell_Line checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.removeRightPadding();
     }
 
   }
 
-  private static void check_xrqfoi_a0a7(EditorCell_Multiline checkedDotOperand, EditorCell_Line checkedDotThisExpression) {
+  private static void check_xrqfoi_a0a8(EditorCell_Multiline checkedDotOperand, EditorCell_Line checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }
 
   }
 
-  private static boolean neq_xrqfoi_a0c0e0b0f(Object a, Object b) {
+  private static boolean neq_xrqfoi_a0c0e0b0g(Object a, Object b) {
     return !((a != null ?
       a.equals(b) :
       a == b

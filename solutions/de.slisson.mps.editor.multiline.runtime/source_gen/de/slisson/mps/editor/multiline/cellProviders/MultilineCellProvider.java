@@ -14,9 +14,6 @@ import jetbrains.mps.nodeEditor.cellMenu.NodeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
-import jetbrains.mps.nodeEditor.CellActionType;
-import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeletePropertyOrNode;
-import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
 
 public class MultilineCellProvider extends CellProviderWithRole {
   private static final Logger LOG = Logger.getLogger(MultilineCellProvider.class);
@@ -54,11 +51,6 @@ public class MultilineCellProvider extends CellProviderWithRole {
   public EditorCell createEditorCell(EditorContext context) {
     PropertyAccessor propertyAccessor = new PropertyAccessor(getSNode(), myPropertyName, myReadOnly, myAllowsEmptyTarget, context);
     EditorCell_Multiline editorCell = EditorCell_Multiline.create(context, propertyAccessor, getSNode());
-    if (!(myReadOnly)) {
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeletePropertyOrNode(getSNode(), myPropertyName));
-    } else {
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteEasily(getSNode()));
-    }
     return editorCell;
   }
 }
