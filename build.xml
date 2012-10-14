@@ -15,14 +15,14 @@
   
   <target name="assemble" depends="classes">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.1.zip" />
-    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline" />
-    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/META-INF" />
-    <echoxml file="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.2.zip" />
+    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline" />
+    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/META-INF" />
+    <echoxml file="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>0.1.1</version>
+        <version>0.1.2</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         
@@ -31,8 +31,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages" />
-    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages/mps-multiline" />
+    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages" />
+    <mkdir dir="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages/mps-multiline" />
     <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar" />
     <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.slisson.mps.editor.multiline.jar/META-INF/module.xml">
@@ -50,12 +50,12 @@
         <sources jar="de.slisson.mps.editor.multiline-src.jar" descriptor="multiline.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar">
+    <jar destfile="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.jar">
       <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
       <fileset dir="${basedir}/languages/multiline" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar">
+    <jar destfile="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar">
       <fileset dir="${basedir}/languages/multiline/source_gen" includes="**/*.java" />
       <zipfileset file="${basedir}/languages/multiline/multiline.mpl" prefix="module" />
       <zipfileset dir="${basedir}/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/languageModels" />
@@ -72,18 +72,18 @@
         <sources jar="de.slisson.mps.editor.multiline.runtime-src.jar" descriptor="runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar">
+    <jar destfile="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar">
       <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
       <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/mps-multiline-0.1.1.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar">
+    <jar destfile="${build.tmp}/default/mps-multiline-0.1.2.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar">
       <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" includes="**/*.java" />
       <zipfileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" prefix="module" />
       <zipfileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/mps-multiline-0.1.1.zip">
-      <fileset dir="${build.tmp}/default/mps-multiline-0.1.1.zip" />
+    <zip destfile="${build.layout}/mps-multiline-0.1.2.zip">
+      <fileset dir="${build.tmp}/default/mps-multiline-0.1.2.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">buildMPS.build.number=${buildMPS.build.number}${line.separator}buildMPS.date=${buildMPS.date}${line.separator}buildMPS.build.vcs.number=${buildMPS.build.vcs.number}${line.separator}buildMPS.teamcity.buildConfName=${buildMPS.teamcity.buildConfName}${line.separator}buildMPS.idea.platform.build.number=${buildMPS.idea.platform.build.number}${line.separator}buildCore.version=${buildCore.version}</echo>
   </target>
