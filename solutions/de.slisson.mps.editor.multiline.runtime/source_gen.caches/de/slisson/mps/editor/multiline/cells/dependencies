@@ -56,6 +56,7 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.NewLineAction" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.TabAction" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
@@ -91,12 +92,47 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
   </dependency>
+  <dependency className="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" file="SelectLeftRightAction.java">
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionManager" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
+  </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.TabAction" file="TabAction.java">
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="java.awt.event.KeyEvent" />
     <classNode dependClassName="jetbrains.mps.logging.Logger" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellKeyMapAction" />
+  </dependency>
+  <dependency className="de.slisson.mps.editor.multiline.cells.WordRangeSelection" file="WordRangeSelection.java">
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.CellInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.Selection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionInfo" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionRestoreException" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionStoreException" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SingularSelection" />
+    <classNode dependClassName="jetbrains.mps.project.structure.modules.ModuleReference" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.selection.AbstractMultipleSelection" />
   </dependency>
 </dependenciesRoot>
 
