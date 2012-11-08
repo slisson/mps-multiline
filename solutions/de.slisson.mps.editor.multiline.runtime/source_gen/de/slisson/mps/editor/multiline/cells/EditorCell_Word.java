@@ -30,7 +30,8 @@ public class EditorCell_Word extends EditorCell_Property {
     Style style = this.getStyle();
     setAction(CellActionType.INSERT, new NewLineAction(this));
     setAction(CellActionType.INSERT_BEFORE, new NewLineAction(this));
-
+    setAction(CellActionType.SELECT_LEFT, new SelectLeftRightAction(true, this));
+    setAction(CellActionType.SELECT_RIGHT, new SelectLeftRightAction(false, this));
     EditorCellKeyMap km = new EditorCellKeyMap();
     km.putAction("any", "VK_TAB", new TabAction(this));
     addKeyMap(km);

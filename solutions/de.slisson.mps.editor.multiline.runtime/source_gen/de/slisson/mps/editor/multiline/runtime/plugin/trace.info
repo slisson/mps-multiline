@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="2549531600787651876" modelId="r:6279123c-1afa-4558-a1ea-b7f095eca0f3(de.slisson.mps.editor.multiline.runtime.plugin)">
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="11" startPosition="34" endLine="12" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="12" startPosition="14" endLine="13" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="13" startPosition="121" endLine="14" endPosition="123" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="14" startPosition="123" endLine="15" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="15" startPosition="28" endLine="16" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="19" startPosition="29" endLine="20" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="23" startPosition="53" endLine="24" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScheme#()Ljava/lang/String;" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getShortcut#(Ljava/lang/String;)Lcom/intellij/openapi/actionSystem/Shortcut;" />
+    <nodeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="10" startPosition="62" endLine="17" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Default_KeymapChanges#()V" />
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="19" startPosition="29" endLine="20" endPosition="22" />
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="23" startPosition="53" endLine="24" endPosition="70" />
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="2549531600787651876" varName="stroke" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="11" startPosition="34" endLine="16" endPosition="15" />
+    <scopeInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="10" startPosition="62" endLine="17" endPosition="3" />
+    <unitInfo nodeId="2549531600787651876" fileName="Default_KeymapChanges.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="de.slisson.mps.editor.multiline.runtime.plugin.Default_KeymapChanges" />
+  </root>
+  <root nodeId="2549531600787651881" modelId="r:6279123c-1afa-4558-a1ea-b7f095eca0f3(de.slisson.mps.editor.multiline.runtime.plugin)">
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="18" startPosition="55" endLine="19" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="19" startPosition="40" endLine="20" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="22" startPosition="34" endLine="23" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="23" startPosition="43" endLine="24" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="24" startPosition="35" endLine="25" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787678432" fileName="SelectWordLeft_Action.java" startLine="33" startPosition="87" endLine="34" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651899" fileName="SelectWordLeft_Action.java" startLine="34" startPosition="105" endLine="35" endPosition="357" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="40" startPosition="7" endLine="41" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="41" startPosition="60" endLine="42" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="45" startPosition="33" endLine="46" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="53" startPosition="53" endLine="54" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="55" startPosition="5" endLine="56" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="57" startPosition="70" endLine="58" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="59" startPosition="5" endLine="60" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651884" fileName="SelectWordLeft_Action.java" startLine="64" startPosition="9" endLine="65" endPosition="157" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="67" startPosition="33" endLine="68" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="52" startPosition="95" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="56" startPosition="107" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="39" startPosition="9" endLine="43" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="21" startPosition="0" endLine="26" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SelectWordLeft_Action#()V" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="27" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="32" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="63" startPosition="96" endLine="70" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="62" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="38" startPosition="89" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="51" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="37" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="45" startPosition="33" endLine="46" endPosition="89" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="53" startPosition="53" endLine="54" endPosition="19" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="57" startPosition="70" endLine="58" endPosition="19" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="64" startPosition="9" endLine="65" endPosition="157" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="67" startPosition="33" endLine="68" endPosition="88" />
+    <scopeInfo nodeId="2549531600787651898" fileName="SelectWordLeft_Action.java" startLine="33" startPosition="87" endLine="35" endPosition="357" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="40" startPosition="7" endLine="42" endPosition="63">
+      <varInfo nodeId="2549531600787651881" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="22" startPosition="34" endLine="25" endPosition="41" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="66" startPosition="0" endLine="69" endPosition="7">
+      <varInfo nodeId="2549531600787651881" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="39" startPosition="9" endLine="43" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="44" startPosition="0" endLine="48" endPosition="44">
+      <varInfo nodeId="2549531600787651881" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="44" startPosition="27" endLine="48" endPosition="44" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="21" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="27" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="32" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="2549531600787651881" varName="_params" />
+      <varInfo nodeId="2549531600787651881" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="63" startPosition="96" endLine="70" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="52" startPosition="95" endLine="60" endPosition="16" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="62" startPosition="0" endLine="72" endPosition="0">
+      <varInfo nodeId="2549531600787651881" varName="_params" />
+      <varInfo nodeId="2549531600787651881" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="38" startPosition="89" endLine="49" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="51" startPosition="0" endLine="62" endPosition="0">
+      <varInfo nodeId="2549531600787651881" varName="_params" />
+      <varInfo nodeId="2549531600787651881" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="37" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="2549531600787651881" varName="_params" />
+      <varInfo nodeId="2549531600787651881" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="2549531600787651881" fileName="SelectWordLeft_Action.java" startLine="18" startPosition="0" endLine="73" endPosition="0" unitName="de.slisson.mps.editor.multiline.runtime.plugin.SelectWordLeft_Action" />
+  </root>
+  <root nodeId="2549531600787651924" modelId="r:6279123c-1afa-4558-a1ea-b7f095eca0f3(de.slisson.mps.editor.multiline.runtime.plugin)">
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="18" startPosition="56" endLine="19" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="19" startPosition="40" endLine="20" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="log" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="22" startPosition="35" endLine="23" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="23" startPosition="44" endLine="24" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="24" startPosition="35" endLine="25" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787678435" fileName="SelectWordRight_Action.java" startLine="33" startPosition="87" endLine="34" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651942" fileName="SelectWordRight_Action.java" startLine="34" startPosition="106" endLine="35" endPosition="357" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="40" startPosition="7" endLine="41" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="41" startPosition="60" endLine="42" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="45" startPosition="33" endLine="46" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="53" startPosition="53" endLine="54" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="55" startPosition="5" endLine="56" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="57" startPosition="70" endLine="58" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="59" startPosition="5" endLine="60" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651929" fileName="SelectWordRight_Action.java" startLine="64" startPosition="9" endLine="65" endPosition="158" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="67" startPosition="33" endLine="68" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="52" startPosition="95" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="56" startPosition="107" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="39" startPosition="9" endLine="43" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="21" startPosition="0" endLine="26" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SelectWordRight_Action#()V" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="27" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="32" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="63" startPosition="96" endLine="70" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="62" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="38" startPosition="89" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="51" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="37" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="29" startPosition="32" endLine="30" endPosition="16" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="45" startPosition="33" endLine="46" endPosition="90" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="53" startPosition="53" endLine="54" endPosition="19" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="57" startPosition="70" endLine="58" endPosition="19" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="64" startPosition="9" endLine="65" endPosition="158" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="67" startPosition="33" endLine="68" endPosition="89" />
+    <scopeInfo nodeId="2549531600787651941" fileName="SelectWordRight_Action.java" startLine="33" startPosition="87" endLine="35" endPosition="357" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="40" startPosition="7" endLine="42" endPosition="63">
+      <varInfo nodeId="2549531600787651924" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="22" startPosition="35" endLine="25" endPosition="41" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="44" startPosition="27" endLine="47" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="66" startPosition="0" endLine="69" endPosition="7">
+      <varInfo nodeId="2549531600787651924" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="66" startPosition="27" endLine="69" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="39" startPosition="9" endLine="43" endPosition="7" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="44" startPosition="0" endLine="48" endPosition="44">
+      <varInfo nodeId="2549531600787651924" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="44" startPosition="27" endLine="48" endPosition="44" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="55" startPosition="5" endLine="59" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="21" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="27" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="32" startPosition="0" endLine="37" endPosition="0">
+      <varInfo nodeId="2549531600787651924" varName="_params" />
+      <varInfo nodeId="2549531600787651924" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="63" startPosition="96" endLine="70" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="52" startPosition="95" endLine="60" endPosition="16" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="62" startPosition="0" endLine="72" endPosition="0">
+      <varInfo nodeId="2549531600787651924" varName="_params" />
+      <varInfo nodeId="2549531600787651924" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="38" startPosition="89" endLine="49" endPosition="5" />
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="51" startPosition="0" endLine="62" endPosition="0">
+      <varInfo nodeId="2549531600787651924" varName="_params" />
+      <varInfo nodeId="2549531600787651924" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="37" startPosition="0" endLine="51" endPosition="0">
+      <varInfo nodeId="2549531600787651924" varName="_params" />
+      <varInfo nodeId="2549531600787651924" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="2549531600787651924" fileName="SelectWordRight_Action.java" startLine="18" startPosition="0" endLine="73" endPosition="0" unitName="de.slisson.mps.editor.multiline.runtime.plugin.SelectWordRight_Action" />
+  </root>
+  <root nodeId="2549531600787651967" modelId="r:6279123c-1afa-4558-a1ea-b7f095eca0f3(de.slisson.mps.editor.multiline.runtime.plugin)">
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="12" startPosition="70" endLine="13" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="18" startPosition="27" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="22" startPosition="30" endLine="23" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="23" startPosition="30" endLine="24" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="24" startPosition="43" endLine="25" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="25" startPosition="44" endLine="26" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="29" startPosition="48" endLine="30" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="30" startPosition="92" endLine="31" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="31" startPosition="71" endLine="32" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="14" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Runtime_ApplicationPlugin#()V" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="28" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initKeymaps#()Ljava/util/List;" />
+    <nodeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="21" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createGroups#()V" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="15" startPosition="38" endLine="15" endPosition="38" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="18" startPosition="27" endLine="19" endPosition="16" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="14" startPosition="0" endLine="16" endPosition="3" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="29" startPosition="48" endLine="32" endPosition="15">
+      <varInfo nodeId="2549531600787651967" varName="res" />
+    </scopeInfo>
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="22" startPosition="30" endLine="26" endPosition="14" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="28" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="21" startPosition="0" endLine="28" endPosition="0" />
+    <unitInfo nodeId="2549531600787651967" fileName="Runtime_ApplicationPlugin.java" startLine="12" startPosition="0" endLine="35" endPosition="0" unitName="de.slisson.mps.editor.multiline.runtime.plugin.Runtime_ApplicationPlugin" />
+  </root>
+</debugInfo>
+
