@@ -18,6 +18,7 @@ import jetbrains.mps.internal.collections.runtime.ILeftCombinator;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
+import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import java.util.ArrayList;
 
 public class EditorCell_Multiline extends EditorCell_Collection {
@@ -33,17 +34,25 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
     myMultilineText = new MultilineText(unescapeText(accessor.getText()));
     myMultilineText.addListener(MultilineText.PROPERTY_TEXT, new PropertyChangeListener() {
-      public void propertyChange(PropertyChangeEvent e) {
-        String oldText = myModelAccessor.getText();
-        String newText = ((String) e.getNewValue());
-        if (neq_v798xa_a0c0a0a1a0e0a(oldText, newText)) {
-          myModelAccessor.setText(escapeText(newText));
-        }
+      public void propertyChange(final PropertyChangeEvent e) {
+        getEditorContext().executeCommand(new Runnable() {
+          public void run() {
+            String oldText = myModelAccessor.getText();
+            String newText = ((String) e.getNewValue());
+            if (neq_v798xa_a0c0a0a0a0a0a0a1a0e0a(oldText, newText)) {
+              myModelAccessor.setText(escapeText(newText));
+            }
+          }
+        });
       }
     });
     myMultilineText.addListener(MultilineText.PROPERTY_WORDS, new PropertyChangeListener() {
       public void propertyChange(PropertyChangeEvent e) {
-        modelToView();
+        getEditorContext().executeCommand(new Runnable() {
+          public void run() {
+            modelToView();
+          }
+        });
       }
     });
     modelToView();
@@ -116,11 +125,15 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public void setCaretPosition(int pos) {
+    setCaretPosition(pos, false);
+  }
+
+  public void setCaretPosition(int pos, boolean enforeSelection) {
     int remainingPos = pos;
     for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
       int textLen = wordCell.getText().length();
       if (remainingPos <= textLen) {
-        if (Sequence.fromIterable(Sequence.fromArray(getCells())).contains(getEditorContext().getSelectedCell())) {
+        if (enforeSelection || Sequence.fromIterable(Sequence.fromArray(getCells())).contains(getEditorContext().getSelectedCell())) {
           getEditorContext().getNodeEditorComponent().getSelectionManager().setSelection(wordCell);
         }
         wordCell.setCaretPosition(remainingPos);
@@ -134,11 +147,11 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     StringBuffer textBefore = new StringBuffer();
     Iterable<EditorCell_Word> cellsBefore = getCellsBefore(wordCell);
     if (Sequence.fromIterable(cellsBefore).isNotEmpty()) {
-      textBefore.append(Sequence.fromIterable(cellsBefore).select(new ISelector<EditorCell_Word, String>() {
+      textBefore.append(IterableUtils.join(Sequence.fromIterable(cellsBefore).select(new ISelector<EditorCell_Word, String>() {
         public String select(EditorCell_Word it) {
           return it.getTextIncludingSeparator();
         }
-      }));
+      }), ""));
     }
     textBefore.append(wordCell.getTextBefore(pos));
 
@@ -171,9 +184,13 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0m(newText);
+    newText = check_v798xa_a0a0n(newText);
     myMultilineText.setText(newText);
     modelToView();
+  }
+
+  public void deleteWords(int from, int to) {
+    myMultilineText.deleteWords(from, to);
   }
 
   public EditorCell_Word newWordCell(int wordNum) {
@@ -190,7 +207,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0p(check_v798xa_a0a0a0a0a51(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0r(check_v798xa_a0a0a0a0a71(cell)));
 
     }
     super.addCellAt(i, cell, b);
@@ -201,28 +218,28 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  private static String check_v798xa_a0a0m(String checkedDotOperand) {
+  private static String check_v798xa_a0a0n(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0p(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0r(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a51(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a71(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
     return null;
   }
 
-  private static boolean neq_v798xa_a0c0a0a1a0e0a(Object a, Object b) {
+  private static boolean neq_v798xa_a0c0a0a0a0a0a0a1a0e0a(Object a, Object b) {
     return !((a != null ?
       a.equals(b) :
       a == b

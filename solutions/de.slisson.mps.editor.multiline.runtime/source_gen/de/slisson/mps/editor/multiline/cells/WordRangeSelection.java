@@ -94,6 +94,14 @@ public class WordRangeSelection extends AbstractMultipleSelection {
         reduceSelection();
       }
       return;
+    } else if (type == CellActionType.DELETE || type == CellActionType.BACKSPACE) {
+      EditorCell_Word firstSelectedCell = myMultilineCell.getCellAt(myStartWordNumber);
+      String textBeforeSelection = myMultilineCell.getTextBefore(firstSelectedCell, 0);
+      myMultilineCell.deleteWords(myStartWordNumber, myEndWordNumber);
+      getEditorComponent().getSelectionManager().clearSelection();
+      int caretPos = textBeforeSelection.length() - 1;
+      caretPos = Math.max(caretPos, 0);
+      myMultilineCell.setCaretPosition(caretPos, true);
     }
     super.executeAction(type);
   }
