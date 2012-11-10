@@ -29,7 +29,7 @@ public class SelectLeftRightAction extends EditorCellAction {
     }
 
     SelectionManager selectionManager = context.getNodeEditorComponent().getSelectionManager();
-    EditorCell_Line parent = myWordCell.getParent();
+    EditorCell_Multiline parent = myWordCell.getParent();
     int index = Sequence.fromIterable(parent.getWordCells()).indexOf(myWordCell);
     selectionManager.pushSelection(new WordRangeSelection(myWordCell.getEditor(), parent, index, index, myLeft));
   }

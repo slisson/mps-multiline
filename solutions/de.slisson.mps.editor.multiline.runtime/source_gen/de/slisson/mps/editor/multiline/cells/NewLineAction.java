@@ -6,13 +6,13 @@ import jetbrains.mps.nodeEditor.EditorCellAction;
 import jetbrains.mps.nodeEditor.EditorContext;
 
 public class NewLineAction extends EditorCellAction {
-  private EditorCell_Word wordCell;
+  private EditorCell_Word myWordCell;
 
   public NewLineAction(EditorCell_Word wordCell) {
-    this.wordCell = wordCell;
+    this.myWordCell = wordCell;
   }
 
   public void execute(EditorContext context) {
-    wordCell.insertText("\n");
+    myWordCell.insertText("\n");
   }
 }

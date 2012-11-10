@@ -1,47 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="de.slisson.mps.editor.multiline.cells.EditorCell_Line" file="EditorCell_Line.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
-    <classNode dependClassName="java.lang.Class" />
-    <classNode dependClassName="java.lang.IllegalArgumentException" />
-    <classNode dependClassName="java.lang.Iterable" />
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Iterator" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IterableUtils" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.style.StyleAttributes" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-  </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" file="EditorCell_Multiline.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineText" />
     <classNode dependClassName="java.beans.PropertyChangeEvent" />
     <classNode dependClassName="java.beans.PropertyChangeListener" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.IllegalArgumentException" />
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.StringBuffer" />
-    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.concurrent.atomic.AtomicLong" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ILeftCombinator" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IterableUtils" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
     <classNode dependClassName="jetbrains.mps.logging.Logger" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
@@ -53,11 +30,11 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.EditorCell_Word" file="EditorCell_Word.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.NewLineAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.TabAction" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Runnable" />
@@ -68,9 +45,8 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.PropertyAccessor" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.style.Measure" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.style.Padding" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.smodel.NodeReadAccessCasterInEditor" />
     <classNode dependClassName="jetbrains.mps.smodel.NodeReadAccessInEditorListener" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -93,7 +69,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" file="SelectLeftRightAction.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
@@ -109,7 +85,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellKeyMapAction" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.WordRangeSelection" file="WordRangeSelection.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Line" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />

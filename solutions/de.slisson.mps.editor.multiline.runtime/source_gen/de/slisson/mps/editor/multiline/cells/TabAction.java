@@ -10,13 +10,13 @@ import jetbrains.mps.nodeEditor.EditorContext;
 public class TabAction extends EditorCellKeyMapAction {
   private static final Logger LOG = Logger.getLogger(TabAction.class);
 
-  private EditorCell_Word wordCell;
+  private EditorCell_Word myWordCell;
 
   public TabAction(EditorCell_Word wordCell) {
-    this.wordCell = wordCell;
+    this.myWordCell = wordCell;
   }
 
   public void execute(KeyEvent event, EditorContext context) {
-    wordCell.insertText("  ");
+    myWordCell.insertText("  ");
   }
 }

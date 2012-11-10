@@ -25,7 +25,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
   private static final String END_WORD_NUMBER_PROPERTY = "endWordNumber";
   private static final String LEFT_DIRECTION_PROPERTY = "leftDirection";
 
-  private EditorCell_Line myLineCell;
+  private EditorCell_Multiline myMultilineCell;
   private int myStartWordNumber;
   private int myEndWordNumber;
   private boolean myLeftDirection;
@@ -36,8 +36,8 @@ public class WordRangeSelection extends AbstractMultipleSelection {
       throw new SelectionStoreException("Requred CellInfo parameter is null");
     }
     EditorCell editorCell = cellInfo.findCell(editorComponent);
-    if (editorCell instanceof EditorCell_Line) {
-      myLineCell = (EditorCell_Line) editorCell;
+    if (editorCell instanceof EditorCell_Multiline) {
+      myMultilineCell = (EditorCell_Multiline) editorCell;
     } else {
       throw new SelectionRestoreException();
     }
@@ -53,20 +53,20 @@ public class WordRangeSelection extends AbstractMultipleSelection {
     if (myStartWordNumber > myEndWordNumber) {
       throw new SelectionRestoreException();
     }
-    int lineSize = Sequence.fromIterable(myLineCell.getWordCells()).count();
+    int lineSize = Sequence.fromIterable(myMultilineCell.getWordCells()).count();
     if (myEndWordNumber >= lineSize) {
       throw new SelectionRestoreException();
     }
     initSelectedCells();
   }
 
-  public WordRangeSelection(EditorComponent editorComponent, EditorCell_Line lineCell, int startWordNumber, int endWordNumber, boolean leftDirection) {
+  public WordRangeSelection(EditorComponent editorComponent, EditorCell_Multiline multilineCell, int startWordNumber, int endWordNumber, boolean leftDirection) {
     super(editorComponent);
-    myLineCell = lineCell;
+    myMultilineCell = multilineCell;
     myLeftDirection = leftDirection;
     myStartWordNumber = startWordNumber;
     myEndWordNumber = endWordNumber;
-    int lineSize = Sequence.fromIterable(myLineCell.getWordCells()).count();
+    int lineSize = Sequence.fromIterable(myMultilineCell.getWordCells()).count();
     assert myStartWordNumber >= 0;
     assert myStartWordNumber <= myEndWordNumber;
     assert myEndWordNumber < lineSize;
@@ -75,7 +75,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
 
   public SelectionInfo getSelectionInfo() throws SelectionStoreException {
     SelectionInfo selectionInto = new SelectionInfo(this.getClass().getName(), ModuleReference.fromString("31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)").getModuleFqName());
-    selectionInto.setCellInfo(myLineCell.getCellInfo());
+    selectionInto.setCellInfo(myMultilineCell.getCellInfo());
     selectionInto.getPropertiesMap().put(WordRangeSelection.LEFT_DIRECTION_PROPERTY, Boolean.toString(myLeftDirection));
     selectionInto.getPropertiesMap().put(WordRangeSelection.START_WORD_NUMBER_PROPERTY, Integer.toString(myStartWordNumber));
     selectionInto.getPropertiesMap().put(END_WORD_NUMBER_PROPERTY, Integer.toString(myEndWordNumber));
@@ -106,7 +106,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
       return false;
     }
     WordRangeSelection that = (WordRangeSelection) selection;
-    if (!(myLineCell.equals(that.myLineCell))) {
+    if (!(myMultilineCell.equals(that.myMultilineCell))) {
       return false;
     }
     return myStartWordNumber == that.myStartWordNumber && myEndWordNumber == that.myEndWordNumber;
@@ -117,7 +117,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
     int index = -1;
     int startCellNumber = Math.min(myStartWordNumber, myEndWordNumber);
     int endCellNumber = Math.max(myStartWordNumber, myEndWordNumber);
-    for (EditorCell_Word wordCell : Sequence.fromIterable(myLineCell.getWordCells())) {
+    for (EditorCell_Word wordCell : Sequence.fromIterable(myMultilineCell.getWordCells())) {
       index++;
       if (index < startCellNumber) {
         continue;
@@ -138,7 +138,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
         newStartWordNumber--;
       }
     } else {
-      int wordCellsNum = Sequence.fromIterable(myLineCell.getWordCells()).count();
+      int wordCellsNum = Sequence.fromIterable(myMultilineCell.getWordCells()).count();
       if (newEndWordNumber < wordCellsNum - 1) {
         newEndWordNumber++;
       }
@@ -147,9 +147,9 @@ public class WordRangeSelection extends AbstractMultipleSelection {
     SelectionManager selectionManager = getEditorComponent().getSelectionManager();
     Selection newSelection;
     if (newStartWordNumber != myStartWordNumber || newEndWordNumber != myEndWordNumber) {
-      newSelection = new WordRangeSelection(getEditorComponent(), myLineCell, newStartWordNumber, newEndWordNumber, myLeftDirection);
+      newSelection = new WordRangeSelection(getEditorComponent(), myMultilineCell, newStartWordNumber, newEndWordNumber, myLeftDirection);
     } else {
-      newSelection = selectionManager.createSelection(myLineCell.getParent());
+      newSelection = selectionManager.createSelection(myMultilineCell.getParent());
       if (newSelection instanceof SingularSelection) {
         ((SingularSelection) newSelection).setSideSelectDirection((myLeftDirection ?
           SingularSelection.SideSelectDirection.LEFT :

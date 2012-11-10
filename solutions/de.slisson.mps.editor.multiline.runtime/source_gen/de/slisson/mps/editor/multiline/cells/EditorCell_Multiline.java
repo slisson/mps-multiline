@@ -13,25 +13,26 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 import org.apache.commons.lang.StringEscapeUtils;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import java.util.Iterator;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
-import jetbrains.mps.nodeEditor.cells.EditorCell;
-import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.internal.collections.runtime.ILeftCombinator;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.nodeEditor.cells.EditorCell;
+import java.util.ArrayList;
 
 public class EditorCell_Multiline extends EditorCell_Collection {
   private static final AtomicLong CELL_ID_SEQUENCE = new AtomicLong();
   private static final Logger LOG = Logger.getLogger(EditorCell_Multiline.class);
 
   private ModelAccessor myModelAccessor;
-  private MultilineText multilineText;
+  private MultilineText myMultilineText;
 
   protected EditorCell_Multiline(EditorContext context, ModelAccessor accessor, SNode node) {
     super(context, node, new CellLayout_Indent(), null);
     myModelAccessor = accessor;
 
-    multilineText = new MultilineText(unescapeText(accessor.getText()));
-    multilineText.addListener(MultilineText.PROPERTY_TEXT, new PropertyChangeListener() {
+    myMultilineText = new MultilineText(unescapeText(accessor.getText()));
+    myMultilineText.addListener(MultilineText.PROPERTY_TEXT, new PropertyChangeListener() {
       public void propertyChange(PropertyChangeEvent e) {
         String oldText = myModelAccessor.getText();
         String newText = ((String) e.getNewValue());
@@ -40,7 +41,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
         }
       }
     });
-    multilineText.addListener(MultilineText.PROPERTY_WORDS, new PropertyChangeListener() {
+    myMultilineText.addListener(MultilineText.PROPERTY_WORDS, new PropertyChangeListener() {
       public void propertyChange(PropertyChangeEvent e) {
         modelToView();
       }
@@ -58,39 +59,45 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   @Override
   public void synchronizeViewWithModel() {
-    multilineText.setTextSilently(unescapeText(myModelAccessor.getText()));
+    myMultilineText.setTextSilently(unescapeText(myModelAccessor.getText()));
     modelToView();
   }
 
   protected void modelToView() {
-    Iterable<String[]> lines = Sequence.fromArray(multilineText.getWords());
-    setNumberOfLineCells(Sequence.fromIterable(lines).count());
-    {
-      Iterator<EditorCell_Line> lineCell_it = Sequence.fromIterable(getLineCells()).iterator();
-      Iterator<String[]> words_it = Sequence.fromIterable(lines).iterator();
-      EditorCell_Line lineCell_var;
-      String[] words_var;
-      while (lineCell_it.hasNext() && words_it.hasNext()) {
-        lineCell_var = lineCell_it.next();
-        words_var = words_it.next();
-        lineCell_var.setWords(Sequence.fromArray(words_var));
+    int caretPos = getCaretPosition();
+    Iterable<String[]> lines = Sequence.fromArray(myMultilineText.getWords());
+    int totalWords = Sequence.fromIterable(lines).select(new ISelector<String[], Integer>() {
+      public Integer select(String[] it) {
+        return it.length;
       }
+    }).reduceLeft(new ILeftCombinator<Integer, Integer>() {
+      public Integer combine(Integer a, Integer b) {
+        return a + b;
+      }
+    });
+    setNumberOfWordCells(totalWords);
+    List<EditorCell_Word> wordCells = Sequence.fromIterable(getWordCells()).toListSequence();
+    int wordNum = -1;
+    for (String[] line : Sequence.fromIterable(lines)) {
+      for (String word : line) {
+        ++wordNum;
+        EditorCell_Word wordCell = ListSequence.fromList(wordCells).getElement(wordNum);
+        wordCell.setText(word);
+        wordCell.setNewLine(false);
+      }
+      ListSequence.fromList(wordCells).getElement(wordNum).setNewLine(true);
     }
+    ListSequence.fromList(wordCells).last().setNewLine(false);
+    setCaretPosition(caretPos);
   }
 
-  public void setNumberOfLineCells(int count) {
+  public void setNumberOfWordCells(int count) {
     while (getCellsCount() > count) {
       removeCell(Sequence.fromIterable(Sequence.fromArray(getCells())).last());
     }
     while (getCellsCount() < count) {
-      addEditorCell(newLineCell(getCellsCount()));
+      addEditorCell(this.newWordCell(getCellsCount()));
     }
-    Sequence.fromIterable(getLineCells()).visitAll(new IVisitor<EditorCell_Line>() {
-      public void visit(EditorCell_Line it) {
-        it.setIndentLayoutNewLine(true);
-      }
-    });
-    check_v798xa_a3a4(Sequence.fromIterable(getLineCells()).last(), this);
   }
 
   public int getCaretPosition() {
@@ -98,19 +105,27 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     EditorCell selectedCell = getEditorContext().getSelectedCell();
     if (selectedCell instanceof EditorCell_Word) {
       EditorCell_Word selectedWordCell = (EditorCell_Word) selectedCell;
-      String textBefore = getTextBefore(selectedWordCell, selectedWordCell.getCaretPosition());
-      pos = textBefore.length();
+      pos += Sequence.fromIterable(getCellsBefore(selectedWordCell)).foldLeft(0, new ILeftCombinator<EditorCell_Word, Integer>() {
+        public Integer combine(Integer s, EditorCell_Word it) {
+          return s + it.getTextIncludingSeparator().length();
+        }
+      });
+      pos += selectedWordCell.getCaretPosition();
     }
-
+    LOG.info("Caret Pos: " + pos);
     return pos;
   }
 
   public void setCaretPosition(int pos) {
+    LOG.info("setCaretPosition(" + pos + ")");
     int remainingPos = pos;
-    for (EditorCell_Line lineCell : Sequence.fromIterable(getLineCells())) {
-      int textLen = lineCell.getText().length();
+    for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
+      int textLen = wordCell.getText().length();
       if (remainingPos <= textLen) {
-        lineCell.setCaretPosition(getEditorContext(), remainingPos);
+        if (Sequence.fromIterable(Sequence.fromArray(getCells())).contains(getEditorContext().getSelectedCell())) {
+          getEditorContext().getNodeEditorComponent().getSelectionManager().setSelection(wordCell);
+        }
+        wordCell.setCaretPosition(remainingPos);
         break;
       }
       remainingPos -= textLen + 1;
@@ -119,68 +134,64 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   public String getTextBefore(EditorCell_Word wordCell, int pos) {
     StringBuffer textBefore = new StringBuffer();
-    for (EditorCell_Line lineCell : Sequence.fromIterable(getLineCells())) {
-      if (lineCell.containsCell(wordCell)) {
-        Iterable<EditorCell_Word> cellsBefore = lineCell.getCellsBefore(wordCell);
-        if (Sequence.fromIterable(cellsBefore).isNotEmpty()) {
-          textBefore.append(IterableUtils.join(Sequence.fromIterable(cellsBefore).select(new ISelector<EditorCell_Word, String>() {
-            public String select(EditorCell_Word it) {
-              return it.getText();
-            }
-          }), " ")).append(" ");
+    Iterable<EditorCell_Word> cellsBefore = getCellsBefore(wordCell);
+    if (Sequence.fromIterable(cellsBefore).isNotEmpty()) {
+      textBefore.append(Sequence.fromIterable(cellsBefore).select(new ISelector<EditorCell_Word, String>() {
+        public String select(EditorCell_Word it) {
+          return it.getTextIncludingSeparator();
         }
-        textBefore.append(wordCell.getTextBefore(pos));
-        break;
-      } else {
-        textBefore.append(lineCell.getText()).append("\n");
-      }
+      }));
     }
+    textBefore.append(wordCell.getTextBefore(pos));
 
     return textBefore.toString();
   }
 
+  public Iterable<EditorCell_Word> getCellsBefore(EditorCell_Word cell) {
+    List<EditorCell_Word> result = ListSequence.fromList(new ArrayList<EditorCell_Word>());
+    int cellNum = getCellNumber(cell);
+    if (cellNum >= 0) {
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(getWordCells()).take(cellNum));
+    }
+    return result;
+  }
+
   public String getTextBeforeCaret() {
-    return multilineText.getText().substring(0, getCaretPosition());
+    return myMultilineText.getText().substring(0, getCaretPosition());
   }
 
   public String getTextAfterCaret() {
-    return multilineText.getText().substring(getCaretPosition());
+    return myMultilineText.getText().substring(getCaretPosition());
   }
 
-  public Iterable<EditorCell_Line> getLineCells() {
-    return Sequence.fromIterable(Sequence.fromArray(getCells())).select(new ISelector<EditorCell, EditorCell_Line>() {
-      public EditorCell_Line select(EditorCell it) {
-        return (EditorCell_Line) it;
+  public Iterable<EditorCell_Word> getWordCells() {
+    return Sequence.fromIterable(Sequence.fromArray(getCells())).select(new ISelector<EditorCell, EditorCell_Word>() {
+      public EditorCell_Word select(EditorCell it) {
+        return (EditorCell_Word) it;
       }
     });
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0l(newText);
-    multilineText.setText(newText);
+    newText = check_v798xa_a0a0m(newText);
+    myMultilineText.setText(newText);
     modelToView();
   }
 
-  private EditorCell_Line newLineCell(int lineNum) {
-    EditorCell_Line lineCell = new EditorCell_Line(getEditorContext(), getSNode(), lineNum);
-    lineCell.setCellId("Multiline_Line_" + CELL_ID_SEQUENCE.incrementAndGet());
-    return lineCell;
-  }
-
-  public EditorCell_Word newWordCell(int lineNum, int wordNum) {
-    EditorCell_Word wordCell = EditorCell_Word.create(getEditorContext(), new EditorCell_Multiline.WordModelAccessor(lineNum, wordNum, multilineText), getSNode());
+  public EditorCell_Word newWordCell(int wordNum) {
+    EditorCell_Word wordCell = EditorCell_Word.create(getEditorContext(), new EditorCell_Multiline.WordModelAccessor(wordNum, myMultilineText), getSNode());
     wordCell.setCellId("Multiline_Word_" + CELL_ID_SEQUENCE.incrementAndGet());
     return wordCell;
   }
 
   @Override
-  public EditorCell_Line getCellAt(int i) {
-    return (EditorCell_Line) super.getCellAt(i);
+  public EditorCell_Word getCellAt(int i) {
+    return (EditorCell_Word) super.getCellAt(i);
   }
 
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
-    if (!(cell instanceof EditorCell_Line)) {
+    if (!(cell instanceof EditorCell_Word)) {
       throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0p(check_v798xa_a0a0a0a0a51(cell)));
 
     }
@@ -192,14 +203,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  private static void check_v798xa_a3a4(EditorCell_Line checkedDotOperand, EditorCell_Multiline checkedDotThisExpression) {
-    if (null != checkedDotOperand) {
-      checkedDotOperand.setIndentLayoutNewLine(false);
-    }
-
-  }
-
-  private static String check_v798xa_a0a0l(String checkedDotOperand) {
+  private static String check_v798xa_a0a0m(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
@@ -228,18 +232,16 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public class WordModelAccessor implements ModelAccessor {
-    private int myLineNum;
     private int myWordNum;
     private MultilineText textSource;
 
-    public WordModelAccessor(int lineNum, int wordNum, MultilineText textSource) {
-      this.myLineNum = lineNum;
+    public WordModelAccessor(int wordNum, MultilineText textSource) {
       this.myWordNum = wordNum;
       this.textSource = textSource;
     }
 
     public String getText() {
-      return textSource.getWord(myLineNum, myWordNum);
+      return textSource.getWord(myWordNum);
     }
 
     public boolean isValidText(String text) {
@@ -247,7 +249,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     }
 
     public void setText(String text) {
-      textSource.setWord(myLineNum, myWordNum, text);
+      textSource.setWord(myWordNum, text);
     }
   }
 }

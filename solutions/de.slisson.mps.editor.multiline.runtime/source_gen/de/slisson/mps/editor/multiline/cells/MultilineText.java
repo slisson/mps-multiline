@@ -70,6 +70,23 @@ public class MultilineText {
     return word;
   }
 
+  public String getWord(int wordNum) {
+    String result = null;
+    String[][] words = myWords;
+    int remainingWordNum = wordNum;
+    int lineNum = 0;
+    for (String[] line : words) {
+      if (remainingWordNum < line.length) {
+        result = words[lineNum][remainingWordNum];
+        break;
+      } else {
+        remainingWordNum -= line.length;
+        ++lineNum;
+      }
+    }
+    return result;
+  }
+
   public void setWord(int lineNum, int wordNum, String newWord) {
     String[][] newWords = this.myWords;
     if (lineNum < newWords.length) {
@@ -77,13 +94,39 @@ public class MultilineText {
         newWords[lineNum][wordNum] = newWord;
       }
     }
+    setWords(newWords);
+  }
 
+  public void setWord(int wordNum, String newWord) {
+    String[][] newWords = this.myWords;
+    int remainingWordNum = wordNum;
+    int lineNum = 0;
+    for (String[] line : newWords) {
+      if (remainingWordNum < line.length) {
+        newWords[lineNum][remainingWordNum] = newWord;
+        break;
+      } else {
+        remainingWordNum -= line.length;
+        ++lineNum;
+      }
+    }
+    setWords(newWords);
+  }
+
+  public void setWords(String[][] newWords) {
+    String oldText = myText;
+    String[][] oldWords = myWords;
     String newText = IterableUtils.join(Sequence.fromIterable(Sequence.fromArray(newWords)).select(new ISelector<String[], String>() {
       public String select(String[] line) {
         return IterableUtils.join(Sequence.fromIterable(Sequence.fromArray(line)), " ");
       }
     }), "\n");
-    setText(newText);
+    myText = newText;
+    myWords = newWords;
+    if (neq_ua5mzx_a0f0k(newText, oldText)) {
+      myChangeSupport.firePropertyChange(PROPERTY_TEXT, oldText, newText);
+      myChangeSupport.firePropertyChange(PROPERTY_WORDS, oldWords, newWords);
+    }
   }
 
   public String[][] getWords() {
@@ -109,6 +152,13 @@ public class MultilineText {
   }
 
   private static boolean neq_ua5mzx_a0g0e(Object a, Object b) {
+    return !((a != null ?
+      a.equals(b) :
+      a == b
+    ));
+  }
+
+  private static boolean neq_ua5mzx_a0f0k(Object a, Object b) {
     return !((a != null ?
       a.equals(b) :
       a == b
