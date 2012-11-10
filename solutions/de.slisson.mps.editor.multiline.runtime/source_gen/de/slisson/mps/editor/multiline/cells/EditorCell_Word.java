@@ -70,7 +70,6 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public boolean executeTextAction(CellActionType type, boolean allowErrors) {
-    LOG.info("executeTextAction(" + type + ", " + allowErrors + ")");
     if (type == CellActionType.BACKSPACE) {
       if (getCaretPosition() == 0) {
         executeDeletePrecedingCharacter();
@@ -102,7 +101,6 @@ public class EditorCell_Word extends EditorCell_Property {
   }
 
   public void deleteFollowingCharacter() {
-    LOG.info("Deleting following char");
     EditorCell_Multiline mlCell = this.getParent();
     if (mlCell != null) {
       int caretPos = mlCell.getCaretPosition();
@@ -115,8 +113,6 @@ public class EditorCell_Word extends EditorCell_Property {
   }
 
   private void deletePrecedingCharacter() {
-    LOG.info("Deleting preceding char");
-
     EditorCell_Multiline mlCell = this.getParent();
     if (mlCell != null) {
       int caretPos = mlCell.getCaretPosition();
@@ -147,7 +143,6 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public void setCaretPositionIfPossible(int i) {
-    LOG.info("setCaretPositionIfPossible(" + i + ") / text: \"" + getText() + "\"");
     if (i == getText().length() + 1) {
       int pos = getParent().getTextBefore(this, getText().length()).length() + 1;
       getParent().setCaretPosition(pos);

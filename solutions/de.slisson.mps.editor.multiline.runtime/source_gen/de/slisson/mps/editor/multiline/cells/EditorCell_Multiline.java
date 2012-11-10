@@ -112,12 +112,10 @@ public class EditorCell_Multiline extends EditorCell_Collection {
       });
       pos += selectedWordCell.getCaretPosition();
     }
-    LOG.info("Caret Pos: " + pos);
     return pos;
   }
 
   public void setCaretPosition(int pos) {
-    LOG.info("setCaretPosition(" + pos + ")");
     int remainingPos = pos;
     for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
       int textLen = wordCell.getText().length();
