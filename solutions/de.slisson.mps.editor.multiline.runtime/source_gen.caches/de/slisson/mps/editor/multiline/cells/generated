@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="2l0kurbxxe1kyhepwdnoxx3h1mo0rma">
+<dependencies version="2" modelHash="-ctvka4p6481f4tyi7kq5135c6gbqefe">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
@@ -87,7 +87,7 @@
     <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="EditorCell_Multiline.java" />
   </source>
-  <source id="6159071989902643399" name="EditorCell_Word" hash="8n9bu145avn25sim6z8be8nkt9oeo9b">
+  <source id="6159071989902643399" name="EditorCell_Word" hash="ay1sg0iz4rszwo70by57exzike49o5">
     <dep root="3602084827117659693" />
     <dep root="5205698381779289256" />
     <dep root="7453862918668889989" />

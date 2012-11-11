@@ -109,7 +109,7 @@ public class EditorCell_Word extends EditorCell_Property {
       text = text.substring(1);
       text = mlCell.getTextBeforeCaret() + text;
       mlCell.setText(text);
-      mlCell.setCaretPosition(caretPos);
+      mlCell.setCaretPosition(caretPos, true);
     }
   }
 
@@ -122,7 +122,7 @@ public class EditorCell_Word extends EditorCell_Property {
         text = text.substring(0, text.length() - 1);
         text += mlCell.getTextAfterCaret();
         mlCell.setText(text);
-        mlCell.setCaretPosition(caretPos - 1);
+        mlCell.setCaretPosition(caretPos - 1, true);
       }
     }
   }
