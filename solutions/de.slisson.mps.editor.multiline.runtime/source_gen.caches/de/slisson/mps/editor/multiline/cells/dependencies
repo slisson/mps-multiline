@@ -92,8 +92,13 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellKeyMapAction" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.WordRangeSelection" file="WordRangeSelection.java">
+    <classNode dependClassName="com.intellij.ide.CopyPasteManagerEx" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="java.awt.datatransfer.DataFlavor" />
+    <classNode dependClassName="java.awt.datatransfer.Transferable" />
+    <classNode dependClassName="java.awt.datatransfer.UnsupportedFlavorException" />
+    <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Math" />

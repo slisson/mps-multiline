@@ -13,6 +13,11 @@ import jetbrains.mps.nodeEditor.selection.SelectionInfo;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.project.structure.modules.ModuleReference;
 import jetbrains.mps.nodeEditor.CellActionType;
+import java.awt.datatransfer.Transferable;
+import com.intellij.ide.CopyPasteManagerEx;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 import jetbrains.mps.nodeEditor.selection.Selection;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -93,17 +98,50 @@ public class WordRangeSelection extends AbstractMultipleSelection {
       } else {
         reduceSelection();
       }
-      return;
     } else if (type == CellActionType.DELETE || type == CellActionType.BACKSPACE) {
-      EditorCell_Word firstSelectedCell = myMultilineCell.getCellAt(myStartWordNumber);
-      String textBeforeSelection = myMultilineCell.getTextBefore(firstSelectedCell, 0);
-      myMultilineCell.deleteWords(myStartWordNumber, myEndWordNumber);
-      getEditorComponent().getSelectionManager().clearSelection();
-      int caretPos = textBeforeSelection.length() - 1;
-      caretPos = Math.max(caretPos, 0);
-      myMultilineCell.setCaretPosition(caretPos, true);
+      deleteSelectedText();
+    } else if (type == CellActionType.CUT) {
+      super.executeAction(CellActionType.COPY);
+      deleteSelectedText();
+    } else if (type == CellActionType.PASTE) {
+      deleteSelectedText();
+      String textToInsert = getClipboardText();
+      if (myMultilineCell.isCaretAtWordStart() && myMultilineCell.isCaretAtWordEnd()) {
+        // Empty word with spaces around it 
+      } else if (myMultilineCell.isCaretAtWordStart()) {
+        textToInsert += " ";
+      } else if (myMultilineCell.isCaretAtWordEnd()) {
+        textToInsert = " " + textToInsert;
+      }
+      myMultilineCell.insertText(textToInsert);
+    } else {
+      super.executeAction(type);
     }
-    super.executeAction(type);
+  }
+
+  private String getClipboardText() {
+    String result = "";
+    for (Transferable content : CopyPasteManagerEx.getInstanceEx().getAllContents()) {
+      if (content.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+        try {
+          result = (String) content.getTransferData(DataFlavor.stringFlavor);
+          break;
+        } catch (UnsupportedFlavorException ex) {
+        } catch (IOException ex) {
+        }
+      }
+    }
+    return result;
+  }
+
+  public void deleteSelectedText() {
+    EditorCell_Word firstSelectedCell = myMultilineCell.getCellAt(myStartWordNumber);
+    String textBeforeSelection = myMultilineCell.getTextBefore(firstSelectedCell, 0);
+    myMultilineCell.deleteWords(myStartWordNumber, myEndWordNumber);
+    getEditorComponent().getSelectionManager().clearSelection();
+    int caretPos = textBeforeSelection.length() - 1;
+    caretPos = Math.max(caretPos, 0);
+    myMultilineCell.setCaretPosition(caretPos, true);
   }
 
   public boolean isSame(Selection selection) {

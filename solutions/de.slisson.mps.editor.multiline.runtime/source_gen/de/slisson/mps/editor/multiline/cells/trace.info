@@ -535,198 +535,245 @@
     <unitInfo nodeId="6159071989902688620" fileName="MultilineText.java" startLine="16" startPosition="0" endLine="196" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.MultilineText" />
   </root>
   <root nodeId="6162642318860137559" modelId="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
-    <nodeInfo nodeId="7105833981449973719" fileName="WordRangeSelection.java" startLine="23" startPosition="67" endLine="24" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="START_WORD_NUMBER_PROPERTY" />
-    <nodeInfo nodeId="6162642318860139363" fileName="WordRangeSelection.java" startLine="24" startPosition="77" endLine="25" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="END_WORD_NUMBER_PROPERTY" />
-    <nodeInfo nodeId="5405576980643888113" fileName="WordRangeSelection.java" startLine="25" startPosition="73" endLine="26" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LEFT_DIRECTION_PROPERTY" />
-    <nodeInfo nodeId="6162642318860139353" fileName="WordRangeSelection.java" startLine="27" startPosition="0" endLine="28" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineCell" />
-    <nodeInfo nodeId="6162642318860139369" fileName="WordRangeSelection.java" startLine="28" startPosition="47" endLine="29" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myStartWordNumber" />
-    <nodeInfo nodeId="6162642318860139376" fileName="WordRangeSelection.java" startLine="29" startPosition="32" endLine="30" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myEndWordNumber" />
-    <nodeInfo nodeId="5405576980643888048" fileName="WordRangeSelection.java" startLine="30" startPosition="30" endLine="31" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myLeftDirection" />
-    <nodeInfo nodeId="6162642318860139338" fileName="WordRangeSelection.java" startLine="33" startPosition="171" endLine="34" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="7105833981449992088" fileName="WordRangeSelection.java" startLine="35" startPosition="27" endLine="36" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="7105833981449992045" fileName="WordRangeSelection.java" startLine="37" startPosition="5" endLine="38" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7105833981449992063" fileName="WordRangeSelection.java" startLine="39" startPosition="53" endLine="40" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7105833981449992074" fileName="WordRangeSelection.java" startLine="41" startPosition="12" endLine="42" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="5405576980643888135" fileName="WordRangeSelection.java" startLine="43" startPosition="5" endLine="44" endPosition="116" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="798624968713558166" fileName="WordRangeSelection.java" startLine="44" startPosition="116" endLine="45" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1692968808721890704" fileName="WordRangeSelection.java" startLine="46" startPosition="32" endLine="47" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="6162642318860139384" fileName="WordRangeSelection.java" startLine="48" startPosition="5" endLine="49" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860139393" fileName="WordRangeSelection.java" startLine="50" startPosition="30" endLine="51" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="5405576980643902996" fileName="WordRangeSelection.java" startLine="53" startPosition="46" endLine="54" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="6162642318860139494" fileName="WordRangeSelection.java" startLine="55" startPosition="5" endLine="56" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1692968808721890734" fileName="WordRangeSelection.java" startLine="57" startPosition="38" endLine="58" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="6162642318860139619" fileName="WordRangeSelection.java" startLine="59" startPosition="5" endLine="60" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860137581" fileName="WordRangeSelection.java" startLine="63" startPosition="161" endLine="64" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6162642318860140048" fileName="WordRangeSelection.java" startLine="64" startPosition="27" endLine="65" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643888061" fileName="WordRangeSelection.java" startLine="65" startPosition="36" endLine="66" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860140083" fileName="WordRangeSelection.java" startLine="66" startPosition="36" endLine="67" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860140110" fileName="WordRangeSelection.java" startLine="67" startPosition="40" endLine="68" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860161313" fileName="WordRangeSelection.java" startLine="68" startPosition="36" endLine="69" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6162642318860140148" fileName="WordRangeSelection.java" startLine="69" startPosition="81" endLine="70" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
-    <nodeInfo nodeId="5405576980643902937" fileName="WordRangeSelection.java" startLine="70" startPosition="34" endLine="71" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
-    <nodeInfo nodeId="6162642318860140285" fileName="WordRangeSelection.java" startLine="71" startPosition="48" endLine="72" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
-    <nodeInfo nodeId="6162642318860140137" fileName="WordRangeSelection.java" startLine="72" startPosition="38" endLine="73" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1692968808721890750" fileName="WordRangeSelection.java" startLine="76" startPosition="74" endLine="77" endPosition="198" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3529089172214317303" fileName="WordRangeSelection.java" startLine="77" startPosition="198" endLine="78" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643888168" fileName="WordRangeSelection.java" startLine="78" startPosition="61" endLine="79" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7327512164851048421" fileName="WordRangeSelection.java" startLine="79" startPosition="120" endLine="80" endPosition="125" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860140436" fileName="WordRangeSelection.java" startLine="80" startPosition="125" endLine="81" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6365263270891632480" fileName="WordRangeSelection.java" startLine="81" startPosition="102" endLine="82" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5405576980643903146" fileName="WordRangeSelection.java" startLine="91" startPosition="10" endLine="92" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643903149" fileName="WordRangeSelection.java" startLine="93" startPosition="14" endLine="94" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643903039" fileName="WordRangeSelection.java" startLine="95" startPosition="7" endLine="96" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1264234391953189400" fileName="WordRangeSelection.java" startLine="97" startPosition="83" endLine="98" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1264234391953189418" fileName="WordRangeSelection.java" startLine="98" startPosition="87" endLine="99" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2674283497056244076" fileName="WordRangeSelection.java" startLine="99" startPosition="87" endLine="100" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1264234391953175834" fileName="WordRangeSelection.java" startLine="100" startPosition="70" endLine="101" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1264234391953214591" fileName="WordRangeSelection.java" startLine="101" startPosition="66" endLine="102" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1264234391953214700" fileName="WordRangeSelection.java" startLine="102" startPosition="54" endLine="103" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1264234391953189457" fileName="WordRangeSelection.java" startLine="103" startPosition="39" endLine="104" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643902861" fileName="WordRangeSelection.java" startLine="105" startPosition="5" endLine="106" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7327512164851048448" fileName="WordRangeSelection.java" startLine="110" startPosition="28" endLine="111" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7327512164851048474" fileName="WordRangeSelection.java" startLine="113" startPosition="66" endLine="114" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7327512164851048480" fileName="WordRangeSelection.java" startLine="115" startPosition="5" endLine="116" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7327512164851048505" fileName="WordRangeSelection.java" startLine="117" startPosition="58" endLine="118" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7327512164851048510" fileName="WordRangeSelection.java" startLine="119" startPosition="5" endLine="120" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2390677225378645237" fileName="WordRangeSelection.java" startLine="123" startPosition="36" endLine="124" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6162642318860139753" fileName="WordRangeSelection.java" startLine="124" startPosition="84" endLine="125" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6162642318860139796" fileName="WordRangeSelection.java" startLine="125" startPosition="19" endLine="126" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6162642318860139828" fileName="WordRangeSelection.java" startLine="126" startPosition="71" endLine="127" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6162642318860147705" fileName="WordRangeSelection.java" startLine="128" startPosition="92" endLine="129" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860139862" fileName="WordRangeSelection.java" startLine="130" startPosition="36" endLine="131" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
-    <nodeInfo nodeId="6162642318860139893" fileName="WordRangeSelection.java" startLine="133" startPosition="34" endLine="134" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
-    <nodeInfo nodeId="6162642318860139985" fileName="WordRangeSelection.java" startLine="135" startPosition="7" endLine="136" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6162642318860139663" fileName="WordRangeSelection.java" startLine="137" startPosition="5" endLine="138" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643903379" fileName="WordRangeSelection.java" startLine="141" startPosition="35" endLine="142" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643903388" fileName="WordRangeSelection.java" startLine="142" startPosition="47" endLine="143" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643903422" fileName="WordRangeSelection.java" startLine="145" startPosition="35" endLine="146" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643903879" fileName="WordRangeSelection.java" startLine="148" startPosition="12" endLine="149" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643903917" fileName="WordRangeSelection.java" startLine="150" startPosition="48" endLine="151" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643903941" fileName="WordRangeSelection.java" startLine="153" startPosition="5" endLine="154" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="5405576980643919047" fileName="WordRangeSelection.java" startLine="154" startPosition="0" endLine="155" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643926000" fileName="WordRangeSelection.java" startLine="155" startPosition="83" endLine="156" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643926004" fileName="WordRangeSelection.java" startLine="157" startPosition="89" endLine="158" endPosition="138" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643926030" fileName="WordRangeSelection.java" startLine="159" startPosition="12" endLine="160" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643904028" fileName="WordRangeSelection.java" startLine="167" startPosition="5" endLine="168" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5405576980643926061" fileName="WordRangeSelection.java" startLine="171" startPosition="34" endLine="172" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5405576980643926068" fileName="WordRangeSelection.java" startLine="172" startPosition="83" endLine="173" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7105833981449992072" fileName="WordRangeSelection.java" startLine="41" startPosition="10" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="5405576980643903078" fileName="WordRangeSelection.java" startLine="93" startPosition="12" endLine="95" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7105833981449992079" fileName="WordRangeSelection.java" startLine="34" startPosition="27" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1692968808721890695" fileName="WordRangeSelection.java" startLine="45" startPosition="117" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6162642318860139391" fileName="WordRangeSelection.java" startLine="49" startPosition="94" endLine="52" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643902967" fileName="WordRangeSelection.java" startLine="52" startPosition="5" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6162642318860139405" fileName="WordRangeSelection.java" startLine="56" startPosition="81" endLine="59" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7327512164851048439" fileName="WordRangeSelection.java" startLine="109" startPosition="46" endLine="112" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7327512164851048452" fileName="WordRangeSelection.java" startLine="112" startPosition="5" endLine="115" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7327512164851048489" fileName="WordRangeSelection.java" startLine="116" startPosition="61" endLine="119" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6162642318860139768" fileName="WordRangeSelection.java" startLine="129" startPosition="14" endLine="132" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6162642318860139864" fileName="WordRangeSelection.java" startLine="132" startPosition="7" endLine="135" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643903393" fileName="WordRangeSelection.java" startLine="144" startPosition="26" endLine="147" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643903471" fileName="WordRangeSelection.java" startLine="149" startPosition="87" endLine="152" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643919210" fileName="WordRangeSelection.java" startLine="161" startPosition="54" endLine="165" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7105833981449992054" fileName="WordRangeSelection.java" startLine="38" startPosition="63" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643903295" fileName="WordRangeSelection.java" startLine="148" startPosition="10" endLine="153" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="5405576980643903117" fileName="WordRangeSelection.java" startLine="170" startPosition="0" endLine="175" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="reduceSelection#()V" />
-    <nodeInfo nodeId="5405576980643919181" fileName="WordRangeSelection.java" startLine="160" startPosition="83" endLine="166" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643903043" fileName="WordRangeSelection.java" startLine="87" startPosition="84" endLine="95" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643904020" fileName="WordRangeSelection.java" startLine="159" startPosition="10" endLine="167" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="6162642318860137566" fileName="WordRangeSelection.java" startLine="75" startPosition="0" endLine="84" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionInfo#()Ljetbrains/mps/nodeEditor/selection/SelectionInfo;" />
-    <nodeInfo nodeId="6162642318860139687" fileName="WordRangeSelection.java" startLine="127" startPosition="69" endLine="137" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5405576980643903290" fileName="WordRangeSelection.java" startLine="143" startPosition="43" endLine="153" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643903943" fileName="WordRangeSelection.java" startLine="156" startPosition="27" endLine="167" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6162642318860137561" fileName="WordRangeSelection.java" startLine="62" startPosition="0" endLine="74" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordRangeSelection#(Ljetbrains/mps/nodeEditor/EditorComponent;Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;IIZ)V" />
-    <nodeInfo nodeId="6162642318860137573" fileName="WordRangeSelection.java" startLine="108" startPosition="0" endLine="122" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSame#(Ljetbrains/mps/nodeEditor/selection/Selection;)Z" />
-    <nodeInfo nodeId="6162642318860139650" fileName="WordRangeSelection.java" startLine="122" startPosition="0" endLine="140" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initSelectedCells#()V" />
-    <nodeInfo nodeId="5405576980643903006" fileName="WordRangeSelection.java" startLine="86" startPosition="50" endLine="105" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5405576980643902854" fileName="WordRangeSelection.java" startLine="84" startPosition="0" endLine="108" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeAction#(Ljetbrains/mps/nodeEditor/CellActionType;)V" />
-    <nodeInfo nodeId="6162642318860137586" fileName="WordRangeSelection.java" startLine="32" startPosition="0" endLine="61" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordRangeSelection#(Ljetbrains/mps/nodeEditor/EditorComponent;Ljava/util/Map;Ljetbrains/mps/nodeEditor/cells/CellInfo;)V" />
-    <nodeInfo nodeId="5405576980643903084" fileName="WordRangeSelection.java" startLine="140" startPosition="0" endLine="170" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="enlargeSelection#()V" />
-    <scopeInfo nodeId="7105833981449992080" fileName="WordRangeSelection.java" startLine="35" startPosition="27" endLine="36" endPosition="78" />
-    <scopeInfo nodeId="7105833981449992055" fileName="WordRangeSelection.java" startLine="39" startPosition="53" endLine="40" endPosition="58" />
-    <scopeInfo nodeId="7105833981449992073" fileName="WordRangeSelection.java" startLine="41" startPosition="12" endLine="42" endPosition="44" />
-    <scopeInfo nodeId="1692968808721890696" fileName="WordRangeSelection.java" startLine="46" startPosition="32" endLine="47" endPosition="108" />
-    <scopeInfo nodeId="6162642318860139392" fileName="WordRangeSelection.java" startLine="50" startPosition="30" endLine="51" endPosition="106" />
-    <scopeInfo nodeId="5405576980643902968" fileName="WordRangeSelection.java" startLine="53" startPosition="46" endLine="54" endPosition="44" />
-    <scopeInfo nodeId="6162642318860139406" fileName="WordRangeSelection.java" startLine="57" startPosition="38" endLine="58" endPosition="44" />
-    <scopeInfo nodeId="5405576980643903044" fileName="WordRangeSelection.java" startLine="91" startPosition="10" endLine="92" endPosition="27" />
-    <scopeInfo nodeId="5405576980643903079" fileName="WordRangeSelection.java" startLine="93" startPosition="14" endLine="94" endPosition="26" />
-    <scopeInfo nodeId="7327512164851048440" fileName="WordRangeSelection.java" startLine="110" startPosition="28" endLine="111" endPosition="18" />
-    <scopeInfo nodeId="7327512164851048453" fileName="WordRangeSelection.java" startLine="113" startPosition="66" endLine="114" endPosition="19" />
-    <scopeInfo nodeId="7327512164851048490" fileName="WordRangeSelection.java" startLine="117" startPosition="58" endLine="118" endPosition="19" />
-    <scopeInfo nodeId="6162642318860139770" fileName="WordRangeSelection.java" startLine="130" startPosition="36" endLine="131" endPosition="17" />
-    <scopeInfo nodeId="6162642318860139865" fileName="WordRangeSelection.java" startLine="133" startPosition="34" endLine="134" endPosition="14" />
-    <scopeInfo nodeId="5405576980643903395" fileName="WordRangeSelection.java" startLine="145" startPosition="35" endLine="146" endPosition="29" />
-    <scopeInfo nodeId="5405576980643903473" fileName="WordRangeSelection.java" startLine="150" startPosition="48" endLine="151" endPosition="27" />
-    <scopeInfo nodeId="5405576980643903944" fileName="WordRangeSelection.java" startLine="157" startPosition="89" endLine="158" endPosition="138" />
-    <scopeInfo nodeId="5405576980643903120" fileName="WordRangeSelection.java" startLine="171" startPosition="34" endLine="173" endPosition="36">
+    <nodeInfo nodeId="7105833981449973719" fileName="WordRangeSelection.java" startLine="28" startPosition="67" endLine="29" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="START_WORD_NUMBER_PROPERTY" />
+    <nodeInfo nodeId="6162642318860139363" fileName="WordRangeSelection.java" startLine="29" startPosition="77" endLine="30" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="END_WORD_NUMBER_PROPERTY" />
+    <nodeInfo nodeId="5405576980643888113" fileName="WordRangeSelection.java" startLine="30" startPosition="73" endLine="31" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LEFT_DIRECTION_PROPERTY" />
+    <nodeInfo nodeId="6162642318860139353" fileName="WordRangeSelection.java" startLine="32" startPosition="0" endLine="33" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineCell" />
+    <nodeInfo nodeId="6162642318860139369" fileName="WordRangeSelection.java" startLine="33" startPosition="47" endLine="34" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myStartWordNumber" />
+    <nodeInfo nodeId="6162642318860139376" fileName="WordRangeSelection.java" startLine="34" startPosition="32" endLine="35" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myEndWordNumber" />
+    <nodeInfo nodeId="5405576980643888048" fileName="WordRangeSelection.java" startLine="35" startPosition="30" endLine="36" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myLeftDirection" />
+    <nodeInfo nodeId="6162642318860139338" fileName="WordRangeSelection.java" startLine="38" startPosition="171" endLine="39" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="7105833981449992088" fileName="WordRangeSelection.java" startLine="40" startPosition="27" endLine="41" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="7105833981449992045" fileName="WordRangeSelection.java" startLine="42" startPosition="5" endLine="43" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7105833981449992063" fileName="WordRangeSelection.java" startLine="44" startPosition="53" endLine="45" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7105833981449992074" fileName="WordRangeSelection.java" startLine="46" startPosition="12" endLine="47" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="5405576980643888135" fileName="WordRangeSelection.java" startLine="48" startPosition="5" endLine="49" endPosition="116" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="798624968713558166" fileName="WordRangeSelection.java" startLine="49" startPosition="116" endLine="50" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1692968808721890704" fileName="WordRangeSelection.java" startLine="51" startPosition="32" endLine="52" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6162642318860139384" fileName="WordRangeSelection.java" startLine="53" startPosition="5" endLine="54" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860139393" fileName="WordRangeSelection.java" startLine="55" startPosition="30" endLine="56" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="5405576980643902996" fileName="WordRangeSelection.java" startLine="58" startPosition="46" endLine="59" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6162642318860139494" fileName="WordRangeSelection.java" startLine="60" startPosition="5" endLine="61" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1692968808721890734" fileName="WordRangeSelection.java" startLine="62" startPosition="38" endLine="63" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6162642318860139619" fileName="WordRangeSelection.java" startLine="64" startPosition="5" endLine="65" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860137581" fileName="WordRangeSelection.java" startLine="68" startPosition="161" endLine="69" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6162642318860140048" fileName="WordRangeSelection.java" startLine="69" startPosition="27" endLine="70" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643888061" fileName="WordRangeSelection.java" startLine="70" startPosition="36" endLine="71" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860140083" fileName="WordRangeSelection.java" startLine="71" startPosition="36" endLine="72" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860140110" fileName="WordRangeSelection.java" startLine="72" startPosition="40" endLine="73" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860161313" fileName="WordRangeSelection.java" startLine="73" startPosition="36" endLine="74" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6162642318860140148" fileName="WordRangeSelection.java" startLine="74" startPosition="81" endLine="75" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
+    <nodeInfo nodeId="5405576980643902937" fileName="WordRangeSelection.java" startLine="75" startPosition="34" endLine="76" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
+    <nodeInfo nodeId="6162642318860140285" fileName="WordRangeSelection.java" startLine="76" startPosition="48" endLine="77" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.AssertStatement" />
+    <nodeInfo nodeId="6162642318860140137" fileName="WordRangeSelection.java" startLine="77" startPosition="38" endLine="78" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1692968808721890750" fileName="WordRangeSelection.java" startLine="81" startPosition="74" endLine="82" endPosition="198" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3529089172214317303" fileName="WordRangeSelection.java" startLine="82" startPosition="198" endLine="83" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643888168" fileName="WordRangeSelection.java" startLine="83" startPosition="61" endLine="84" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7327512164851048421" fileName="WordRangeSelection.java" startLine="84" startPosition="120" endLine="85" endPosition="125" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860140436" fileName="WordRangeSelection.java" startLine="85" startPosition="125" endLine="86" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6365263270891632480" fileName="WordRangeSelection.java" startLine="86" startPosition="102" endLine="87" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5405576980643903146" fileName="WordRangeSelection.java" startLine="96" startPosition="10" endLine="97" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643903149" fileName="WordRangeSelection.java" startLine="98" startPosition="14" endLine="99" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953223221" fileName="WordRangeSelection.java" startLine="101" startPosition="83" endLine="102" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953223265" fileName="WordRangeSelection.java" startLine="103" startPosition="44" endLine="104" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953223270" fileName="WordRangeSelection.java" startLine="104" startPosition="47" endLine="105" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953225605" fileName="WordRangeSelection.java" startLine="106" startPosition="46" endLine="107" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953237167" fileName="WordRangeSelection.java" startLine="107" startPosition="27" endLine="108" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953237450" fileName="WordRangeSelection.java" startLine="109" startPosition="87" endLine="110" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1264234391953237205" fileName="WordRangeSelection.java" startLine="111" startPosition="56" endLine="112" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953237464" fileName="WordRangeSelection.java" startLine="113" startPosition="54" endLine="114" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953225608" fileName="WordRangeSelection.java" startLine="115" startPosition="7" endLine="116" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643902861" fileName="WordRangeSelection.java" startLine="117" startPosition="12" endLine="118" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953234008" fileName="WordRangeSelection.java" startLine="122" startPosition="37" endLine="123" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953234084" fileName="WordRangeSelection.java" startLine="126" startPosition="13" endLine="127" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953234153" fileName="WordRangeSelection.java" startLine="127" startPosition="77" endLine="128" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="1264234391953234015" fileName="WordRangeSelection.java" startLine="133" startPosition="5" endLine="134" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1264234391953189400" fileName="WordRangeSelection.java" startLine="137" startPosition="36" endLine="138" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953189418" fileName="WordRangeSelection.java" startLine="138" startPosition="85" endLine="139" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2674283497056244076" fileName="WordRangeSelection.java" startLine="139" startPosition="85" endLine="140" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953175834" fileName="WordRangeSelection.java" startLine="140" startPosition="68" endLine="141" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953214591" fileName="WordRangeSelection.java" startLine="141" startPosition="64" endLine="142" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953214700" fileName="WordRangeSelection.java" startLine="142" startPosition="52" endLine="143" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953189457" fileName="WordRangeSelection.java" startLine="143" startPosition="37" endLine="144" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7327512164851048448" fileName="WordRangeSelection.java" startLine="148" startPosition="28" endLine="149" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7327512164851048474" fileName="WordRangeSelection.java" startLine="151" startPosition="66" endLine="152" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7327512164851048480" fileName="WordRangeSelection.java" startLine="153" startPosition="5" endLine="154" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7327512164851048505" fileName="WordRangeSelection.java" startLine="155" startPosition="58" endLine="156" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7327512164851048510" fileName="WordRangeSelection.java" startLine="157" startPosition="5" endLine="158" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2390677225378645237" fileName="WordRangeSelection.java" startLine="161" startPosition="36" endLine="162" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6162642318860139753" fileName="WordRangeSelection.java" startLine="162" startPosition="84" endLine="163" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6162642318860139796" fileName="WordRangeSelection.java" startLine="163" startPosition="19" endLine="164" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6162642318860139828" fileName="WordRangeSelection.java" startLine="164" startPosition="71" endLine="165" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6162642318860147705" fileName="WordRangeSelection.java" startLine="166" startPosition="92" endLine="167" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860139862" fileName="WordRangeSelection.java" startLine="168" startPosition="36" endLine="169" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+    <nodeInfo nodeId="6162642318860139893" fileName="WordRangeSelection.java" startLine="171" startPosition="34" endLine="172" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="6162642318860139985" fileName="WordRangeSelection.java" startLine="173" startPosition="7" endLine="174" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6162642318860139663" fileName="WordRangeSelection.java" startLine="175" startPosition="5" endLine="176" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643903379" fileName="WordRangeSelection.java" startLine="179" startPosition="35" endLine="180" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643903388" fileName="WordRangeSelection.java" startLine="180" startPosition="47" endLine="181" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643903422" fileName="WordRangeSelection.java" startLine="183" startPosition="35" endLine="184" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643903879" fileName="WordRangeSelection.java" startLine="186" startPosition="12" endLine="187" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643903917" fileName="WordRangeSelection.java" startLine="188" startPosition="48" endLine="189" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643903941" fileName="WordRangeSelection.java" startLine="191" startPosition="5" endLine="192" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="5405576980643919047" fileName="WordRangeSelection.java" startLine="192" startPosition="0" endLine="193" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643926000" fileName="WordRangeSelection.java" startLine="193" startPosition="83" endLine="194" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643926004" fileName="WordRangeSelection.java" startLine="195" startPosition="89" endLine="196" endPosition="138" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643926030" fileName="WordRangeSelection.java" startLine="197" startPosition="12" endLine="198" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643904028" fileName="WordRangeSelection.java" startLine="205" startPosition="5" endLine="206" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5405576980643926061" fileName="WordRangeSelection.java" startLine="209" startPosition="34" endLine="210" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5405576980643926068" fileName="WordRangeSelection.java" startLine="210" startPosition="83" endLine="211" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7105833981449992072" fileName="WordRangeSelection.java" startLine="46" startPosition="10" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5405576980643903078" fileName="WordRangeSelection.java" startLine="98" startPosition="12" endLine="100" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1264234391953224420" fileName="WordRangeSelection.java" startLine="117" startPosition="10" endLine="119" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7105833981449992079" fileName="WordRangeSelection.java" startLine="39" startPosition="27" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1692968808721890695" fileName="WordRangeSelection.java" startLine="50" startPosition="117" endLine="53" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860139391" fileName="WordRangeSelection.java" startLine="54" startPosition="94" endLine="57" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643902967" fileName="WordRangeSelection.java" startLine="57" startPosition="5" endLine="60" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860139405" fileName="WordRangeSelection.java" startLine="61" startPosition="81" endLine="64" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7327512164851048439" fileName="WordRangeSelection.java" startLine="147" startPosition="46" endLine="150" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7327512164851048452" fileName="WordRangeSelection.java" startLine="150" startPosition="5" endLine="153" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7327512164851048489" fileName="WordRangeSelection.java" startLine="154" startPosition="61" endLine="157" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860139768" fileName="WordRangeSelection.java" startLine="167" startPosition="14" endLine="170" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860139864" fileName="WordRangeSelection.java" startLine="170" startPosition="7" endLine="173" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643903393" fileName="WordRangeSelection.java" startLine="182" startPosition="26" endLine="185" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643903471" fileName="WordRangeSelection.java" startLine="187" startPosition="87" endLine="190" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643919210" fileName="WordRangeSelection.java" startLine="199" startPosition="54" endLine="203" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7105833981449992054" fileName="WordRangeSelection.java" startLine="43" startPosition="63" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643903295" fileName="WordRangeSelection.java" startLine="186" startPosition="10" endLine="191" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5405576980643903117" fileName="WordRangeSelection.java" startLine="208" startPosition="0" endLine="213" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="reduceSelection#()V" />
+    <nodeInfo nodeId="1264234391953234146" fileName="WordRangeSelection.java" startLine="125" startPosition="67" endLine="131" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5405576980643919181" fileName="WordRangeSelection.java" startLine="198" startPosition="83" endLine="204" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1264234391953237367" fileName="WordRangeSelection.java" startLine="108" startPosition="47" endLine="115" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643903043" fileName="WordRangeSelection.java" startLine="92" startPosition="84" endLine="100" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1264234391953234051" fileName="WordRangeSelection.java" startLine="124" startPosition="86" endLine="132" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643904020" fileName="WordRangeSelection.java" startLine="197" startPosition="10" endLine="205" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6162642318860137566" fileName="WordRangeSelection.java" startLine="80" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionInfo#()Ljetbrains/mps/nodeEditor/selection/SelectionInfo;" />
+    <nodeInfo nodeId="1264234391953234018" fileName="WordRangeSelection.java" startLine="123" startPosition="23" endLine="133" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="1264234391953223193" fileName="WordRangeSelection.java" startLine="136" startPosition="0" endLine="146" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteSelectedText#()V" />
+    <nodeInfo nodeId="6162642318860139687" fileName="WordRangeSelection.java" startLine="165" startPosition="69" endLine="175" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5405576980643903290" fileName="WordRangeSelection.java" startLine="181" startPosition="43" endLine="191" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5405576980643903943" fileName="WordRangeSelection.java" startLine="194" startPosition="27" endLine="205" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860137561" fileName="WordRangeSelection.java" startLine="67" startPosition="0" endLine="79" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordRangeSelection#(Ljetbrains/mps/nodeEditor/EditorComponent;Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;IIZ)V" />
+    <nodeInfo nodeId="6162642318860137573" fileName="WordRangeSelection.java" startLine="146" startPosition="0" endLine="160" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSame#(Ljetbrains/mps/nodeEditor/selection/Selection;)Z" />
+    <nodeInfo nodeId="1264234391953233816" fileName="WordRangeSelection.java" startLine="121" startPosition="0" endLine="136" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getClipboardText#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6162642318860139650" fileName="WordRangeSelection.java" startLine="160" startPosition="0" endLine="178" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initSelectedCells#()V" />
+    <nodeInfo nodeId="5405576980643903006" fileName="WordRangeSelection.java" startLine="91" startPosition="50" endLine="119" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6162642318860137586" fileName="WordRangeSelection.java" startLine="37" startPosition="0" endLine="66" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordRangeSelection#(Ljetbrains/mps/nodeEditor/EditorComponent;Ljava/util/Map;Ljetbrains/mps/nodeEditor/cells/CellInfo;)V" />
+    <nodeInfo nodeId="5405576980643903084" fileName="WordRangeSelection.java" startLine="178" startPosition="0" endLine="208" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="enlargeSelection#()V" />
+    <nodeInfo nodeId="5405576980643902854" fileName="WordRangeSelection.java" startLine="89" startPosition="0" endLine="121" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeAction#(Ljetbrains/mps/nodeEditor/CellActionType;)V" />
+    <scopeInfo nodeId="1264234391953234156" fileName="WordRangeSelection.java" startLine="129" startPosition="0" endLine="129" endPosition="49">
+      <varInfo nodeId="1264234391953234157" varName="ex" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953234159" fileName="WordRangeSelection.java" startLine="129" startPosition="49" endLine="129" endPosition="49" />
+    <scopeInfo nodeId="1264234391953234149" fileName="WordRangeSelection.java" startLine="130" startPosition="0" endLine="130" endPosition="34">
+      <varInfo nodeId="1264234391953234150" varName="ex" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953234152" fileName="WordRangeSelection.java" startLine="130" startPosition="34" endLine="130" endPosition="34" />
+    <scopeInfo nodeId="7105833981449992080" fileName="WordRangeSelection.java" startLine="40" startPosition="27" endLine="41" endPosition="78" />
+    <scopeInfo nodeId="7105833981449992055" fileName="WordRangeSelection.java" startLine="44" startPosition="53" endLine="45" endPosition="58" />
+    <scopeInfo nodeId="7105833981449992073" fileName="WordRangeSelection.java" startLine="46" startPosition="12" endLine="47" endPosition="44" />
+    <scopeInfo nodeId="1692968808721890696" fileName="WordRangeSelection.java" startLine="51" startPosition="32" endLine="52" endPosition="108" />
+    <scopeInfo nodeId="6162642318860139392" fileName="WordRangeSelection.java" startLine="55" startPosition="30" endLine="56" endPosition="106" />
+    <scopeInfo nodeId="5405576980643902968" fileName="WordRangeSelection.java" startLine="58" startPosition="46" endLine="59" endPosition="44" />
+    <scopeInfo nodeId="6162642318860139406" fileName="WordRangeSelection.java" startLine="62" startPosition="38" endLine="63" endPosition="44" />
+    <scopeInfo nodeId="5405576980643903044" fileName="WordRangeSelection.java" startLine="96" startPosition="10" endLine="97" endPosition="27" />
+    <scopeInfo nodeId="5405576980643903079" fileName="WordRangeSelection.java" startLine="98" startPosition="14" endLine="99" endPosition="26" />
+    <scopeInfo nodeId="2674283497056244018" fileName="WordRangeSelection.java" startLine="101" startPosition="83" endLine="102" endPosition="27" />
+    <scopeInfo nodeId="1264234391953237368" fileName="WordRangeSelection.java" startLine="109" startPosition="87" endLine="110" endPosition="44" />
+    <scopeInfo nodeId="1264234391953237454" fileName="WordRangeSelection.java" startLine="111" startPosition="56" endLine="112" endPosition="28" />
+    <scopeInfo nodeId="1264234391953237460" fileName="WordRangeSelection.java" startLine="113" startPosition="54" endLine="114" endPosition="42" />
+    <scopeInfo nodeId="1264234391953224421" fileName="WordRangeSelection.java" startLine="117" startPosition="12" endLine="118" endPosition="32" />
+    <scopeInfo nodeId="7327512164851048440" fileName="WordRangeSelection.java" startLine="148" startPosition="28" endLine="149" endPosition="18" />
+    <scopeInfo nodeId="7327512164851048453" fileName="WordRangeSelection.java" startLine="151" startPosition="66" endLine="152" endPosition="19" />
+    <scopeInfo nodeId="7327512164851048490" fileName="WordRangeSelection.java" startLine="155" startPosition="58" endLine="156" endPosition="19" />
+    <scopeInfo nodeId="6162642318860139770" fileName="WordRangeSelection.java" startLine="168" startPosition="36" endLine="169" endPosition="17" />
+    <scopeInfo nodeId="6162642318860139865" fileName="WordRangeSelection.java" startLine="171" startPosition="34" endLine="172" endPosition="14" />
+    <scopeInfo nodeId="5405576980643903395" fileName="WordRangeSelection.java" startLine="183" startPosition="35" endLine="184" endPosition="29" />
+    <scopeInfo nodeId="5405576980643903473" fileName="WordRangeSelection.java" startLine="188" startPosition="48" endLine="189" endPosition="27" />
+    <scopeInfo nodeId="5405576980643903944" fileName="WordRangeSelection.java" startLine="195" startPosition="89" endLine="196" endPosition="138" />
+    <scopeInfo nodeId="1264234391953223225" fileName="WordRangeSelection.java" startLine="103" startPosition="44" endLine="105" endPosition="27" />
+    <scopeInfo nodeId="1264234391953234147" fileName="WordRangeSelection.java" startLine="126" startPosition="13" endLine="128" endPosition="16" />
+    <scopeInfo nodeId="5405576980643903120" fileName="WordRangeSelection.java" startLine="209" startPosition="34" endLine="211" endPosition="36">
       <varInfo nodeId="5405576980643926062" varName="selectionManager" />
     </scopeInfo>
-    <scopeInfo nodeId="5405576980643903291" fileName="WordRangeSelection.java" startLine="144" startPosition="26" endLine="147" endPosition="7" />
-    <scopeInfo nodeId="5405576980643903296" fileName="WordRangeSelection.java" startLine="148" startPosition="12" endLine="152" endPosition="7">
+    <scopeInfo nodeId="5405576980643903291" fileName="WordRangeSelection.java" startLine="182" startPosition="26" endLine="185" endPosition="7" />
+    <scopeInfo nodeId="5405576980643903296" fileName="WordRangeSelection.java" startLine="186" startPosition="12" endLine="190" endPosition="7">
       <varInfo nodeId="5405576980643903880" varName="wordCellsNum" />
     </scopeInfo>
-    <scopeInfo nodeId="5405576980643919182" fileName="WordRangeSelection.java" startLine="161" startPosition="54" endLine="165" endPosition="11" />
-    <scopeInfo nodeId="5405576980643903117" fileName="WordRangeSelection.java" startLine="170" startPosition="0" endLine="175" endPosition="0" />
-    <scopeInfo nodeId="6162642318860137570" fileName="WordRangeSelection.java" startLine="76" startPosition="74" endLine="82" endPosition="25">
+    <scopeInfo nodeId="5405576980643919182" fileName="WordRangeSelection.java" startLine="199" startPosition="54" endLine="203" endPosition="11" />
+    <scopeInfo nodeId="5405576980643903117" fileName="WordRangeSelection.java" startLine="208" startPosition="0" endLine="213" endPosition="0" />
+    <scopeInfo nodeId="6162642318860137570" fileName="WordRangeSelection.java" startLine="81" startPosition="74" endLine="87" endPosition="25">
       <varInfo nodeId="1692968808721890751" varName="selectionInto" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056244018" fileName="WordRangeSelection.java" startLine="97" startPosition="83" endLine="104" endPosition="55">
+    <scopeInfo nodeId="1264234391953234053" fileName="WordRangeSelection.java" startLine="125" startPosition="67" endLine="131" endPosition="9" />
+    <scopeInfo nodeId="1264234391953223196" fileName="WordRangeSelection.java" startLine="137" startPosition="36" endLine="144" endPosition="53">
       <varInfo nodeId="1264234391953214592" varName="caretPos" />
       <varInfo nodeId="1264234391953189401" varName="firstSelectedCell" />
       <varInfo nodeId="1264234391953189419" varName="textBeforeSelection" />
     </scopeInfo>
-    <scopeInfo nodeId="5405576980643904021" fileName="WordRangeSelection.java" startLine="159" startPosition="12" endLine="166" endPosition="7" />
-    <scopeInfo nodeId="6162642318860139690" fileName="WordRangeSelection.java" startLine="128" startPosition="92" endLine="136" endPosition="60" />
-    <scopeInfo nodeId="6162642318860137566" fileName="WordRangeSelection.java" startLine="75" startPosition="0" endLine="84" endPosition="0" />
-    <scopeInfo nodeId="5405576980643903007" fileName="WordRangeSelection.java" startLine="87" startPosition="84" endLine="96" endPosition="13" />
-    <scopeInfo nodeId="6162642318860137564" fileName="WordRangeSelection.java" startLine="63" startPosition="161" endLine="73" endPosition="24">
+    <scopeInfo nodeId="5405576980643904021" fileName="WordRangeSelection.java" startLine="197" startPosition="12" endLine="204" endPosition="7" />
+    <scopeInfo nodeId="5405576980643903007" fileName="WordRangeSelection.java" startLine="92" startPosition="84" endLine="100" endPosition="7" />
+    <scopeInfo nodeId="1264234391953234021" fileName="WordRangeSelection.java" startLine="124" startPosition="86" endLine="132" endPosition="7" />
+    <scopeInfo nodeId="6162642318860139690" fileName="WordRangeSelection.java" startLine="166" startPosition="92" endLine="174" endPosition="60" />
+    <scopeInfo nodeId="6162642318860137566" fileName="WordRangeSelection.java" startLine="80" startPosition="0" endLine="89" endPosition="0" />
+    <scopeInfo nodeId="6162642318860137564" fileName="WordRangeSelection.java" startLine="68" startPosition="161" endLine="78" endPosition="24">
       <varInfo nodeId="6162642318860161314" varName="lineSize" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860139687" fileName="WordRangeSelection.java" startLine="127" startPosition="69" endLine="137" endPosition="5">
+    <scopeInfo nodeId="1264234391953225571" fileName="WordRangeSelection.java" startLine="106" startPosition="46" endLine="116" endPosition="47">
+      <varInfo nodeId="1264234391953237168" varName="textToInsert" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953234018" fileName="WordRangeSelection.java" startLine="123" startPosition="23" endLine="133" endPosition="5">
+      <varInfo nodeId="1264234391953234018" varName="content" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953223193" fileName="WordRangeSelection.java" startLine="136" startPosition="0" endLine="146" endPosition="0" />
+    <scopeInfo nodeId="6162642318860139687" fileName="WordRangeSelection.java" startLine="165" startPosition="69" endLine="175" endPosition="5">
       <varInfo nodeId="6162642318860139687" varName="wordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860137578" fileName="WordRangeSelection.java" startLine="109" startPosition="46" endLine="120" endPosition="98">
+    <scopeInfo nodeId="6162642318860137578" fileName="WordRangeSelection.java" startLine="147" startPosition="46" endLine="158" endPosition="98">
       <varInfo nodeId="7327512164851048481" varName="that" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860137561" fileName="WordRangeSelection.java" startLine="62" startPosition="0" endLine="74" endPosition="3">
+    <scopeInfo nodeId="6162642318860137561" fileName="WordRangeSelection.java" startLine="67" startPosition="0" endLine="79" endPosition="3">
       <varInfo nodeId="6162642318860137582" varName="editorComponent" />
       <varInfo nodeId="6162642318860139347" varName="endWordNumber" />
       <varInfo nodeId="5405576980643888045" varName="leftDirection" />
       <varInfo nodeId="6162642318860139341" varName="multilineCell" />
       <varInfo nodeId="6162642318860139344" varName="startWordNumber" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860137573" fileName="WordRangeSelection.java" startLine="108" startPosition="0" endLine="122" endPosition="0">
+    <scopeInfo nodeId="1264234391953233819" fileName="WordRangeSelection.java" startLine="122" startPosition="37" endLine="134" endPosition="18">
+      <varInfo nodeId="1264234391953234009" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="6162642318860137573" fileName="WordRangeSelection.java" startLine="146" startPosition="0" endLine="160" endPosition="0">
       <varInfo nodeId="6162642318860137576" varName="selection" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860139652" fileName="WordRangeSelection.java" startLine="123" startPosition="36" endLine="138" endPosition="32">
+    <scopeInfo nodeId="1264234391953233816" fileName="WordRangeSelection.java" startLine="121" startPosition="0" endLine="136" endPosition="0" />
+    <scopeInfo nodeId="6162642318860139652" fileName="WordRangeSelection.java" startLine="161" startPosition="36" endLine="176" endPosition="32">
       <varInfo nodeId="6162642318860139829" varName="endCellNumber" />
       <varInfo nodeId="6162642318860139754" varName="index" />
       <varInfo nodeId="2390677225378645238" varName="selection" />
       <varInfo nodeId="6162642318860139797" varName="startCellNumber" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860139650" fileName="WordRangeSelection.java" startLine="122" startPosition="0" endLine="140" endPosition="0" />
-    <scopeInfo nodeId="5405576980643902859" fileName="WordRangeSelection.java" startLine="86" startPosition="50" endLine="106" endPosition="30" />
-    <scopeInfo nodeId="5405576980643902854" fileName="WordRangeSelection.java" startLine="84" startPosition="0" endLine="108" endPosition="0">
-      <varInfo nodeId="5405576980643902857" varName="type" />
-    </scopeInfo>
-    <scopeInfo nodeId="6162642318860137589" fileName="WordRangeSelection.java" startLine="33" startPosition="171" endLine="60" endPosition="24">
+    <scopeInfo nodeId="6162642318860139650" fileName="WordRangeSelection.java" startLine="160" startPosition="0" endLine="178" endPosition="0" />
+    <scopeInfo nodeId="6162642318860137589" fileName="WordRangeSelection.java" startLine="38" startPosition="171" endLine="65" endPosition="24">
       <varInfo nodeId="7105833981449992046" varName="editorCell" />
       <varInfo nodeId="6162642318860139495" varName="lineSize" />
     </scopeInfo>
-    <scopeInfo nodeId="5405576980643903087" fileName="WordRangeSelection.java" startLine="141" startPosition="35" endLine="168" endPosition="49">
+    <scopeInfo nodeId="5405576980643903087" fileName="WordRangeSelection.java" startLine="179" startPosition="35" endLine="206" endPosition="49">
       <varInfo nodeId="5405576980643903389" varName="newEndWordNumber" />
       <varInfo nodeId="5405576980643926001" varName="newSelection" />
       <varInfo nodeId="5405576980643903380" varName="newStartWordNumber" />
       <varInfo nodeId="5405576980643919048" varName="selectionManager" />
     </scopeInfo>
-    <scopeInfo nodeId="6162642318860137586" fileName="WordRangeSelection.java" startLine="32" startPosition="0" endLine="61" endPosition="3">
+    <scopeInfo nodeId="5405576980643902859" fileName="WordRangeSelection.java" startLine="91" startPosition="50" endLine="119" endPosition="5" />
+    <scopeInfo nodeId="6162642318860137586" fileName="WordRangeSelection.java" startLine="37" startPosition="0" endLine="66" endPosition="3">
       <varInfo nodeId="2390677225378655499" varName="cellInfo" />
       <varInfo nodeId="6162642318860137590" varName="editorComponent" />
       <varInfo nodeId="2390677225378655489" varName="properties" />
     </scopeInfo>
-    <scopeInfo nodeId="5405576980643903084" fileName="WordRangeSelection.java" startLine="140" startPosition="0" endLine="170" endPosition="0" />
-    <unitInfo nodeId="6162642318860137559" fileName="WordRangeSelection.java" startLine="23" startPosition="0" endLine="176" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
+    <scopeInfo nodeId="5405576980643903084" fileName="WordRangeSelection.java" startLine="178" startPosition="0" endLine="208" endPosition="0" />
+    <scopeInfo nodeId="5405576980643902854" fileName="WordRangeSelection.java" startLine="89" startPosition="0" endLine="121" endPosition="0">
+      <varInfo nodeId="5405576980643902857" varName="type" />
+    </scopeInfo>
+    <unitInfo nodeId="6162642318860137559" fileName="WordRangeSelection.java" startLine="28" startPosition="0" endLine="214" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
   </root>
   <root nodeId="7453862918668889989" modelId="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
     <nodeInfo nodeId="7453862918668890005" fileName="NewLineAction.java" startLine="8" startPosition="53" endLine="9" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordCell" />
@@ -802,111 +849,131 @@
     <nodeInfo nodeId="2395520505377971733" fileName="EditorCell_Multiline.java" startLine="118" startPosition="63" endLine="119" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7453862918669177785" fileName="EditorCell_Multiline.java" startLine="121" startPosition="9" endLine="122" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="7453862918668957867" fileName="EditorCell_Multiline.java" startLine="123" startPosition="5" endLine="124" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1264234391953191409" fileName="EditorCell_Multiline.java" startLine="127" startPosition="41" endLine="128" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668959304" fileName="EditorCell_Multiline.java" startLine="131" startPosition="66" endLine="132" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918668959667" fileName="EditorCell_Multiline.java" startLine="133" startPosition="76" endLine="134" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623283397" fileName="EditorCell_Multiline.java" startLine="136" startPosition="134" endLine="137" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668959538" fileName="EditorCell_Multiline.java" startLine="138" startPosition="9" endLine="139" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668959576" fileName="EditorCell_Multiline.java" startLine="139" startPosition="48" endLine="140" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
-    <nodeInfo nodeId="7453862918668959587" fileName="EditorCell_Multiline.java" startLine="141" startPosition="7" endLine="142" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669116012" fileName="EditorCell_Multiline.java" startLine="146" startPosition="66" endLine="147" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623253530" fileName="EditorCell_Multiline.java" startLine="147" startPosition="49" endLine="148" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623253562" fileName="EditorCell_Multiline.java" startLine="151" startPosition="50" endLine="152" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623253575" fileName="EditorCell_Multiline.java" startLine="155" startPosition="5" endLine="156" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669116085" fileName="EditorCell_Multiline.java" startLine="156" startPosition="51" endLine="157" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7453862918669116086" fileName="EditorCell_Multiline.java" startLine="157" startPosition="0" endLine="158" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623253467" fileName="EditorCell_Multiline.java" startLine="161" startPosition="73" endLine="162" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623253474" fileName="EditorCell_Multiline.java" startLine="162" startPosition="91" endLine="163" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623253481" fileName="EditorCell_Multiline.java" startLine="164" startPosition="23" endLine="165" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253504" fileName="EditorCell_Multiline.java" startLine="166" startPosition="5" endLine="167" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7453862918669038811" fileName="EditorCell_Multiline.java" startLine="170" startPosition="38" endLine="171" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7453862918669038969" fileName="EditorCell_Multiline.java" startLine="174" startPosition="37" endLine="175" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623253426" fileName="EditorCell_Multiline.java" startLine="180" startPosition="52" endLine="181" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902657356" fileName="EditorCell_Multiline.java" startLine="186" startPosition="39" endLine="187" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902661760" fileName="EditorCell_Multiline.java" startLine="187" startPosition="42" endLine="188" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902686205" fileName="EditorCell_Multiline.java" startLine="188" startPosition="37" endLine="189" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2674283497056238575" fileName="EditorCell_Multiline.java" startLine="192" startPosition="45" endLine="193" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902679636" fileName="EditorCell_Multiline.java" startLine="196" startPosition="51" endLine="197" endPosition="156" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902617776" fileName="EditorCell_Multiline.java" startLine="197" startPosition="156" endLine="198" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902572080" fileName="EditorCell_Multiline.java" startLine="198" startPosition="79" endLine="199" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659785" fileName="EditorCell_Multiline.java" startLine="203" startPosition="43" endLine="204" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659818" fileName="EditorCell_Multiline.java" startLine="209" startPosition="45" endLine="210" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="6159071989902659828" fileName="EditorCell_Multiline.java" startLine="210" startPosition="159" endLine="211" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="6159071989902659799" fileName="EditorCell_Multiline.java" startLine="212" startPosition="5" endLine="213" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902659423" fileName="EditorCell_Multiline.java" startLine="216" startPosition="104" endLine="217" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669183568" fileName="EditorCell_Multiline.java" startLine="217" startPosition="84" endLine="218" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="222" startPosition="36" endLine="223" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="224" startPosition="5" endLine="225" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="229" startPosition="36" endLine="230" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="231" startPosition="5" endLine="232" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="236" startPosition="36" endLine="237" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="238" startPosition="5" endLine="239" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902663589" fileName="EditorCell_Multiline.java" startLine="249" startPosition="59" endLine="250" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordNum" />
-    <nodeInfo nodeId="6159071989902663732" fileName="EditorCell_Multiline.java" startLine="250" startPosition="26" endLine="251" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="textSource" />
-    <nodeInfo nodeId="6159071989902663626" fileName="EditorCell_Multiline.java" startLine="253" startPosition="69" endLine="254" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902663740" fileName="EditorCell_Multiline.java" startLine="254" startPosition="31" endLine="255" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902663789" fileName="EditorCell_Multiline.java" startLine="258" startPosition="29" endLine="259" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902663727" fileName="EditorCell_Multiline.java" startLine="262" startPosition="45" endLine="263" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902663896" fileName="EditorCell_Multiline.java" startLine="266" startPosition="38" endLine="267" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953235530" fileName="EditorCell_Multiline.java" startLine="127" startPosition="39" endLine="128" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1264234391953236947" fileName="EditorCell_Multiline.java" startLine="131" startPosition="39" endLine="132" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953236857" fileName="EditorCell_Multiline.java" startLine="132" startPosition="27" endLine="133" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953236865" fileName="EditorCell_Multiline.java" startLine="134" startPosition="50" endLine="135" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953236955" fileName="EditorCell_Multiline.java" startLine="135" startPosition="72" endLine="136" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953236940" fileName="EditorCell_Multiline.java" startLine="137" startPosition="5" endLine="138" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1264234391953237059" fileName="EditorCell_Multiline.java" startLine="141" startPosition="37" endLine="142" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953237063" fileName="EditorCell_Multiline.java" startLine="142" startPosition="27" endLine="143" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953237071" fileName="EditorCell_Multiline.java" startLine="144" startPosition="50" endLine="145" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953237077" fileName="EditorCell_Multiline.java" startLine="145" startPosition="72" endLine="146" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953237088" fileName="EditorCell_Multiline.java" startLine="147" startPosition="5" endLine="148" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1264234391953191409" fileName="EditorCell_Multiline.java" startLine="151" startPosition="41" endLine="152" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668959304" fileName="EditorCell_Multiline.java" startLine="155" startPosition="66" endLine="156" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918668959667" fileName="EditorCell_Multiline.java" startLine="157" startPosition="76" endLine="158" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623283397" fileName="EditorCell_Multiline.java" startLine="160" startPosition="134" endLine="161" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668959538" fileName="EditorCell_Multiline.java" startLine="162" startPosition="9" endLine="163" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668959576" fileName="EditorCell_Multiline.java" startLine="163" startPosition="48" endLine="164" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="7453862918668959587" fileName="EditorCell_Multiline.java" startLine="165" startPosition="7" endLine="166" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953225703" fileName="EditorCell_Multiline.java" startLine="170" startPosition="39" endLine="171" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1264234391953225709" fileName="EditorCell_Multiline.java" startLine="171" startPosition="38" endLine="172" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1264234391953225790" fileName="EditorCell_Multiline.java" startLine="172" startPosition="79" endLine="173" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669116012" fileName="EditorCell_Multiline.java" startLine="176" startPosition="66" endLine="177" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623253530" fileName="EditorCell_Multiline.java" startLine="177" startPosition="49" endLine="178" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623253562" fileName="EditorCell_Multiline.java" startLine="181" startPosition="50" endLine="182" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623253575" fileName="EditorCell_Multiline.java" startLine="185" startPosition="5" endLine="186" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669116085" fileName="EditorCell_Multiline.java" startLine="186" startPosition="51" endLine="187" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7453862918669116086" fileName="EditorCell_Multiline.java" startLine="187" startPosition="0" endLine="188" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623253467" fileName="EditorCell_Multiline.java" startLine="191" startPosition="73" endLine="192" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623253474" fileName="EditorCell_Multiline.java" startLine="192" startPosition="91" endLine="193" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623253481" fileName="EditorCell_Multiline.java" startLine="194" startPosition="23" endLine="195" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623253504" fileName="EditorCell_Multiline.java" startLine="196" startPosition="5" endLine="197" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7453862918669038811" fileName="EditorCell_Multiline.java" startLine="200" startPosition="38" endLine="201" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7453862918669038969" fileName="EditorCell_Multiline.java" startLine="204" startPosition="37" endLine="205" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623253426" fileName="EditorCell_Multiline.java" startLine="210" startPosition="52" endLine="211" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902657356" fileName="EditorCell_Multiline.java" startLine="216" startPosition="39" endLine="217" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902661760" fileName="EditorCell_Multiline.java" startLine="217" startPosition="42" endLine="218" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902686205" fileName="EditorCell_Multiline.java" startLine="218" startPosition="37" endLine="219" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2674283497056238575" fileName="EditorCell_Multiline.java" startLine="222" startPosition="45" endLine="223" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902679636" fileName="EditorCell_Multiline.java" startLine="226" startPosition="51" endLine="227" endPosition="156" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902617776" fileName="EditorCell_Multiline.java" startLine="227" startPosition="156" endLine="228" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902572080" fileName="EditorCell_Multiline.java" startLine="228" startPosition="79" endLine="229" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659785" fileName="EditorCell_Multiline.java" startLine="233" startPosition="43" endLine="234" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659818" fileName="EditorCell_Multiline.java" startLine="239" startPosition="45" endLine="240" endPosition="159" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="6159071989902659828" fileName="EditorCell_Multiline.java" startLine="240" startPosition="159" endLine="241" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6159071989902659799" fileName="EditorCell_Multiline.java" startLine="242" startPosition="5" endLine="243" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902659423" fileName="EditorCell_Multiline.java" startLine="246" startPosition="104" endLine="247" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669183568" fileName="EditorCell_Multiline.java" startLine="247" startPosition="84" endLine="248" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="252" startPosition="36" endLine="253" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="254" startPosition="5" endLine="255" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="259" startPosition="36" endLine="260" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="261" startPosition="5" endLine="262" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="266" startPosition="36" endLine="267" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="268" startPosition="5" endLine="269" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902663589" fileName="EditorCell_Multiline.java" startLine="279" startPosition="59" endLine="280" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordNum" />
+    <nodeInfo nodeId="6159071989902663732" fileName="EditorCell_Multiline.java" startLine="280" startPosition="26" endLine="281" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="textSource" />
+    <nodeInfo nodeId="6159071989902663626" fileName="EditorCell_Multiline.java" startLine="283" startPosition="69" endLine="284" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902663740" fileName="EditorCell_Multiline.java" startLine="284" startPosition="31" endLine="285" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902663789" fileName="EditorCell_Multiline.java" startLine="288" startPosition="29" endLine="289" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902663727" fileName="EditorCell_Multiline.java" startLine="292" startPosition="45" endLine="293" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902663896" fileName="EditorCell_Multiline.java" startLine="296" startPosition="38" endLine="297" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1735233166553447514" fileName="EditorCell_Multiline.java" startLine="41" startPosition="56" endLine="44" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="4702832764623254753" fileName="EditorCell_Multiline.java" startLine="103" startPosition="47" endLine="106" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
     <nodeInfo nodeId="4702832764623254765" fileName="EditorCell_Multiline.java" startLine="106" startPosition="5" endLine="109" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-    <nodeInfo nodeId="2395520505377982765" fileName="EditorCell_Multiline.java" startLine="135" startPosition="36" endLine="138" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253479" fileName="EditorCell_Multiline.java" startLine="163" startPosition="38" endLine="166" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="221" startPosition="70" endLine="224" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="228" startPosition="76" endLine="231" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="235" startPosition="82" endLine="238" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2395520505377982765" fileName="EditorCell_Multiline.java" startLine="159" startPosition="36" endLine="162" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4702832764623253479" fileName="EditorCell_Multiline.java" startLine="193" startPosition="38" endLine="196" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="251" startPosition="70" endLine="254" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="258" startPosition="76" endLine="261" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="265" startPosition="82" endLine="268" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="1264234391953172329" fileName="EditorCell_Multiline.java" startLine="51" startPosition="58" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
     <nodeInfo nodeId="7453862918668895983" fileName="EditorCell_Multiline.java" startLine="60" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="escapeText#(Ljava/lang/String;)Ljava/lang/String;" />
     <nodeInfo nodeId="7453862918668896838" fileName="EditorCell_Multiline.java" startLine="64" startPosition="0" endLine="68" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="unescapeText#(Ljava/lang/String;)Ljava/lang/String;" />
     <nodeInfo nodeId="4702832764623255928" fileName="EditorCell_Multiline.java" startLine="78" startPosition="93" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#([Ljava/lang/String;)Ljava/lang/Integer;" />
     <nodeInfo nodeId="4702832764623255814" fileName="EditorCell_Multiline.java" startLine="82" startPosition="59" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="combine#(Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;" />
     <nodeInfo nodeId="2395520505377971724" fileName="EditorCell_Multiline.java" startLine="117" startPosition="130" endLine="121" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="combine#(Ljava/lang/Integer;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)Ljava/lang/Integer;" />
-    <nodeInfo nodeId="1264234391953191393" fileName="EditorCell_Multiline.java" startLine="126" startPosition="0" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPosition#(I)V" />
-    <nodeInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="150" startPosition="127" endLine="154" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)Ljava/lang/String;" />
-    <nodeInfo nodeId="7453862918669038804" fileName="EditorCell_Multiline.java" startLine="169" startPosition="0" endLine="173" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBeforeCaret#()Ljava/lang/String;" />
-    <nodeInfo nodeId="7453862918669038958" fileName="EditorCell_Multiline.java" startLine="173" startPosition="0" endLine="177" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextAfterCaret#()Ljava/lang/String;" />
-    <nodeInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="179" startPosition="118" endLine="183" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
-    <nodeInfo nodeId="2674283497056238557" fileName="EditorCell_Multiline.java" startLine="191" startPosition="0" endLine="195" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteWords#(II)V" />
-    <nodeInfo nodeId="6159071989902659816" fileName="EditorCell_Multiline.java" startLine="208" startPosition="60" endLine="212" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="242" startPosition="79" endLine="246" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902663142" fileName="EditorCell_Multiline.java" startLine="252" startPosition="0" endLine="256" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordModelAccessor#(ILde/slisson/mps/editor/multiline/cells/MultilineText;)V" />
-    <nodeInfo nodeId="6159071989902663707" fileName="EditorCell_Multiline.java" startLine="257" startPosition="0" endLine="261" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getText#()Ljava/lang/String;" />
-    <nodeInfo nodeId="6159071989902663713" fileName="EditorCell_Multiline.java" startLine="261" startPosition="0" endLine="265" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isValidText#(Ljava/lang/String;)Z" />
-    <nodeInfo nodeId="6159071989902663721" fileName="EditorCell_Multiline.java" startLine="265" startPosition="0" endLine="269" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="1264234391953235421" fileName="EditorCell_Multiline.java" startLine="126" startPosition="0" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isCaretAtLineStart#()Z" />
+    <nodeInfo nodeId="1264234391953236863" fileName="EditorCell_Multiline.java" startLine="133" startPosition="67" endLine="137" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1264234391953237069" fileName="EditorCell_Multiline.java" startLine="143" startPosition="67" endLine="147" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1264234391953191393" fileName="EditorCell_Multiline.java" startLine="150" startPosition="0" endLine="154" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPosition#(I)V" />
+    <nodeInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="180" startPosition="127" endLine="184" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)Ljava/lang/String;" />
+    <nodeInfo nodeId="7453862918669038804" fileName="EditorCell_Multiline.java" startLine="199" startPosition="0" endLine="203" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBeforeCaret#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7453862918669038958" fileName="EditorCell_Multiline.java" startLine="203" startPosition="0" endLine="207" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextAfterCaret#()Ljava/lang/String;" />
+    <nodeInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="209" startPosition="118" endLine="213" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
+    <nodeInfo nodeId="2674283497056238557" fileName="EditorCell_Multiline.java" startLine="221" startPosition="0" endLine="225" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteWords#(II)V" />
+    <nodeInfo nodeId="6159071989902659816" fileName="EditorCell_Multiline.java" startLine="238" startPosition="60" endLine="242" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="272" startPosition="79" endLine="276" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902663142" fileName="EditorCell_Multiline.java" startLine="282" startPosition="0" endLine="286" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="WordModelAccessor#(ILde/slisson/mps/editor/multiline/cells/MultilineText;)V" />
+    <nodeInfo nodeId="6159071989902663707" fileName="EditorCell_Multiline.java" startLine="287" startPosition="0" endLine="291" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getText#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6159071989902663713" fileName="EditorCell_Multiline.java" startLine="291" startPosition="0" endLine="295" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isValidText#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="6159071989902663721" fileName="EditorCell_Multiline.java" startLine="295" startPosition="0" endLine="299" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="1264234391953172300" fileName="EditorCell_Multiline.java" startLine="50" startPosition="57" endLine="55" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4702832764623275739" fileName="EditorCell_Multiline.java" startLine="116" startPosition="72" endLine="121" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253551" fileName="EditorCell_Multiline.java" startLine="149" startPosition="58" endLine="154" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253366" fileName="EditorCell_Multiline.java" startLine="178" startPosition="51" endLine="183" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659778" fileName="EditorCell_Multiline.java" startLine="201" startPosition="0" endLine="206" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellAt#(I)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
-    <nodeInfo nodeId="6159071989902659411" fileName="EditorCell_Multiline.java" startLine="215" startPosition="0" endLine="220" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="create#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
+    <nodeInfo nodeId="4702832764623253551" fileName="EditorCell_Multiline.java" startLine="179" startPosition="58" endLine="184" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623253366" fileName="EditorCell_Multiline.java" startLine="208" startPosition="51" endLine="213" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659778" fileName="EditorCell_Multiline.java" startLine="231" startPosition="0" endLine="236" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellAt#(I)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
+    <nodeInfo nodeId="6159071989902659411" fileName="EditorCell_Multiline.java" startLine="245" startPosition="0" endLine="250" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="create#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
     <nodeInfo nodeId="7453862918669183545" fileName="EditorCell_Multiline.java" startLine="68" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="synchronizeViewWithModel#()V" />
     <nodeInfo nodeId="4702832764623255998" fileName="EditorCell_Multiline.java" startLine="90" startPosition="56" endLine="96" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="185" startPosition="0" endLine="191" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="6159071989902572038" fileName="EditorCell_Multiline.java" startLine="195" startPosition="0" endLine="201" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="newWordCell#(I)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
-    <nodeInfo nodeId="7453862918668959443" fileName="EditorCell_Multiline.java" startLine="134" startPosition="48" endLine="141" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253549" fileName="EditorCell_Multiline.java" startLine="148" startPosition="69" endLine="155" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="220" startPosition="0" endLine="227" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0n#(Ljava/lang/String;)Ljava/lang/String;" />
-    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="227" startPosition="0" endLine="234" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0a0a0r#(Ljava/lang/Class;)Ljava/lang/String;" />
-    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="234" startPosition="0" endLine="241" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0a0a0a71#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljava/lang/Class;" />
-    <nodeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="241" startPosition="0" endLine="248" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_v798xa_a0c0a0a0a0a0a0a1a0e0a#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="1264234391953225673" fileName="EditorCell_Multiline.java" startLine="169" startPosition="0" endLine="175" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="215" startPosition="0" endLine="221" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6159071989902572038" fileName="EditorCell_Multiline.java" startLine="225" startPosition="0" endLine="231" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="newWordCell#(I)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
+    <nodeInfo nodeId="7453862918668959443" fileName="EditorCell_Multiline.java" startLine="158" startPosition="48" endLine="165" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4702832764623253549" fileName="EditorCell_Multiline.java" startLine="178" startPosition="69" endLine="185" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="250" startPosition="0" endLine="257" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0r#(Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="257" startPosition="0" endLine="264" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0a0a0v#(Ljava/lang/Class;)Ljava/lang/String;" />
+    <nodeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="264" startPosition="0" endLine="271" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_v798xa_a0a0a0a0a12#(Ljetbrains/mps/nodeEditor/cells/EditorCell;)Ljava/lang/Class;" />
+    <nodeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="271" startPosition="0" endLine="278" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_v798xa_a0c0a0a0a0a0a0a1a0e0a#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
     <nodeInfo nodeId="1264234391953174684" fileName="EditorCell_Multiline.java" startLine="38" startPosition="58" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
     <nodeInfo nodeId="6159071989902689698" fileName="EditorCell_Multiline.java" startLine="49" startPosition="92" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="propertyChange#(Ljava/beans/PropertyChangeEvent;)V" />
-    <nodeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="177" startPosition="0" endLine="185" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWordCells#()Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="207" startPosition="0" endLine="215" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWordCells#()Ljava/lang/Iterable;" />
     <nodeInfo nodeId="1264234391953174655" fileName="EditorCell_Multiline.java" startLine="37" startPosition="63" endLine="46" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="6159071989902689660" fileName="EditorCell_Multiline.java" startLine="48" startPosition="7" endLine="57" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4702832764623255693" fileName="EditorCell_Multiline.java" startLine="77" startPosition="78" endLine="86" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="4702832764623255993" fileName="EditorCell_Multiline.java" startLine="89" startPosition="21" endLine="98" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
     <nodeInfo nodeId="4702832764623254747" fileName="EditorCell_Multiline.java" startLine="102" startPosition="0" endLine="111" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNumberOfWordCells#(I)V" />
     <nodeInfo nodeId="7453862918668958414" fileName="EditorCell_Multiline.java" startLine="114" startPosition="67" endLine="123" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253460" fileName="EditorCell_Multiline.java" startLine="160" startPosition="0" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellsBefore#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)Ljava/lang/Iterable;" />
-    <nodeInfo nodeId="6159071989902659788" fileName="EditorCell_Multiline.java" startLine="206" startPosition="0" endLine="215" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addCellAt#(ILjetbrains/mps/nodeEditor/cells/EditorCell;Z)V" />
-    <nodeInfo nodeId="7453862918668959324" fileName="EditorCell_Multiline.java" startLine="132" startPosition="27" endLine="143" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="4702832764623253460" fileName="EditorCell_Multiline.java" startLine="190" startPosition="0" endLine="199" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellsBefore#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="6159071989902659788" fileName="EditorCell_Multiline.java" startLine="236" startPosition="0" endLine="245" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addCellAt#(ILjetbrains/mps/nodeEditor/cells/EditorCell;Z)V" />
+    <nodeInfo nodeId="1264234391953236834" fileName="EditorCell_Multiline.java" startLine="130" startPosition="0" endLine="140" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isCaretAtWordStart#()Z" />
+    <nodeInfo nodeId="1264234391953237055" fileName="EditorCell_Multiline.java" startLine="140" startPosition="0" endLine="150" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isCaretAtWordEnd#()Z" />
+    <nodeInfo nodeId="7453862918668959324" fileName="EditorCell_Multiline.java" startLine="156" startPosition="27" endLine="167" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
     <nodeInfo nodeId="6159071989902689367" fileName="EditorCell_Multiline.java" startLine="36" startPosition="91" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="propertyChange#(Ljava/beans/PropertyChangeEvent;)V" />
     <nodeInfo nodeId="6159071989902689300" fileName="EditorCell_Multiline.java" startLine="35" startPosition="74" endLine="48" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="7453862918668957819" fileName="EditorCell_Multiline.java" startLine="111" startPosition="0" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCaretPosition#()I" />
-    <nodeInfo nodeId="7453862918668958926" fileName="EditorCell_Multiline.java" startLine="130" startPosition="0" endLine="145" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPosition#(IZ)V" />
-    <nodeInfo nodeId="7453862918669115980" fileName="EditorCell_Multiline.java" startLine="145" startPosition="0" endLine="160" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBefore#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;I)Ljava/lang/String;" />
+    <nodeInfo nodeId="7453862918668958926" fileName="EditorCell_Multiline.java" startLine="154" startPosition="0" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPosition#(IZ)V" />
+    <nodeInfo nodeId="7453862918669115980" fileName="EditorCell_Multiline.java" startLine="175" startPosition="0" endLine="190" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBefore#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;I)Ljava/lang/String;" />
     <nodeInfo nodeId="6159071989902686137" fileName="EditorCell_Multiline.java" startLine="74" startPosition="0" endLine="102" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="modelToView#()V" />
     <nodeInfo nodeId="8291359990510677543" fileName="EditorCell_Multiline.java" startLine="30" startPosition="0" endLine="59" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EditorCell_Multiline#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)V" />
     <scopeInfo nodeId="1735233166553447515" fileName="EditorCell_Multiline.java" startLine="42" startPosition="69" endLine="43" endPosition="59" />
@@ -918,29 +985,39 @@
     <scopeInfo nodeId="4702832764623254757" fileName="EditorCell_Multiline.java" startLine="104" startPosition="37" endLine="105" endPosition="79" />
     <scopeInfo nodeId="4702832764623254769" fileName="EditorCell_Multiline.java" startLine="107" startPosition="37" endLine="108" endPosition="55" />
     <scopeInfo nodeId="2395520505377971725" fileName="EditorCell_Multiline.java" startLine="118" startPosition="63" endLine="119" endPosition="61" />
-    <scopeInfo nodeId="1264234391953191396" fileName="EditorCell_Multiline.java" startLine="127" startPosition="41" endLine="128" endPosition="33" />
-    <scopeInfo nodeId="2395520505377982766" fileName="EditorCell_Multiline.java" startLine="136" startPosition="134" endLine="137" endPosition="99" />
-    <scopeInfo nodeId="4702832764623253561" fileName="EditorCell_Multiline.java" startLine="151" startPosition="50" endLine="152" endPosition="48" />
-    <scopeInfo nodeId="4702832764623253480" fileName="EditorCell_Multiline.java" startLine="164" startPosition="23" endLine="165" endPosition="101" />
-    <scopeInfo nodeId="7453862918669038807" fileName="EditorCell_Multiline.java" startLine="170" startPosition="38" endLine="171" endPosition="70" />
-    <scopeInfo nodeId="7453862918669038961" fileName="EditorCell_Multiline.java" startLine="174" startPosition="37" endLine="175" endPosition="67" />
-    <scopeInfo nodeId="4702832764623253423" fileName="EditorCell_Multiline.java" startLine="180" startPosition="52" endLine="181" endPosition="36" />
-    <scopeInfo nodeId="2674283497056238560" fileName="EditorCell_Multiline.java" startLine="192" startPosition="45" endLine="193" endPosition="42" />
-    <scopeInfo nodeId="6159071989902659783" fileName="EditorCell_Multiline.java" startLine="203" startPosition="43" endLine="204" endPosition="48" />
-    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="222" startPosition="36" endLine="223" endPosition="52" />
-    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="229" startPosition="36" endLine="230" endPosition="41" />
-    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="236" startPosition="36" endLine="237" endPosition="42" />
-    <scopeInfo nodeId="6159071989902663710" fileName="EditorCell_Multiline.java" startLine="258" startPosition="29" endLine="259" endPosition="43" />
-    <scopeInfo nodeId="6159071989902663718" fileName="EditorCell_Multiline.java" startLine="262" startPosition="45" endLine="263" endPosition="18" />
-    <scopeInfo nodeId="6159071989902663726" fileName="EditorCell_Multiline.java" startLine="266" startPosition="38" endLine="267" endPosition="42" />
+    <scopeInfo nodeId="1264234391953235424" fileName="EditorCell_Multiline.java" startLine="127" startPosition="39" endLine="128" endPosition="74" />
+    <scopeInfo nodeId="1264234391953191396" fileName="EditorCell_Multiline.java" startLine="151" startPosition="41" endLine="152" endPosition="33" />
+    <scopeInfo nodeId="2395520505377982766" fileName="EditorCell_Multiline.java" startLine="160" startPosition="134" endLine="161" endPosition="99" />
+    <scopeInfo nodeId="4702832764623253561" fileName="EditorCell_Multiline.java" startLine="181" startPosition="50" endLine="182" endPosition="48" />
+    <scopeInfo nodeId="4702832764623253480" fileName="EditorCell_Multiline.java" startLine="194" startPosition="23" endLine="195" endPosition="101" />
+    <scopeInfo nodeId="7453862918669038807" fileName="EditorCell_Multiline.java" startLine="200" startPosition="38" endLine="201" endPosition="70" />
+    <scopeInfo nodeId="7453862918669038961" fileName="EditorCell_Multiline.java" startLine="204" startPosition="37" endLine="205" endPosition="67" />
+    <scopeInfo nodeId="4702832764623253423" fileName="EditorCell_Multiline.java" startLine="210" startPosition="52" endLine="211" endPosition="36" />
+    <scopeInfo nodeId="2674283497056238560" fileName="EditorCell_Multiline.java" startLine="222" startPosition="45" endLine="223" endPosition="42" />
+    <scopeInfo nodeId="6159071989902659783" fileName="EditorCell_Multiline.java" startLine="233" startPosition="43" endLine="234" endPosition="48" />
+    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="252" startPosition="36" endLine="253" endPosition="52" />
+    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="259" startPosition="36" endLine="260" endPosition="41" />
+    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="266" startPosition="36" endLine="267" endPosition="42" />
+    <scopeInfo nodeId="6159071989902663710" fileName="EditorCell_Multiline.java" startLine="288" startPosition="29" endLine="289" endPosition="43" />
+    <scopeInfo nodeId="6159071989902663718" fileName="EditorCell_Multiline.java" startLine="292" startPosition="45" endLine="293" endPosition="18" />
+    <scopeInfo nodeId="6159071989902663726" fileName="EditorCell_Multiline.java" startLine="296" startPosition="38" endLine="297" endPosition="42" />
     <scopeInfo nodeId="7453862918669183548" fileName="EditorCell_Multiline.java" startLine="70" startPosition="42" endLine="72" endPosition="18" />
-    <scopeInfo nodeId="6159071989902659817" fileName="EditorCell_Multiline.java" startLine="209" startPosition="45" endLine="211" endPosition="0" />
-    <scopeInfo nodeId="6159071989902659414" fileName="EditorCell_Multiline.java" startLine="216" startPosition="104" endLine="218" endPosition="18">
+    <scopeInfo nodeId="1264234391953236864" fileName="EditorCell_Multiline.java" startLine="134" startPosition="50" endLine="136" endPosition="56">
+      <varInfo nodeId="1264234391953236866" varName="selectedWordCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953237070" fileName="EditorCell_Multiline.java" startLine="144" startPosition="50" endLine="146" endPosition="90">
+      <varInfo nodeId="1264234391953237072" varName="selectedWordCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="6159071989902659817" fileName="EditorCell_Multiline.java" startLine="239" startPosition="45" endLine="241" endPosition="0" />
+    <scopeInfo nodeId="6159071989902659414" fileName="EditorCell_Multiline.java" startLine="246" startPosition="104" endLine="248" endPosition="18">
       <varInfo nodeId="6159071989902659424" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902663145" fileName="EditorCell_Multiline.java" startLine="253" startPosition="69" endLine="255" endPosition="35" />
-    <scopeInfo nodeId="6159071989902512926" fileName="EditorCell_Multiline.java" startLine="186" startPosition="39" endLine="189" endPosition="18" />
-    <scopeInfo nodeId="6159071989902572041" fileName="EditorCell_Multiline.java" startLine="196" startPosition="51" endLine="199" endPosition="20">
+    <scopeInfo nodeId="6159071989902663145" fileName="EditorCell_Multiline.java" startLine="283" startPosition="69" endLine="285" endPosition="35" />
+    <scopeInfo nodeId="1264234391953225676" fileName="EditorCell_Multiline.java" startLine="170" startPosition="39" endLine="173" endPosition="53">
+      <varInfo nodeId="1264234391953225704" varName="caretPos" />
+    </scopeInfo>
+    <scopeInfo nodeId="6159071989902512926" fileName="EditorCell_Multiline.java" startLine="216" startPosition="39" endLine="219" endPosition="18" />
+    <scopeInfo nodeId="6159071989902572041" fileName="EditorCell_Multiline.java" startLine="226" startPosition="51" endLine="229" endPosition="20">
       <varInfo nodeId="6159071989902679637" varName="wordCell" />
     </scopeInfo>
     <scopeInfo nodeId="1264234391953172329" fileName="EditorCell_Multiline.java" startLine="51" startPosition="58" endLine="55" endPosition="0" />
@@ -964,34 +1041,35 @@
       <varInfo nodeId="2395520505377971724" varName="it" />
       <varInfo nodeId="2395520505377971724" varName="s" />
     </scopeInfo>
-    <scopeInfo nodeId="1264234391953191393" fileName="EditorCell_Multiline.java" startLine="126" startPosition="0" endLine="130" endPosition="0">
+    <scopeInfo nodeId="1264234391953235421" fileName="EditorCell_Multiline.java" startLine="126" startPosition="0" endLine="130" endPosition="0" />
+    <scopeInfo nodeId="1264234391953191393" fileName="EditorCell_Multiline.java" startLine="150" startPosition="0" endLine="154" endPosition="0">
       <varInfo nodeId="1264234391953191402" varName="pos" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="150" startPosition="127" endLine="154" endPosition="0">
+    <scopeInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="180" startPosition="127" endLine="184" endPosition="0">
       <varInfo nodeId="4702832764623253560" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669038804" fileName="EditorCell_Multiline.java" startLine="169" startPosition="0" endLine="173" endPosition="0" />
-    <scopeInfo nodeId="7453862918669038958" fileName="EditorCell_Multiline.java" startLine="173" startPosition="0" endLine="177" endPosition="0" />
-    <scopeInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="179" startPosition="118" endLine="183" endPosition="0">
+    <scopeInfo nodeId="7453862918669038804" fileName="EditorCell_Multiline.java" startLine="199" startPosition="0" endLine="203" endPosition="0" />
+    <scopeInfo nodeId="7453862918669038958" fileName="EditorCell_Multiline.java" startLine="203" startPosition="0" endLine="207" endPosition="0" />
+    <scopeInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="209" startPosition="118" endLine="213" endPosition="0">
       <varInfo nodeId="4702832764623253422" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056238557" fileName="EditorCell_Multiline.java" startLine="191" startPosition="0" endLine="195" endPosition="0">
+    <scopeInfo nodeId="2674283497056238557" fileName="EditorCell_Multiline.java" startLine="221" startPosition="0" endLine="225" endPosition="0">
       <varInfo nodeId="2674283497056238564" varName="from" />
       <varInfo nodeId="2674283497056238569" varName="to" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="221" startPosition="70" endLine="225" endPosition="16" />
-    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="228" startPosition="76" endLine="232" endPosition="16" />
-    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="235" startPosition="82" endLine="239" endPosition="16" />
-    <scopeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="242" startPosition="79" endLine="246" endPosition="7" />
-    <scopeInfo nodeId="6159071989902663142" fileName="EditorCell_Multiline.java" startLine="252" startPosition="0" endLine="256" endPosition="5">
+    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="251" startPosition="70" endLine="255" endPosition="16" />
+    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="258" startPosition="76" endLine="262" endPosition="16" />
+    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="265" startPosition="82" endLine="269" endPosition="16" />
+    <scopeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="272" startPosition="79" endLine="276" endPosition="7" />
+    <scopeInfo nodeId="6159071989902663142" fileName="EditorCell_Multiline.java" startLine="282" startPosition="0" endLine="286" endPosition="5">
       <varInfo nodeId="6159071989902663736" varName="textSource" />
       <varInfo nodeId="6159071989902663596" varName="wordNum" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902663707" fileName="EditorCell_Multiline.java" startLine="257" startPosition="0" endLine="261" endPosition="0" />
-    <scopeInfo nodeId="6159071989902663713" fileName="EditorCell_Multiline.java" startLine="261" startPosition="0" endLine="265" endPosition="0">
+    <scopeInfo nodeId="6159071989902663707" fileName="EditorCell_Multiline.java" startLine="287" startPosition="0" endLine="291" endPosition="0" />
+    <scopeInfo nodeId="6159071989902663713" fileName="EditorCell_Multiline.java" startLine="291" startPosition="0" endLine="295" endPosition="0">
       <varInfo nodeId="6159071989902663716" varName="text" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902663721" fileName="EditorCell_Multiline.java" startLine="265" startPosition="0" endLine="269" endPosition="0">
+    <scopeInfo nodeId="6159071989902663721" fileName="EditorCell_Multiline.java" startLine="295" startPosition="0" endLine="299" endPosition="0">
       <varInfo nodeId="6159071989902663724" varName="text" />
     </scopeInfo>
     <scopeInfo nodeId="1264234391953174685" fileName="EditorCell_Multiline.java" startLine="39" startPosition="29" endLine="44" endPosition="13">
@@ -999,14 +1077,14 @@
       <varInfo nodeId="1735233166553447483" varName="oldText" />
     </scopeInfo>
     <scopeInfo nodeId="6159071989902689703" fileName="EditorCell_Multiline.java" startLine="50" startPosition="57" endLine="55" endPosition="11" />
-    <scopeInfo nodeId="7453862918668959445" fileName="EditorCell_Multiline.java" startLine="135" startPosition="36" endLine="140" endPosition="14" />
-    <scopeInfo nodeId="4702832764623253550" fileName="EditorCell_Multiline.java" startLine="149" startPosition="58" endLine="154" endPosition="15" />
-    <scopeInfo nodeId="4702832764623253352" fileName="EditorCell_Multiline.java" startLine="178" startPosition="51" endLine="183" endPosition="7" />
-    <scopeInfo nodeId="6159071989902659778" fileName="EditorCell_Multiline.java" startLine="201" startPosition="0" endLine="206" endPosition="0">
+    <scopeInfo nodeId="7453862918668959445" fileName="EditorCell_Multiline.java" startLine="159" startPosition="36" endLine="164" endPosition="14" />
+    <scopeInfo nodeId="4702832764623253550" fileName="EditorCell_Multiline.java" startLine="179" startPosition="58" endLine="184" endPosition="15" />
+    <scopeInfo nodeId="4702832764623253352" fileName="EditorCell_Multiline.java" startLine="208" startPosition="51" endLine="213" endPosition="7" />
+    <scopeInfo nodeId="6159071989902659778" fileName="EditorCell_Multiline.java" startLine="231" startPosition="0" endLine="236" endPosition="0">
       <varInfo nodeId="6159071989902659781" varName="i" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902659797" fileName="EditorCell_Multiline.java" startLine="208" startPosition="60" endLine="213" endPosition="32" />
-    <scopeInfo nodeId="6159071989902659411" fileName="EditorCell_Multiline.java" startLine="215" startPosition="0" endLine="220" endPosition="0">
+    <scopeInfo nodeId="6159071989902659797" fileName="EditorCell_Multiline.java" startLine="238" startPosition="60" endLine="243" endPosition="32" />
+    <scopeInfo nodeId="6159071989902659411" fileName="EditorCell_Multiline.java" startLine="245" startPosition="0" endLine="250" endPosition="0">
       <varInfo nodeId="6159071989902659417" varName="accessor" />
       <varInfo nodeId="6159071989902659415" varName="context" />
       <varInfo nodeId="6159071989902659419" varName="node" />
@@ -1016,30 +1094,41 @@
       <varInfo nodeId="4702832764623255998" varName="word" />
     </scopeInfo>
     <scopeInfo nodeId="4702832764623254752" fileName="EditorCell_Multiline.java" startLine="103" startPosition="47" endLine="109" endPosition="5" />
-    <scopeInfo nodeId="4702832764623253466" fileName="EditorCell_Multiline.java" startLine="161" startPosition="73" endLine="167" endPosition="18">
+    <scopeInfo nodeId="1264234391953225673" fileName="EditorCell_Multiline.java" startLine="169" startPosition="0" endLine="175" endPosition="0">
+      <varInfo nodeId="1264234391953225691" varName="text" />
+    </scopeInfo>
+    <scopeInfo nodeId="4702832764623253466" fileName="EditorCell_Multiline.java" startLine="191" startPosition="73" endLine="197" endPosition="18">
       <varInfo nodeId="4702832764623253475" varName="cellNum" />
       <varInfo nodeId="4702832764623253468" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="185" startPosition="0" endLine="191" endPosition="0">
+    <scopeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="215" startPosition="0" endLine="221" endPosition="0">
       <varInfo nodeId="6159071989902512927" varName="newText" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902572038" fileName="EditorCell_Multiline.java" startLine="195" startPosition="0" endLine="201" endPosition="0">
+    <scopeInfo nodeId="6159071989902572038" fileName="EditorCell_Multiline.java" startLine="225" startPosition="0" endLine="231" endPosition="0">
       <varInfo nodeId="6159071989902684819" varName="wordNum" />
     </scopeInfo>
     <scopeInfo nodeId="4702832764623255996" fileName="EditorCell_Multiline.java" startLine="90" startPosition="56" endLine="97" endPosition="76" />
     <scopeInfo nodeId="7453862918668958415" fileName="EditorCell_Multiline.java" startLine="115" startPosition="50" endLine="122" endPosition="49">
       <varInfo nodeId="7453862918668958428" varName="selectedWordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="220" startPosition="0" endLine="227" endPosition="0">
+    <scopeInfo nodeId="1264234391953236837" fileName="EditorCell_Multiline.java" startLine="131" startPosition="39" endLine="138" endPosition="18">
+      <varInfo nodeId="1264234391953236948" varName="result" />
+      <varInfo nodeId="1264234391953236858" varName="selectedCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="1264234391953237058" fileName="EditorCell_Multiline.java" startLine="141" startPosition="37" endLine="148" endPosition="18">
+      <varInfo nodeId="1264234391953237060" varName="result" />
+      <varInfo nodeId="1264234391953237064" varName="selectedCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="6159071989902662233" fileName="EditorCell_Multiline.java" startLine="250" startPosition="0" endLine="257" endPosition="0">
       <varInfo nodeId="6159071989902662233" varName="checkedDotOperand" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="227" startPosition="0" endLine="234" endPosition="0">
+    <scopeInfo nodeId="6159071989902659822" fileName="EditorCell_Multiline.java" startLine="257" startPosition="0" endLine="264" endPosition="0">
       <varInfo nodeId="6159071989902659822" varName="checkedDotOperand" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="234" startPosition="0" endLine="241" endPosition="0">
+    <scopeInfo nodeId="6159071989902659823" fileName="EditorCell_Multiline.java" startLine="264" startPosition="0" endLine="271" endPosition="0">
       <varInfo nodeId="6159071989902659823" varName="checkedDotOperand" />
     </scopeInfo>
-    <scopeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="241" startPosition="0" endLine="248" endPosition="0">
+    <scopeInfo nodeId="1735233166553447539" fileName="EditorCell_Multiline.java" startLine="271" startPosition="0" endLine="278" endPosition="0">
       <varInfo nodeId="1735233166553447539" varName="a" />
       <varInfo nodeId="1735233166553447539" varName="b" />
     </scopeInfo>
@@ -1047,7 +1136,7 @@
     <scopeInfo nodeId="6159071989902689698" fileName="EditorCell_Multiline.java" startLine="49" startPosition="92" endLine="57" endPosition="0">
       <varInfo nodeId="6159071989902689701" varName="e" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="177" startPosition="0" endLine="185" endPosition="0" />
+    <scopeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="207" startPosition="0" endLine="215" endPosition="0" />
     <scopeInfo nodeId="6159071989902689372" fileName="EditorCell_Multiline.java" startLine="37" startPosition="63" endLine="46" endPosition="11" />
     <scopeInfo nodeId="4702832764623255993" fileName="EditorCell_Multiline.java" startLine="89" startPosition="21" endLine="98" endPosition="5">
       <varInfo nodeId="4702832764623255993" varName="line" />
@@ -1055,18 +1144,20 @@
     <scopeInfo nodeId="4702832764623254747" fileName="EditorCell_Multiline.java" startLine="102" startPosition="0" endLine="111" endPosition="0">
       <varInfo nodeId="4702832764623254748" varName="count" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918668959327" fileName="EditorCell_Multiline.java" startLine="133" startPosition="76" endLine="142" endPosition="34">
+    <scopeInfo nodeId="7453862918668959327" fileName="EditorCell_Multiline.java" startLine="157" startPosition="76" endLine="166" endPosition="34">
       <varInfo nodeId="7453862918668959668" varName="textLen" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253460" fileName="EditorCell_Multiline.java" startLine="160" startPosition="0" endLine="169" endPosition="0">
+    <scopeInfo nodeId="4702832764623253460" fileName="EditorCell_Multiline.java" startLine="190" startPosition="0" endLine="199" endPosition="0">
       <varInfo nodeId="4702832764623253461" varName="cell" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902659788" fileName="EditorCell_Multiline.java" startLine="206" startPosition="0" endLine="215" endPosition="0">
+    <scopeInfo nodeId="6159071989902659788" fileName="EditorCell_Multiline.java" startLine="236" startPosition="0" endLine="245" endPosition="0">
       <varInfo nodeId="6159071989902659795" varName="b" />
       <varInfo nodeId="6159071989902659793" varName="cell" />
       <varInfo nodeId="6159071989902659791" varName="i" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918668959324" fileName="EditorCell_Multiline.java" startLine="132" startPosition="27" endLine="143" endPosition="5">
+    <scopeInfo nodeId="1264234391953236834" fileName="EditorCell_Multiline.java" startLine="130" startPosition="0" endLine="140" endPosition="0" />
+    <scopeInfo nodeId="1264234391953237055" fileName="EditorCell_Multiline.java" startLine="140" startPosition="0" endLine="150" endPosition="0" />
+    <scopeInfo nodeId="7453862918668959324" fileName="EditorCell_Multiline.java" startLine="156" startPosition="27" endLine="167" endPosition="5">
       <varInfo nodeId="7453862918668959324" varName="wordCell" />
     </scopeInfo>
     <scopeInfo nodeId="6159071989902689367" fileName="EditorCell_Multiline.java" startLine="36" startPosition="91" endLine="48" endPosition="0">
@@ -1076,19 +1167,19 @@
       <varInfo nodeId="7453862918668957861" varName="pos" />
       <varInfo nodeId="7453862918668957873" varName="selectedCell" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918668958929" fileName="EditorCell_Multiline.java" startLine="131" startPosition="66" endLine="143" endPosition="5">
+    <scopeInfo nodeId="7453862918668958929" fileName="EditorCell_Multiline.java" startLine="155" startPosition="66" endLine="167" endPosition="5">
       <varInfo nodeId="7453862918668959305" varName="remainingPos" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669115983" fileName="EditorCell_Multiline.java" startLine="146" startPosition="66" endLine="158" endPosition="33">
+    <scopeInfo nodeId="7453862918669115983" fileName="EditorCell_Multiline.java" startLine="176" startPosition="66" endLine="188" endPosition="33">
       <varInfo nodeId="4702832764623253531" varName="cellsBefore" />
       <varInfo nodeId="7453862918669116013" varName="textBefore" />
     </scopeInfo>
     <scopeInfo nodeId="7453862918668957819" fileName="EditorCell_Multiline.java" startLine="111" startPosition="0" endLine="126" endPosition="0" />
-    <scopeInfo nodeId="7453862918668958926" fileName="EditorCell_Multiline.java" startLine="130" startPosition="0" endLine="145" endPosition="0">
+    <scopeInfo nodeId="7453862918668958926" fileName="EditorCell_Multiline.java" startLine="154" startPosition="0" endLine="169" endPosition="0">
       <varInfo nodeId="1264234391953191378" varName="enforeSelection" />
       <varInfo nodeId="7453862918668959307" varName="pos" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669115980" fileName="EditorCell_Multiline.java" startLine="145" startPosition="0" endLine="160" endPosition="0">
+    <scopeInfo nodeId="7453862918669115980" fileName="EditorCell_Multiline.java" startLine="175" startPosition="0" endLine="190" endPosition="0">
       <varInfo nodeId="7453862918669116123" varName="pos" />
       <varInfo nodeId="7453862918669115988" varName="wordCell" />
     </scopeInfo>
@@ -1110,13 +1201,13 @@
     <unitInfo nodeId="4702832764623255928" fileName="EditorCell_Multiline.java" startLine="78" startPosition="61" endLine="82" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$1" />
     <unitInfo nodeId="4702832764623255814" fileName="EditorCell_Multiline.java" startLine="82" startPosition="22" endLine="86" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$2" />
     <unitInfo nodeId="2395520505377971724" fileName="EditorCell_Multiline.java" startLine="117" startPosition="85" endLine="121" endPosition="7" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$3" />
-    <unitInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="150" startPosition="89" endLine="154" endPosition="7" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$4" />
-    <unitInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="179" startPosition="76" endLine="183" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$5" />
+    <unitInfo nodeId="4702832764623253560" fileName="EditorCell_Multiline.java" startLine="180" startPosition="89" endLine="184" endPosition="7" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$4" />
+    <unitInfo nodeId="4702832764623253422" fileName="EditorCell_Multiline.java" startLine="209" startPosition="76" endLine="213" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$5" />
     <unitInfo nodeId="1264234391953174684" fileName="EditorCell_Multiline.java" startLine="38" startPosition="46" endLine="46" endPosition="9" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$7" />
     <unitInfo nodeId="6159071989902689696" fileName="EditorCell_Multiline.java" startLine="49" startPosition="66" endLine="57" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$7" />
     <unitInfo nodeId="6159071989902689365" fileName="EditorCell_Multiline.java" startLine="36" startPosition="65" endLine="48" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$6" />
-    <unitInfo nodeId="6159071989902663140" fileName="EditorCell_Multiline.java" startLine="249" startPosition="0" endLine="270" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$WordModelAccessor" />
-    <unitInfo nodeId="8291359990510677541" fileName="EditorCell_Multiline.java" startLine="24" startPosition="0" endLine="271" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
+    <unitInfo nodeId="6159071989902663140" fileName="EditorCell_Multiline.java" startLine="279" startPosition="0" endLine="300" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline$WordModelAccessor" />
+    <unitInfo nodeId="8291359990510677541" fileName="EditorCell_Multiline.java" startLine="24" startPosition="0" endLine="301" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
   </root>
 </debugInfo>
 
