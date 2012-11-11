@@ -148,16 +148,16 @@ public class MultilineText {
     List<String[]> newWords = ListSequence.fromList(new ArrayList<String[]>());
     IntRange rangeToRemove = new IntRange(from, to);
     IntRange lineRange = new IntRange(-1, -1);
+    List<String> newLine = ListSequence.fromList(new ArrayList<String>());
     for (String[] line : oldWords) {
       lineRange = new IntRange(lineRange.getMaximumInteger() + 1, lineRange.getMaximumInteger() + line.length);
       if (lineRange.overlapsRange(rangeToRemove) || lineRange.containsRange(rangeToRemove)) {
-        List<String> newLine = ListSequence.fromList(new ArrayList<String>());
         for (int wordNum = lineRange.getMinimumInteger(); wordNum <= lineRange.getMaximumInteger(); ++wordNum) {
           if (!(rangeToRemove.containsInteger(wordNum))) {
             ListSequence.fromList(newLine).addElement(line[wordNum - lineRange.getMinimumInteger()]);
           }
         }
-        if (ListSequence.fromList(newLine).isNotEmpty()) {
+        if (ListSequence.fromList(newLine).isNotEmpty() && rangeToRemove.getMaximumInteger() <= lineRange.getMaximumInteger()) {
           ListSequence.fromList(newWords).addElement(ListSequence.fromList(newLine).toGenericArray(String.class));
         }
       } else {
