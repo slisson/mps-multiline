@@ -36,6 +36,7 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.NewLineAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.TabAction" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordPasteAction" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
@@ -91,14 +92,16 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellKeyMapAction" />
   </dependency>
+  <dependency className="de.slisson.mps.editor.multiline.cells.WordPasteAction" file="WordPasteAction.java">
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.runtime.ClipboardUtils" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
+  </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.WordRangeSelection" file="WordRangeSelection.java">
-    <classNode dependClassName="com.intellij.ide.CopyPasteManagerEx" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
-    <classNode dependClassName="java.awt.datatransfer.DataFlavor" />
-    <classNode dependClassName="java.awt.datatransfer.Transferable" />
-    <classNode dependClassName="java.awt.datatransfer.UnsupportedFlavorException" />
-    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.runtime.ClipboardUtils" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Math" />

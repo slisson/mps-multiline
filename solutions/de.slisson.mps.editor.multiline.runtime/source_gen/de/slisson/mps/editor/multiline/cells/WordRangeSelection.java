@@ -13,11 +13,7 @@ import jetbrains.mps.nodeEditor.selection.SelectionInfo;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.project.structure.modules.ModuleReference;
 import jetbrains.mps.nodeEditor.CellActionType;
-import java.awt.datatransfer.Transferable;
-import com.intellij.ide.CopyPasteManagerEx;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.UnsupportedFlavorException;
-import java.io.IOException;
+import de.slisson.mps.editor.multiline.runtime.ClipboardUtils;
 import jetbrains.mps.nodeEditor.selection.Selection;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -105,7 +101,7 @@ public class WordRangeSelection extends AbstractMultipleSelection {
       deleteSelectedText();
     } else if (type == CellActionType.PASTE) {
       deleteSelectedText();
-      String textToInsert = getClipboardText();
+      String textToInsert = ClipboardUtils.getClipboardText();
       if (myMultilineCell.isCaretAtWordStart() && myMultilineCell.isCaretAtWordEnd()) {
         // Empty word with spaces around it 
       } else if (myMultilineCell.isCaretAtWordStart()) {
@@ -117,21 +113,6 @@ public class WordRangeSelection extends AbstractMultipleSelection {
     } else {
       super.executeAction(type);
     }
-  }
-
-  private String getClipboardText() {
-    String result = "";
-    for (Transferable content : CopyPasteManagerEx.getInstanceEx().getAllContents()) {
-      if (content.isDataFlavorSupported(DataFlavor.stringFlavor)) {
-        try {
-          result = (String) content.getTransferData(DataFlavor.stringFlavor);
-          break;
-        } catch (UnsupportedFlavorException ex) {
-        } catch (IOException ex) {
-        }
-      }
-    }
-    return result;
   }
 
   public void deleteSelectedText() {
