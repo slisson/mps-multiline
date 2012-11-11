@@ -344,16 +344,16 @@
     <nodeInfo nodeId="2674283497056235468" fileName="MultilineText.java" startLine="151" startPosition="36" endLine="152" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2674283497056235846" fileName="MultilineText.java" startLine="153" startPosition="93" endLine="154" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2674283497056235946" fileName="MultilineText.java" startLine="156" startPosition="58" endLine="157" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2674283497056236003" fileName="MultilineText.java" startLine="159" startPosition="9" endLine="160" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2674283497056235722" fileName="MultilineText.java" startLine="161" startPosition="14" endLine="162" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2674283497056236068" fileName="MultilineText.java" startLine="164" startPosition="5" endLine="165" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902688650" fileName="MultilineText.java" startLine="168" startPosition="54" endLine="169" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902688657" fileName="MultilineText.java" startLine="170" startPosition="23" endLine="171" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902688672" fileName="MultilineText.java" startLine="172" startPosition="12" endLine="173" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902688680" fileName="MultilineText.java" startLine="173" startPosition="45" endLine="174" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902688694" fileName="MultilineText.java" startLine="175" startPosition="64" endLine="176" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5063083321524111149" fileName="MultilineText.java" startLine="178" startPosition="5" endLine="179" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2674283497056235720" fileName="MultilineText.java" startLine="161" startPosition="12" endLine="163" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2674283497056236003" fileName="MultilineText.java" startLine="160" startPosition="58" endLine="161" endPosition="114" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2674283497056235722" fileName="MultilineText.java" startLine="163" startPosition="14" endLine="164" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2674283497056236068" fileName="MultilineText.java" startLine="166" startPosition="5" endLine="167" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902688650" fileName="MultilineText.java" startLine="170" startPosition="54" endLine="171" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902688657" fileName="MultilineText.java" startLine="172" startPosition="23" endLine="173" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902688672" fileName="MultilineText.java" startLine="174" startPosition="12" endLine="175" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902688680" fileName="MultilineText.java" startLine="175" startPosition="45" endLine="176" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902688694" fileName="MultilineText.java" startLine="177" startPosition="64" endLine="178" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5063083321524111149" fileName="MultilineText.java" startLine="180" startPosition="5" endLine="181" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2674283497056235720" fileName="MultilineText.java" startLine="163" startPosition="12" endLine="165" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="6159071989902688622" fileName="MultilineText.java" startLine="24" startPosition="0" endLine="27" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineText#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="5063083321524164669" fileName="MultilineText.java" startLine="45" startPosition="39" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="5063083321524164613" fileName="MultilineText.java" startLine="60" startPosition="47" endLine="63" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
@@ -362,7 +362,8 @@
     <nodeInfo nodeId="6159071989902688781" fileName="MultilineText.java" startLine="98" startPosition="36" endLine="101" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="4702832764623254978" fileName="MultilineText.java" startLine="114" startPosition="12" endLine="117" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2674283497056235882" fileName="MultilineText.java" startLine="155" startPosition="112" endLine="158" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902688692" fileName="MultilineText.java" startLine="174" startPosition="41" endLine="177" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="5205698381779292683" fileName="MultilineText.java" startLine="159" startPosition="9" endLine="162" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902688692" fileName="MultilineText.java" startLine="176" startPosition="41" endLine="179" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
     <nodeInfo nodeId="6159071989902688863" fileName="MultilineText.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addListener#(Ljava/beans/PropertyChangeListener;)V" />
     <nodeInfo nodeId="6159071989902689000" fileName="MultilineText.java" startLine="32" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addListener#(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V" />
     <nodeInfo nodeId="6159071989902688923" fileName="MultilineText.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeListener#(Ljava/beans/PropertyChangeListener;)V" />
@@ -372,31 +373,31 @@
     <nodeInfo nodeId="4702832764623255285" fileName="MultilineText.java" startLine="131" startPosition="23" endLine="135" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="6159071989902688840" fileName="MultilineText.java" startLine="137" startPosition="0" endLine="141" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWords#()[[Ljava/lang/String;" />
     <nodeInfo nodeId="7453862918669038848" fileName="MultilineText.java" startLine="141" startPosition="0" endLine="145" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getText#()Ljava/lang/String;" />
-    <nodeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="182" startPosition="63" endLine="186" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="189" startPosition="63" endLine="193" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="184" startPosition="63" endLine="188" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="191" startPosition="63" endLine="195" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6159071989902688741" fileName="MultilineText.java" startLine="70" startPosition="23" endLine="75" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="6159071989902688779" fileName="MultilineText.java" startLine="97" startPosition="39" endLine="102" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="4702832764623255185" fileName="MultilineText.java" startLine="124" startPosition="34" endLine="129" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2674283497056235755" fileName="MultilineText.java" startLine="154" startPosition="78" endLine="159" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
-    <nodeInfo nodeId="6159071989902688670" fileName="MultilineText.java" startLine="172" startPosition="10" endLine="178" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6159071989902688670" fileName="MultilineText.java" startLine="174" startPosition="10" endLine="180" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="4702832764623255458" fileName="MultilineText.java" startLine="84" startPosition="33" endLine="91" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="4702832764623254899" fileName="MultilineText.java" startLine="110" startPosition="36" endLine="117" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="181" startPosition="0" endLine="188" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_ua5mzx_a0g0e#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-    <nodeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="188" startPosition="0" endLine="195" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_ua5mzx_a0f0k#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="183" startPosition="0" endLine="190" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_ua5mzx_a0g0e#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="190" startPosition="0" endLine="197" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="neq_ua5mzx_a0f0k#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
     <nodeInfo nodeId="5063083321524111019" fileName="MultilineText.java" startLine="59" startPosition="0" endLine="67" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setTextSilently#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="4702832764623255454" fileName="MultilineText.java" startLine="83" startPosition="20" endLine="92" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
     <nodeInfo nodeId="4702832764623254891" fileName="MultilineText.java" startLine="109" startPosition="20" endLine="118" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6159071989902688655" fileName="MultilineText.java" startLine="169" startPosition="21" endLine="178" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902688655" fileName="MultilineText.java" startLine="171" startPosition="21" endLine="180" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="6159071989902688767" fileName="MultilineText.java" startLine="95" startPosition="0" endLine="105" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setWord#(IILjava/lang/String;)V" />
     <nodeInfo nodeId="6159071989902688721" fileName="MultilineText.java" startLine="67" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWord#(II)Ljava/lang/String;" />
-    <nodeInfo nodeId="2674283497056235686" fileName="MultilineText.java" startLine="152" startPosition="111" endLine="163" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2674283497056191772" fileName="MultilineText.java" startLine="150" startPosition="46" endLine="164" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5063083321524111126" fileName="MultilineText.java" startLine="167" startPosition="0" endLine="181" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="textToWords#(Ljava/lang/String;)[[Ljava/lang/String;" />
+    <nodeInfo nodeId="2674283497056235686" fileName="MultilineText.java" startLine="152" startPosition="111" endLine="165" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5063083321524111126" fileName="MultilineText.java" startLine="169" startPosition="0" endLine="183" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="textToWords#(Ljava/lang/String;)[[Ljava/lang/String;" />
     <nodeInfo nodeId="6159071989902688638" fileName="MultilineText.java" startLine="44" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="4702832764623254830" fileName="MultilineText.java" startLine="105" startPosition="0" endLine="121" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setWord#(ILjava/lang/String;)V" />
     <nodeInfo nodeId="4702832764623255151" fileName="MultilineText.java" startLine="121" startPosition="0" endLine="137" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setWords#([[Ljava/lang/String;)V" />
+    <nodeInfo nodeId="2674283497056191772" fileName="MultilineText.java" startLine="150" startPosition="46" endLine="166" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
     <nodeInfo nodeId="4702832764623255392" fileName="MultilineText.java" startLine="78" startPosition="0" endLine="95" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWord#(I)Ljava/lang/String;" />
-    <nodeInfo nodeId="2674283497056191654" fileName="MultilineText.java" startLine="145" startPosition="0" endLine="167" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteWords#(II)V" />
+    <nodeInfo nodeId="2674283497056191654" fileName="MultilineText.java" startLine="145" startPosition="0" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteWords#(II)V" />
     <scopeInfo nodeId="6159071989902688625" fileName="MultilineText.java" startLine="25" startPosition="37" endLine="26" endPosition="18" />
     <scopeInfo nodeId="6159071989902688866" fileName="MultilineText.java" startLine="29" startPosition="53" endLine="30" endPosition="49" />
     <scopeInfo nodeId="6159071989902689003" fileName="MultilineText.java" startLine="33" startPosition="74" endLine="34" endPosition="63" />
@@ -410,9 +411,10 @@
     <scopeInfo nodeId="6159071989902688845" fileName="MultilineText.java" startLine="138" startPosition="32" endLine="139" endPosition="19" />
     <scopeInfo nodeId="7453862918669038851" fileName="MultilineText.java" startLine="142" startPosition="27" endLine="143" endPosition="18" />
     <scopeInfo nodeId="2674283497056235943" fileName="MultilineText.java" startLine="156" startPosition="58" endLine="157" endPosition="101" />
-    <scopeInfo nodeId="2674283497056235721" fileName="MultilineText.java" startLine="161" startPosition="14" endLine="162" endPosition="57" />
-    <scopeInfo nodeId="6159071989902688656" fileName="MultilineText.java" startLine="170" startPosition="23" endLine="171" endPosition="31" />
-    <scopeInfo nodeId="6159071989902688693" fileName="MultilineText.java" startLine="175" startPosition="64" endLine="176" endPosition="55" />
+    <scopeInfo nodeId="5205698381779292684" fileName="MultilineText.java" startLine="160" startPosition="58" endLine="161" endPosition="114" />
+    <scopeInfo nodeId="2674283497056235721" fileName="MultilineText.java" startLine="163" startPosition="14" endLine="164" endPosition="57" />
+    <scopeInfo nodeId="6159071989902688656" fileName="MultilineText.java" startLine="172" startPosition="23" endLine="173" endPosition="31" />
+    <scopeInfo nodeId="6159071989902688693" fileName="MultilineText.java" startLine="177" startPosition="64" endLine="178" endPosition="55" />
     <scopeInfo nodeId="6159071989902689537" fileName="MultilineText.java" startLine="54" startPosition="45" endLine="56" endPosition="77" />
     <scopeInfo nodeId="4702832764623255464" fileName="MultilineText.java" startLine="85" startPosition="43" endLine="87" endPosition="14" />
     <scopeInfo nodeId="4702832764623255474" fileName="MultilineText.java" startLine="88" startPosition="14" endLine="90" endPosition="18" />
@@ -425,7 +427,7 @@
     <scopeInfo nodeId="6159071989902688742" fileName="MultilineText.java" startLine="71" startPosition="33" endLine="74" endPosition="7" />
     <scopeInfo nodeId="6159071989902688780" fileName="MultilineText.java" startLine="98" startPosition="36" endLine="101" endPosition="7" />
     <scopeInfo nodeId="2674283497056235756" fileName="MultilineText.java" startLine="155" startPosition="112" endLine="158" endPosition="11" />
-    <scopeInfo nodeId="6159071989902688692" fileName="MultilineText.java" startLine="174" startPosition="41" endLine="177" endPosition="7">
+    <scopeInfo nodeId="6159071989902688692" fileName="MultilineText.java" startLine="176" startPosition="41" endLine="179" endPosition="7">
       <varInfo nodeId="6159071989902688705" varName="lineNum" />
     </scopeInfo>
     <scopeInfo nodeId="6159071989902688863" fileName="MultilineText.java" startLine="28" startPosition="0" endLine="32" endPosition="0">
@@ -447,13 +449,13 @@
     </scopeInfo>
     <scopeInfo nodeId="6159071989902688840" fileName="MultilineText.java" startLine="137" startPosition="0" endLine="141" endPosition="0" />
     <scopeInfo nodeId="7453862918669038848" fileName="MultilineText.java" startLine="141" startPosition="0" endLine="145" endPosition="0" />
-    <scopeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="182" startPosition="63" endLine="186" endPosition="7" />
-    <scopeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="189" startPosition="63" endLine="193" endPosition="7" />
+    <scopeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="184" startPosition="63" endLine="188" endPosition="7" />
+    <scopeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="191" startPosition="63" endLine="195" endPosition="7" />
     <scopeInfo nodeId="5063083321524111022" fileName="MultilineText.java" startLine="60" startPosition="47" endLine="65" endPosition="35" />
     <scopeInfo nodeId="2674283497056235755" fileName="MultilineText.java" startLine="154" startPosition="78" endLine="159" endPosition="9">
       <varInfo nodeId="2674283497056235758" varName="wordNum" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902688671" fileName="MultilineText.java" startLine="172" startPosition="12" endLine="177" endPosition="7">
+    <scopeInfo nodeId="6159071989902688671" fileName="MultilineText.java" startLine="174" startPosition="12" endLine="179" endPosition="7">
       <varInfo nodeId="6159071989902688673" varName="lines" />
     </scopeInfo>
     <scopeInfo nodeId="4702832764623255457" fileName="MultilineText.java" startLine="84" startPosition="33" endLine="91" endPosition="7" />
@@ -461,14 +463,11 @@
       <varInfo nodeId="6159071989902688772" varName="newWords" />
     </scopeInfo>
     <scopeInfo nodeId="4702832764623254894" fileName="MultilineText.java" startLine="110" startPosition="36" endLine="117" endPosition="7" />
-    <scopeInfo nodeId="2674283497056235687" fileName="MultilineText.java" startLine="153" startPosition="93" endLine="160" endPosition="112">
-      <varInfo nodeId="2674283497056235847" varName="newLine" />
-    </scopeInfo>
-    <scopeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="181" startPosition="0" endLine="188" endPosition="0">
+    <scopeInfo nodeId="6159071989902689561" fileName="MultilineText.java" startLine="183" startPosition="0" endLine="190" endPosition="0">
       <varInfo nodeId="6159071989902689561" varName="a" />
       <varInfo nodeId="6159071989902689561" varName="b" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="188" startPosition="0" endLine="195" endPosition="0">
+    <scopeInfo nodeId="4702832764623255299" fileName="MultilineText.java" startLine="190" startPosition="0" endLine="197" endPosition="0">
       <varInfo nodeId="4702832764623255299" varName="a" />
       <varInfo nodeId="4702832764623255299" varName="b" />
     </scopeInfo>
@@ -485,6 +484,9 @@
     <scopeInfo nodeId="4702832764623254891" fileName="MultilineText.java" startLine="109" startPosition="20" endLine="118" endPosition="5">
       <varInfo nodeId="4702832764623254891" varName="line" />
     </scopeInfo>
+    <scopeInfo nodeId="2674283497056235687" fileName="MultilineText.java" startLine="153" startPosition="93" endLine="162" endPosition="9">
+      <varInfo nodeId="2674283497056235847" varName="newLine" />
+    </scopeInfo>
     <scopeInfo nodeId="6159071989902688767" fileName="MultilineText.java" startLine="95" startPosition="0" endLine="105" endPosition="0">
       <varInfo nodeId="6159071989902688834" varName="lineNum" />
       <varInfo nodeId="6159071989902688838" varName="newWord" />
@@ -494,7 +496,7 @@
       <varInfo nodeId="6159071989902688722" varName="lineNum" />
       <varInfo nodeId="6159071989902688724" varName="wordNum" />
     </scopeInfo>
-    <scopeInfo nodeId="5063083321524111038" fileName="MultilineText.java" startLine="168" startPosition="54" endLine="179" endPosition="17">
+    <scopeInfo nodeId="5063083321524111038" fileName="MultilineText.java" startLine="170" startPosition="54" endLine="181" endPosition="17">
       <varInfo nodeId="6159071989902688651" varName="words" />
     </scopeInfo>
     <scopeInfo nodeId="6159071989902688643" fileName="MultilineText.java" startLine="45" startPosition="39" endLine="57" endPosition="5">
@@ -502,7 +504,6 @@
       <varInfo nodeId="6159071989902689086" varName="oldText" />
       <varInfo nodeId="6159071989902689092" varName="oldWords" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056191775" fileName="MultilineText.java" startLine="151" startPosition="36" endLine="163" endPosition="7" />
     <scopeInfo nodeId="4702832764623254833" fileName="MultilineText.java" startLine="106" startPosition="52" endLine="119" endPosition="23">
       <varInfo nodeId="4702832764623255034" varName="lineNum" />
       <varInfo nodeId="4702832764623254876" varName="newWords" />
@@ -519,10 +520,8 @@
       <varInfo nodeId="4702832764623255544" varName="result" />
       <varInfo nodeId="4702832764623255576" varName="words" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056191772" fileName="MultilineText.java" startLine="150" startPosition="46" endLine="164" endPosition="5">
-      <varInfo nodeId="2674283497056191772" varName="line" />
-    </scopeInfo>
-    <scopeInfo nodeId="5063083321524111126" fileName="MultilineText.java" startLine="167" startPosition="0" endLine="181" endPosition="0">
+    <scopeInfo nodeId="2674283497056191775" fileName="MultilineText.java" startLine="151" startPosition="36" endLine="165" endPosition="7" />
+    <scopeInfo nodeId="5063083321524111126" fileName="MultilineText.java" startLine="169" startPosition="0" endLine="183" endPosition="0">
       <varInfo nodeId="5063083321524111112" varName="text" />
     </scopeInfo>
     <scopeInfo nodeId="6159071989902688638" fileName="MultilineText.java" startLine="44" startPosition="0" endLine="59" endPosition="0">
@@ -535,21 +534,24 @@
     <scopeInfo nodeId="4702832764623255151" fileName="MultilineText.java" startLine="121" startPosition="0" endLine="137" endPosition="0">
       <varInfo nodeId="4702832764623255167" varName="newWords" />
     </scopeInfo>
+    <scopeInfo nodeId="2674283497056191772" fileName="MultilineText.java" startLine="150" startPosition="46" endLine="166" endPosition="5">
+      <varInfo nodeId="2674283497056191772" varName="line" />
+    </scopeInfo>
     <scopeInfo nodeId="4702832764623255392" fileName="MultilineText.java" startLine="78" startPosition="0" endLine="95" endPosition="0">
       <varInfo nodeId="4702832764623255420" varName="wordNum" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056191657" fileName="MultilineText.java" startLine="146" startPosition="45" endLine="165" endPosition="48">
+    <scopeInfo nodeId="2674283497056191657" fileName="MultilineText.java" startLine="146" startPosition="45" endLine="167" endPosition="48">
       <varInfo nodeId="2674283497056235451" varName="lineRange" />
       <varInfo nodeId="2674283497056191739" varName="newWords" />
       <varInfo nodeId="2674283497056191763" varName="oldWords" />
       <varInfo nodeId="2674283497056235498" varName="rangeToRemove" />
     </scopeInfo>
-    <scopeInfo nodeId="2674283497056191654" fileName="MultilineText.java" startLine="145" startPosition="0" endLine="167" endPosition="0">
+    <scopeInfo nodeId="2674283497056191654" fileName="MultilineText.java" startLine="145" startPosition="0" endLine="169" endPosition="0">
       <varInfo nodeId="2674283497056191682" varName="from" />
       <varInfo nodeId="2674283497056191708" varName="to" />
     </scopeInfo>
     <unitInfo nodeId="4702832764623255194" fileName="MultilineText.java" startLine="125" startPosition="103" endLine="129" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.MultilineText$1" />
-    <unitInfo nodeId="6159071989902688620" fileName="MultilineText.java" startLine="16" startPosition="0" endLine="196" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.MultilineText" />
+    <unitInfo nodeId="6159071989902688620" fileName="MultilineText.java" startLine="16" startPosition="0" endLine="198" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.MultilineText" />
   </root>
   <root nodeId="6162642318860137559" modelId="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
     <nodeInfo nodeId="7105833981449973719" fileName="WordRangeSelection.java" startLine="24" startPosition="67" endLine="25" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="START_WORD_NUMBER_PROPERTY" />

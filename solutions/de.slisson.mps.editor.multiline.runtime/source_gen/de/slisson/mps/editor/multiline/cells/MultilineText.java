@@ -157,7 +157,9 @@ public class MultilineText {
             ListSequence.fromList(newLine).addElement(line[wordNum - lineRange.getMinimumInteger()]);
           }
         }
-        ListSequence.fromList(newWords).addElement(ListSequence.fromList(newLine).toGenericArray(String.class));
+        if (ListSequence.fromList(newLine).isNotEmpty()) {
+          ListSequence.fromList(newWords).addElement(ListSequence.fromList(newLine).toGenericArray(String.class));
+        }
       } else {
         ListSequence.fromList(newWords).addElement(line);
       }
