@@ -14,6 +14,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.project.structure.modules.ModuleReference;
 import jetbrains.mps.nodeEditor.CellActionType;
 import de.slisson.mps.editor.multiline.runtime.ClipboardUtils;
+import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.nodeEditor.selection.Selection;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -75,12 +76,12 @@ public class WordRangeSelection extends AbstractMultipleSelection {
   }
 
   public SelectionInfo getSelectionInfo() throws SelectionStoreException {
-    SelectionInfo selectionInto = new SelectionInfo(this.getClass().getName(), ModuleReference.fromString("31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)").getModuleFqName());
-    selectionInto.setCellInfo(myMultilineCell.getCellInfo());
-    selectionInto.getPropertiesMap().put(WordRangeSelection.LEFT_DIRECTION_PROPERTY, Boolean.toString(myLeftDirection));
-    selectionInto.getPropertiesMap().put(WordRangeSelection.START_WORD_NUMBER_PROPERTY, Integer.toString(myStartWordNumber));
-    selectionInto.getPropertiesMap().put(END_WORD_NUMBER_PROPERTY, Integer.toString(myEndWordNumber));
-    return selectionInto;
+    SelectionInfo selectionInfo = new SelectionInfo(this.getClass().getName(), ModuleReference.fromString("dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)").getModuleFqName());
+    selectionInfo.setCellInfo(myMultilineCell.getCellInfo());
+    selectionInfo.getPropertiesMap().put(WordRangeSelection.LEFT_DIRECTION_PROPERTY, Boolean.toString(myLeftDirection));
+    selectionInfo.getPropertiesMap().put(WordRangeSelection.START_WORD_NUMBER_PROPERTY, Integer.toString(myStartWordNumber));
+    selectionInfo.getPropertiesMap().put(END_WORD_NUMBER_PROPERTY, Integer.toString(myEndWordNumber));
+    return selectionInfo;
   }
 
   @Override
@@ -95,23 +96,39 @@ public class WordRangeSelection extends AbstractMultipleSelection {
         reduceSelection();
       }
     } else if (type == CellActionType.DELETE || type == CellActionType.BACKSPACE) {
-      deleteSelectedText();
+      executeDeleteSelectedText();
     } else if (type == CellActionType.CUT) {
       super.executeAction(CellActionType.COPY);
-      deleteSelectedText();
+      executeDeleteSelectedText();
     } else if (type == CellActionType.PASTE) {
-      deleteSelectedText();
-      String textToInsert = ClipboardUtils.getClipboardText();
-      if (myMultilineCell.isCaretAtWordStart() && myMultilineCell.isCaretAtWordEnd()) {
-        // Empty word with spaces around it 
-      } else if (myMultilineCell.isCaretAtWordStart()) {
-        textToInsert += " ";
-      } else if (myMultilineCell.isCaretAtWordEnd()) {
-        textToInsert = " " + textToInsert;
-      }
-      myMultilineCell.insertText(textToInsert);
+      getEditorComponent().getEditorContext().executeCommand(new Runnable() {
+        public void run() {
+          executeDeleteSelectedText();
+          String textToInsert = ClipboardUtils.getClipboardText();
+          if (myMultilineCell.isCaretAtWordStart() && myMultilineCell.isCaretAtWordEnd()) {
+            // Empty word with spaces around it 
+          } else if (myMultilineCell.isCaretAtWordStart()) {
+            textToInsert += " ";
+          } else if (myMultilineCell.isCaretAtWordEnd()) {
+            textToInsert = " " + textToInsert;
+          }
+          myMultilineCell.insertText(textToInsert);
+        }
+      });
     } else {
       super.executeAction(type);
+    }
+  }
+
+  public void executeDeleteSelectedText() {
+    if (ModelAccess.instance().canWrite()) {
+      deleteSelectedText();
+    } else {
+      getEditorComponent().getEditorContext().executeCommand(new Runnable() {
+        public void run() {
+          deleteSelectedText();
+        }
+      });
     }
   }
 

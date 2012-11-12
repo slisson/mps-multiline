@@ -73,32 +73,16 @@ public class EditorCell_Word extends EditorCell_Property {
   public boolean executeTextAction(CellActionType type, boolean allowErrors) {
     if (type == CellActionType.BACKSPACE) {
       if (getCaretPosition() == 0) {
-        executeDeletePrecedingCharacter();
+        deletePrecedingCharacter();
         return true;
       }
     } else if (type == CellActionType.DELETE) {
       if (getCaretPosition() == getText().length()) {
-        executeDeleteFollowingCharacter();
+        deleteFollowingCharacter();
         return true;
       }
     }
     return super.executeTextAction(type, allowErrors);
-  }
-
-  public void executeDeleteFollowingCharacter() {
-    getEditorContext().executeCommand(new Runnable() {
-      public void run() {
-        deleteFollowingCharacter();
-      }
-    });
-  }
-
-  public void executeDeletePrecedingCharacter() {
-    getEditorContext().executeCommand(new Runnable() {
-      public void run() {
-        deletePrecedingCharacter();
-      }
-    });
   }
 
   public void deleteFollowingCharacter() {
@@ -167,7 +151,7 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public void synchronizeViewWithModel() {
-    check_xru0dp_a0a61(getParent(), this);
+    check_xru0dp_a0a41(getParent(), this);
   }
 
   private static void addPropertyDependenciesToEditor(NodeReadAccessInEditorListener listener, EditorCell_Word result) {
@@ -190,7 +174,7 @@ public class EditorCell_Word extends EditorCell_Property {
     return result;
   }
 
-  private static void check_xru0dp_a0a61(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
+  private static void check_xru0dp_a0a41(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }

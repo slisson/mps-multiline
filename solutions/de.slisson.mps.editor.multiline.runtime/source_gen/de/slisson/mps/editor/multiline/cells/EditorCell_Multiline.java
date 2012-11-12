@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
+import jetbrains.mps.smodel.ModelAccess;
 import org.apache.commons.lang.StringEscapeUtils;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ISelector;
@@ -34,25 +35,30 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
     myMultilineText = new MultilineText(unescapeText(accessor.getText()));
     myMultilineText.addListener(MultilineText.PROPERTY_TEXT, new PropertyChangeListener() {
-      public void propertyChange(final PropertyChangeEvent e) {
-        getEditorContext().executeCommand(new Runnable() {
-          public void run() {
-            String oldText = myModelAccessor.getText();
-            String newText = ((String) e.getNewValue());
-            if (neq_v798xa_a0c0a0a0a0a0a0a1a0e0a(oldText, newText)) {
-              myModelAccessor.setText(escapeText(newText));
+      public void propertyChange(PropertyChangeEvent e) {
+        final String newText = ((String) e.getNewValue());
+        if (ModelAccess.instance().canWrite()) {
+          textToProperty(newText);
+        } else {
+          getEditorContext().executeCommand(new Runnable() {
+            public void run() {
+              textToProperty(newText);
             }
-          }
-        });
+          });
+        }
       }
     });
     myMultilineText.addListener(MultilineText.PROPERTY_WORDS, new PropertyChangeListener() {
       public void propertyChange(PropertyChangeEvent e) {
-        getEditorContext().executeCommand(new Runnable() {
-          public void run() {
-            modelToView();
-          }
-        });
+        if (ModelAccess.instance().canWrite()) {
+          modelToView();
+        } else {
+          getEditorContext().executeCommand(new Runnable() {
+            public void run() {
+              modelToView();
+            }
+          });
+        }
       }
     });
     modelToView();
@@ -98,6 +104,13 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     }
     ListSequence.fromList(wordCells).last().setNewLine(false);
     setCaretPosition(caretPos);
+  }
+
+  public void textToProperty(String newText) {
+    String oldText = myModelAccessor.getText();
+    if (neq_v798xa_a0b0e(oldText, newText)) {
+      myModelAccessor.setText(escapeText(newText));
+    }
   }
 
   public void setNumberOfWordCells(int count) {
@@ -214,7 +227,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0r(newText);
+    newText = check_v798xa_a0a0s(newText);
     myMultilineText.setText(newText);
     modelToView();
   }
@@ -237,7 +250,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0v(check_v798xa_a0a0a0a0a12(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0w(check_v798xa_a0a0a0a0a22(cell)));
 
     }
     super.addCellAt(i, cell, b);
@@ -248,28 +261,28 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  private static String check_v798xa_a0a0r(String checkedDotOperand) {
+  private static String check_v798xa_a0a0s(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0v(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0w(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a12(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a22(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
     return null;
   }
 
-  private static boolean neq_v798xa_a0c0a0a0a0a0a0a1a0e0a(Object a, Object b) {
+  private static boolean neq_v798xa_a0b0e(Object a, Object b) {
     return !((a != null ?
       a.equals(b) :
       a == b
