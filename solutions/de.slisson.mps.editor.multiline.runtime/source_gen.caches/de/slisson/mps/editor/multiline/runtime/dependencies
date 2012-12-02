@@ -3,6 +3,7 @@
   <dependency className="de.slisson.mps.editor.multiline.runtime.ClipboardUtils" file="ClipboardUtils.java">
     <classNode dependClassName="com.intellij.ide.CopyPasteManagerEx" />
     <classNode dependClassName="java.awt.datatransfer.DataFlavor" />
+    <classNode dependClassName="java.awt.datatransfer.StringSelection" />
     <classNode dependClassName="java.awt.datatransfer.Transferable" />
     <classNode dependClassName="java.awt.datatransfer.UnsupportedFlavorException" />
     <classNode dependClassName="java.io.IOException" />

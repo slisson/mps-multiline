@@ -31,6 +31,15 @@ public class SelectLeftRightAction extends EditorCellAction {
     SelectionManager selectionManager = context.getNodeEditorComponent().getSelectionManager();
     EditorCell_Multiline parent = myWordCell.getParent();
     int index = Sequence.fromIterable(parent.getWordCells()).indexOf(myWordCell);
-    selectionManager.pushSelection(new WordRangeSelection(myWordCell.getEditor(), parent, index, index, myLeft));
+    int wordStart = myWordCell.getParent().getTextBefore(myWordCell, 0).length();
+    int selectionStart = myWordCell.getSelectionStart() + wordStart;
+    int selectionEnd = myWordCell.getSelectionEnd() + wordStart;
+    if (myLeft) {
+      --selectionStart;
+    } else {
+      ++selectionEnd;
+    }
+
+    selectionManager.pushSelection(new MultilineSelection(myWordCell.getEditor(), parent, selectionStart, selectionEnd, myLeft));
   }
 }

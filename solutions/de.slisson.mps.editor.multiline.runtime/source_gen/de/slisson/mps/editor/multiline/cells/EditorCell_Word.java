@@ -11,6 +11,8 @@ import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.CellActionType;
 import jetbrains.mps.nodeEditor.EditorCellKeyMap;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.selection.Selection;
+import jetbrains.mps.nodeEditor.cells.TextLine;
 import org.apache.commons.lang.StringEscapeUtils;
 import jetbrains.mps.smodel.NodeReadAccessInEditorListener;
 import jetbrains.mps.util.Pair;
@@ -52,6 +54,15 @@ public class EditorCell_Word extends EditorCell_Property {
     return result;
   }
 
+  @Override
+  public String getText() {
+    String text = super.getText();
+    return (text == null ?
+      "" :
+      text
+    );
+  }
+
   public String getTextIncludingSeparator() {
     return getText() + ((followedByNewLine() ?
       "\n" :
@@ -62,6 +73,32 @@ public class EditorCell_Word extends EditorCell_Property {
   @Override
   public boolean canPasteText() {
     return isEditable();
+  }
+
+  @Override
+  protected boolean toShowCaret() {
+    if (super.toShowCaret()) {
+      return true;
+    }
+
+    // Caret blinking when multiline selection is active 
+    Selection selection = getEditor().getSelectionManager().getSelection();
+    if (selection instanceof MultilineSelection) {
+      MultilineSelection mlSelection = (MultilineSelection) selection;
+      return mlSelection.getCellContainingCaret() == this && myCaretIsVisible;
+    }
+
+    return false;
+  }
+
+  public TextLine getRenderedTextLine() {
+    TextLine textLine;
+    if (myNoTextSet && myTextLine.getText().length() == 0) {
+      textLine = myNullTextLine;
+    } else {
+      textLine = myTextLine;
+    }
+    return textLine;
   }
 
   @Override
@@ -151,7 +188,7 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public void synchronizeViewWithModel() {
-    check_xru0dp_a0a41(getParent(), this);
+    check_xru0dp_a0a71(getParent(), this);
   }
 
   private static void addPropertyDependenciesToEditor(NodeReadAccessInEditorListener listener, EditorCell_Word result) {
@@ -174,7 +211,7 @@ public class EditorCell_Word extends EditorCell_Property {
     return result;
   }
 
-  private static void check_xru0dp_a0a41(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
+  private static void check_xru0dp_a0a71(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }

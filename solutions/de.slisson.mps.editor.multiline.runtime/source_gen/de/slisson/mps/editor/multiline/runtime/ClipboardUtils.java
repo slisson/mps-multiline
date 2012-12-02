@@ -7,6 +7,7 @@ import com.intellij.ide.CopyPasteManagerEx;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
+import java.awt.datatransfer.StringSelection;
 
 public class ClipboardUtils {
   public ClipboardUtils() {
@@ -25,5 +26,9 @@ public class ClipboardUtils {
       }
     }
     return result;
+  }
+
+  public static void setClipboardText(String text) {
+    CopyPasteManagerEx.getInstanceEx().setContents(new StringSelection(text));
   }
 }

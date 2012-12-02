@@ -4,6 +4,7 @@ package de.slisson.mps.editor.multiline.cellProviders;
 
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.logging.Logger;
+import java.util.concurrent.atomic.AtomicLong;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.util.InternUtil;
@@ -17,6 +18,7 @@ import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
 
 public class MultilineCellProvider extends CellProviderWithRole {
   private static final Logger LOG = Logger.getLogger(MultilineCellProvider.class);
+  private static AtomicLong CALL_ID_SEQUENCE = new AtomicLong();
 
   private String myPropertyName;
   private SNode myPropertyDeclaration;
@@ -50,7 +52,7 @@ public class MultilineCellProvider extends CellProviderWithRole {
 
   public EditorCell createEditorCell(EditorContext context) {
     PropertyAccessor propertyAccessor = new PropertyAccessor(getSNode(), myPropertyName, myReadOnly, myAllowsEmptyTarget, context);
-    EditorCell_Multiline editorCell = EditorCell_Multiline.create(context, propertyAccessor, getSNode());
+    EditorCell editorCell = EditorCell_Multiline.create(context, propertyAccessor, getSNode());
     return editorCell;
   }
 }

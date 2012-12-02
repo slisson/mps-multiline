@@ -20,7 +20,7 @@
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.runtime.plugin.SelectWordLeft_Action" file="SelectWordLeft_Action.java">
     <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -38,7 +38,7 @@
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.runtime.plugin.SelectWordRight_Action" file="SelectWordRight_Action.java">
     <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordRangeSelection" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

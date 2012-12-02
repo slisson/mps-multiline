@@ -165,12 +165,24 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     setCaretPosition(pos, false);
   }
 
-  public void setCaretPosition(int pos, boolean enforeSelection) {
+  public EditorCell_Word getWordCellContainingPos(int pos) {
     int remainingPos = pos;
     for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
       int textLen = wordCell.getText().length();
       if (remainingPos <= textLen) {
-        if (enforeSelection || Sequence.fromIterable(Sequence.fromArray(getCells())).contains(getEditorContext().getSelectedCell())) {
+        return wordCell;
+      }
+      remainingPos -= textLen + 1;
+    }
+    return Sequence.fromIterable(getWordCells()).last();
+  }
+
+  public void setCaretPosition(int pos, boolean enforceSelection) {
+    int remainingPos = pos;
+    for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
+      int textLen = wordCell.getText().length();
+      if (remainingPos <= textLen) {
+        if (enforceSelection || Sequence.fromIterable(Sequence.fromArray(getCells())).contains(getEditorContext().getSelectedCell())) {
           getEditorContext().getNodeEditorComponent().getSelectionManager().setSelection(wordCell);
         }
         wordCell.setCaretPosition(remainingPos);
@@ -226,8 +238,12 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     });
   }
 
+  public String getText() {
+    return myMultilineText.getText();
+  }
+
   public void setText(String newText) {
-    newText = check_v798xa_a0a0s(newText);
+    newText = check_v798xa_a0a0u(newText);
     myMultilineText.setText(newText);
     modelToView();
   }
@@ -250,7 +266,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0w(check_v798xa_a0a0a0a0a22(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0y(check_v798xa_a0a0a0a0a42(cell)));
 
     }
     super.addCellAt(i, cell, b);
@@ -261,21 +277,21 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  private static String check_v798xa_a0a0s(String checkedDotOperand) {
+  private static String check_v798xa_a0a0u(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0w(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0y(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a22(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a42(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }

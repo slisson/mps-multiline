@@ -140,7 +140,10 @@ public class MultilineText {
   }
 
   public String getText() {
-    return myText;
+    return (myText == null ?
+      "" :
+      myText
+    );
   }
 
   public void deleteWords(int from, int to) {
