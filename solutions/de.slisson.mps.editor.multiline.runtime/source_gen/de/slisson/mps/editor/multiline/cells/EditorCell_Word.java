@@ -14,6 +14,7 @@ import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.selection.Selection;
 import jetbrains.mps.nodeEditor.cells.TextLine;
 import org.apache.commons.lang.StringEscapeUtils;
+import java.awt.event.MouseEvent;
 import jetbrains.mps.smodel.NodeReadAccessInEditorListener;
 import jetbrains.mps.util.Pair;
 import jetbrains.mps.smodel.NodeReadAccessCasterInEditor;
@@ -127,7 +128,9 @@ public class EditorCell_Word extends EditorCell_Property {
     if (mlCell != null) {
       int caretPos = mlCell.getCaretPosition();
       String text = mlCell.getTextAfterCaret();
-      text = text.substring(1);
+      if (text.length() >= 1) {
+        text = text.substring(1);
+      }
       text = mlCell.getTextBeforeCaret() + text;
       mlCell.setText(text);
       mlCell.setCaretPosition(caretPos, true);
@@ -140,7 +143,9 @@ public class EditorCell_Word extends EditorCell_Property {
       int caretPos = mlCell.getCaretPosition();
       if (caretPos > 0) {
         String text = mlCell.getTextBeforeCaret();
-        text = text.substring(0, text.length() - 1);
+        if (text.length() > 0) {
+          text = text.substring(0, text.length() - 1);
+        }
         text += mlCell.getTextAfterCaret();
         mlCell.setText(text);
         mlCell.setCaretPosition(caretPos - 1, true);
@@ -189,6 +194,19 @@ public class EditorCell_Word extends EditorCell_Property {
   @Override
   public void synchronizeViewWithModel() {
     check_xru0dp_a0a71(getParent(), this);
+  }
+
+  @Override
+  public boolean processMousePressed(MouseEvent event) {
+    LOG.info("mousePressed " + event, new Exception());
+    int prevCaretPos = getParent().getCaretPosition();
+    super.processMousePressed(event);
+    if (event.isShiftDown()) {
+      int caretPos = getParent().getCaretPosition();
+      getEditor().getSelectionManager().pushSelection(new MultilineSelection(getEditor(), getParent(), Math.min(prevCaretPos, caretPos), Math.max(prevCaretPos, caretPos), caretPos < prevCaretPos));
+      LOG.info("selection " + prevCaretPos + " - " + caretPos);
+    }
+    return true;
   }
 
   private static void addPropertyDependenciesToEditor(NodeReadAccessInEditorListener listener, EditorCell_Word result) {

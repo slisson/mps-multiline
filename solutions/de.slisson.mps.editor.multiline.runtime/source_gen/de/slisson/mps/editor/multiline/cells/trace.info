@@ -409,255 +409,277 @@
     <unitInfo nodeId="5205698381779289256" fileName="WordPasteAction.java" startLine="9" startPosition="0" endLine="20" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.WordPasteAction" />
   </root>
   <root nodeId="6159071989902643399" modelId="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
-    <nodeInfo nodeId="7453862918669043509" fileName="EditorCell_Word.java" startLine="22" startPosition="58" endLine="23" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="6159071989902663956" fileName="EditorCell_Word.java" startLine="25" startPosition="90" endLine="26" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6159071989902643422" fileName="EditorCell_Word.java" startLine="26" startPosition="40" endLine="27" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902657760" fileName="EditorCell_Word.java" startLine="27" startPosition="22" endLine="28" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902618009" fileName="EditorCell_Word.java" startLine="28" startPosition="23" endLine="29" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918668895405" fileName="EditorCell_Word.java" startLine="29" startPosition="34" endLine="30" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669149377" fileName="EditorCell_Word.java" startLine="30" startPosition="62" endLine="31" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3602084827117659037" fileName="EditorCell_Word.java" startLine="31" startPosition="69" endLine="32" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3602084827117662745" fileName="EditorCell_Word.java" startLine="32" startPosition="81" endLine="33" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5205698381779291460" fileName="EditorCell_Word.java" startLine="33" startPosition="83" endLine="34" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668948260" fileName="EditorCell_Word.java" startLine="34" startPosition="63" endLine="35" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918668948267" fileName="EditorCell_Word.java" startLine="35" startPosition="49" endLine="36" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668955479" fileName="EditorCell_Word.java" startLine="36" startPosition="55" endLine="37" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253051" fileName="EditorCell_Word.java" startLine="40" startPosition="53" endLine="41" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623255681" fileName="EditorCell_Word.java" startLine="44" startPosition="43" endLine="45" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253665" fileName="EditorCell_Word.java" startLine="48" startPosition="38" endLine="49" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623253747" fileName="EditorCell_Word.java" startLine="53" startPosition="6" endLine="54" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530247794" fileName="EditorCell_Word.java" startLine="58" startPosition="27" endLine="59" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902643441" fileName="EditorCell_Word.java" startLine="74" startPosition="33" endLine="75" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7793244833751855677" fileName="EditorCell_Word.java" startLine="80" startPosition="30" endLine="81" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7793244833751859260" fileName="EditorCell_Word.java" startLine="82" startPosition="5" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7793244833751859262" fileName="EditorCell_Word.java" startLine="83" startPosition="0" endLine="84" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7793244833751855738" fileName="EditorCell_Word.java" startLine="84" startPosition="57" endLine="85" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7793244833751855810" fileName="EditorCell_Word.java" startLine="86" startPosition="50" endLine="87" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7793244833751855855" fileName="EditorCell_Word.java" startLine="87" startPosition="70" endLine="88" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7793244833751860778" fileName="EditorCell_Word.java" startLine="89" startPosition="5" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7793244833751855744" fileName="EditorCell_Word.java" startLine="90" startPosition="0" endLine="91" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212341784" fileName="EditorCell_Word.java" startLine="94" startPosition="41" endLine="95" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4950521006212341804" fileName="EditorCell_Word.java" startLine="96" startPosition="60" endLine="97" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4950521006212341799" fileName="EditorCell_Word.java" startLine="98" startPosition="12" endLine="99" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4950521006212341808" fileName="EditorCell_Word.java" startLine="100" startPosition="5" endLine="101" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6159071989902659879" fileName="EditorCell_Word.java" startLine="105" startPosition="36" endLine="106" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059122" fileName="EditorCell_Word.java" startLine="112" startPosition="36" endLine="113" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059125" fileName="EditorCell_Word.java" startLine="113" startPosition="35" endLine="114" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623311731" fileName="EditorCell_Word.java" startLine="117" startPosition="53" endLine="118" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623311733" fileName="EditorCell_Word.java" startLine="118" startPosition="35" endLine="119" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7453862918669059150" fileName="EditorCell_Word.java" startLine="121" startPosition="5" endLine="122" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623311455" fileName="EditorCell_Word.java" startLine="125" startPosition="42" endLine="126" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623311463" fileName="EditorCell_Word.java" startLine="127" startPosition="25" endLine="128" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623311471" fileName="EditorCell_Word.java" startLine="128" startPosition="47" endLine="129" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4702832764623311487" fileName="EditorCell_Word.java" startLine="129" startPosition="47" endLine="130" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623311546" fileName="EditorCell_Word.java" startLine="130" startPosition="31" endLine="131" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623311505" fileName="EditorCell_Word.java" startLine="131" startPosition="48" endLine="132" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623311510" fileName="EditorCell_Word.java" startLine="132" startPosition="27" endLine="133" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059045" fileName="EditorCell_Word.java" startLine="137" startPosition="43" endLine="138" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669059051" fileName="EditorCell_Word.java" startLine="139" startPosition="25" endLine="140" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669059059" fileName="EditorCell_Word.java" startLine="141" startPosition="25" endLine="142" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669059065" fileName="EditorCell_Word.java" startLine="142" startPosition="50" endLine="143" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059077" fileName="EditorCell_Word.java" startLine="143" startPosition="52" endLine="144" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059083" fileName="EditorCell_Word.java" startLine="144" startPosition="43" endLine="145" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669059088" fileName="EditorCell_Word.java" startLine="145" startPosition="29" endLine="146" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5487618617262510517" fileName="EditorCell_Word.java" startLine="151" startPosition="39" endLine="152" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669167811" fileName="EditorCell_Word.java" startLine="152" startPosition="48" endLine="153" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918668959868" fileName="EditorCell_Word.java" startLine="154" startPosition="25" endLine="155" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918668959851" fileName="EditorCell_Word.java" startLine="155" startPosition="66" endLine="156" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668960047" fileName="EditorCell_Word.java" startLine="156" startPosition="29" endLine="157" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918668959884" fileName="EditorCell_Word.java" startLine="162" startPosition="43" endLine="163" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7453862918669146622" fileName="EditorCell_Word.java" startLine="168" startPosition="38" endLine="169" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669146678" fileName="EditorCell_Word.java" startLine="169" startPosition="81" endLine="170" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669115861" fileName="EditorCell_Word.java" startLine="171" startPosition="12" endLine="172" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669116235" fileName="EditorCell_Word.java" startLine="176" startPosition="40" endLine="177" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7453862918669116245" fileName="EditorCell_Word.java" startLine="177" startPosition="30" endLine="178" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7453862918669116242" fileName="EditorCell_Word.java" startLine="178" startPosition="65" endLine="179" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4443338901581803154" fileName="EditorCell_Word.java" startLine="183" startPosition="27" endLine="184" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="4443338901581803160" fileName="EditorCell_Word.java" startLine="184" startPosition="83" endLine="185" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="4443338901581803150" fileName="EditorCell_Word.java" startLine="185" startPosition="76" endLine="186" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1735233166553443229" fileName="EditorCell_Word.java" startLine="190" startPosition="42" endLine="191" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902664626" fileName="EditorCell_Word.java" startLine="195" startPosition="67" endLine="196" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902679437" fileName="EditorCell_Word.java" startLine="200" startPosition="110" endLine="201" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902679451" fileName="EditorCell_Word.java" startLine="203" startPosition="29" endLine="204" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902679455" fileName="EditorCell_Word.java" startLine="206" startPosition="5" endLine="207" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6159071989902679624" fileName="EditorCell_Word.java" startLine="208" startPosition="27" endLine="209" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6159071989902679472" fileName="EditorCell_Word.java" startLine="210" startPosition="5" endLine="211" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="215" startPosition="36" endLine="216" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="217" startPosition="5" endLine="218" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="4950521006212341797" fileName="EditorCell_Word.java" startLine="98" startPosition="10" endLine="100" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7453862918669115967" fileName="EditorCell_Word.java" startLine="171" startPosition="10" endLine="173" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7793244833751855674" fileName="EditorCell_Word.java" startLine="79" startPosition="35" endLine="82" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902664619" fileName="EditorCell_Word.java" startLine="194" startPosition="120" endLine="197" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6159071989902679446" fileName="EditorCell_Word.java" startLine="202" startPosition="52" endLine="205" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902679463" fileName="EditorCell_Word.java" startLine="207" startPosition="85" endLine="210" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="214" startPosition="124" endLine="217" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253045" fileName="EditorCell_Word.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setIndentLayoutNewLine#(Z)V" />
-    <nodeInfo nodeId="4702832764623255655" fileName="EditorCell_Word.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNewLine#(Z)V" />
-    <nodeInfo nodeId="4702832764623253670" fileName="EditorCell_Word.java" startLine="49" startPosition="76" endLine="53" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530247800" fileName="EditorCell_Word.java" startLine="59" startPosition="34" endLine="63" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4702832764623253803" fileName="EditorCell_Word.java" startLine="66" startPosition="45" endLine="70" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7793244833751855747" fileName="EditorCell_Word.java" startLine="85" startPosition="75" endLine="89" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7453862918669058978" fileName="EditorCell_Word.java" startLine="111" startPosition="43" endLine="115" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623311729" fileName="EditorCell_Word.java" startLine="116" startPosition="47" endLine="120" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902643434" fileName="EditorCell_Word.java" startLine="72" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canPasteText#()Z" />
-    <nodeInfo nodeId="4950521006212341787" fileName="EditorCell_Word.java" startLine="95" startPosition="22" endLine="100" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6159071989902659872" fileName="EditorCell_Word.java" startLine="103" startPosition="0" endLine="108" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7453862918669167821" fileName="EditorCell_Word.java" startLine="153" startPosition="46" endLine="158" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7453862918668959879" fileName="EditorCell_Word.java" startLine="160" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getParent#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
-    <nodeInfo nodeId="1735233166553443200" fileName="EditorCell_Word.java" startLine="188" startPosition="0" endLine="193" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="synchronizeViewWithModel#()V" />
-    <nodeInfo nodeId="6159071989902679441" fileName="EditorCell_Word.java" startLine="201" startPosition="99" endLine="206" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7453862918669115883" fileName="EditorCell_Word.java" startLine="167" startPosition="49" endLine="173" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7453862918669116163" fileName="EditorCell_Word.java" startLine="175" startPosition="0" endLine="181" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBefore#(I)Ljava/lang/String;" />
-    <nodeInfo nodeId="6159071989902664611" fileName="EditorCell_Word.java" startLine="193" startPosition="0" endLine="199" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="addPropertyDependenciesToEditor#(Ljetbrains/mps/smodel/NodeReadAccessInEditorListener;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
-    <nodeInfo nodeId="4702832764623253775" fileName="EditorCell_Word.java" startLine="65" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextIncludingSeparator#()Ljava/lang/String;" />
-    <nodeInfo nodeId="7453862918669059057" fileName="EditorCell_Word.java" startLine="140" startPosition="47" endLine="147" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4443338901581803098" fileName="EditorCell_Word.java" startLine="181" startPosition="0" endLine="188" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRole#()Ljava/lang/String;" />
-    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="213" startPosition="0" endLine="220" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_xru0dp_a0a71#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
-    <nodeInfo nodeId="4702832764623311461" fileName="EditorCell_Word.java" startLine="126" startPosition="51" endLine="134" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253595" fileName="EditorCell_Word.java" startLine="47" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="followedByNewLine#()Z" />
-    <nodeInfo nodeId="1534219577530247768" fileName="EditorCell_Word.java" startLine="56" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getText#()Ljava/lang/String;" />
-    <nodeInfo nodeId="4950521006212341752" fileName="EditorCell_Word.java" startLine="93" startPosition="0" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRenderedTextLine#()Ljetbrains/mps/nodeEditor/cells/TextLine;" />
-    <nodeInfo nodeId="7453862918669179063" fileName="EditorCell_Word.java" startLine="138" startPosition="51" endLine="148" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7453862918668959844" fileName="EditorCell_Word.java" startLine="150" startPosition="0" endLine="160" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertText#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7453862918669115854" fileName="EditorCell_Word.java" startLine="165" startPosition="0" endLine="175" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPositionIfPossible#(I)V" />
-    <nodeInfo nodeId="7453862918669058899" fileName="EditorCell_Word.java" startLine="110" startPosition="78" endLine="121" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623311429" fileName="EditorCell_Word.java" startLine="124" startPosition="0" endLine="136" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteFollowingCharacter#()V" />
-    <nodeInfo nodeId="6159071989902643401" fileName="EditorCell_Word.java" startLine="24" startPosition="0" endLine="38" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EditorCell_Word#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)V" />
-    <nodeInfo nodeId="7453862918669061617" fileName="EditorCell_Word.java" startLine="136" startPosition="0" endLine="150" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deletePrecedingCharacter#()V" />
-    <nodeInfo nodeId="6159071989902679427" fileName="EditorCell_Word.java" startLine="199" startPosition="0" endLine="213" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="create#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
-    <nodeInfo nodeId="7793244833751855634" fileName="EditorCell_Word.java" startLine="77" startPosition="0" endLine="93" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toShowCaret#()Z" />
-    <nodeInfo nodeId="7453862918669058864" fileName="EditorCell_Word.java" startLine="108" startPosition="0" endLine="124" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeTextAction#(Ljetbrains/mps/nodeEditor/CellActionType;Z)Z" />
-    <scopeInfo nodeId="4702832764623253050" fileName="EditorCell_Word.java" startLine="40" startPosition="53" endLine="41" endPosition="66" />
-    <scopeInfo nodeId="4702832764623255658" fileName="EditorCell_Word.java" startLine="44" startPosition="43" endLine="45" endPosition="36" />
-    <scopeInfo nodeId="6159071989902643437" fileName="EditorCell_Word.java" startLine="74" startPosition="33" endLine="75" endPosition="24" />
-    <scopeInfo nodeId="7793244833751855676" fileName="EditorCell_Word.java" startLine="80" startPosition="30" endLine="81" endPosition="18" />
-    <scopeInfo nodeId="4950521006212341803" fileName="EditorCell_Word.java" startLine="96" startPosition="60" endLine="97" endPosition="32" />
-    <scopeInfo nodeId="4950521006212341798" fileName="EditorCell_Word.java" startLine="98" startPosition="12" endLine="99" endPosition="28" />
-    <scopeInfo nodeId="6159071989902659877" fileName="EditorCell_Word.java" startLine="105" startPosition="36" endLine="106" endPosition="24" />
-    <scopeInfo nodeId="7453862918668959882" fileName="EditorCell_Word.java" startLine="162" startPosition="43" endLine="163" endPosition="52" />
-    <scopeInfo nodeId="7453862918669115968" fileName="EditorCell_Word.java" startLine="171" startPosition="12" endLine="172" endPosition="42" />
-    <scopeInfo nodeId="1735233166553443203" fileName="EditorCell_Word.java" startLine="190" startPosition="42" endLine="191" endPosition="42" />
-    <scopeInfo nodeId="6159071989902664625" fileName="EditorCell_Word.java" startLine="195" startPosition="67" endLine="196" endPosition="70" />
-    <scopeInfo nodeId="6159071989902679450" fileName="EditorCell_Word.java" startLine="203" startPosition="29" endLine="204" endPosition="52" />
-    <scopeInfo nodeId="6159071989902679467" fileName="EditorCell_Word.java" startLine="208" startPosition="27" endLine="209" endPosition="72" />
-    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="215" startPosition="36" endLine="216" endPosition="51" />
-    <scopeInfo nodeId="7793244833751855748" fileName="EditorCell_Word.java" startLine="86" startPosition="50" endLine="88" endPosition="78">
+    <nodeInfo nodeId="7453862918669043509" fileName="EditorCell_Word.java" startLine="23" startPosition="58" endLine="24" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="6159071989902663956" fileName="EditorCell_Word.java" startLine="26" startPosition="90" endLine="27" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6159071989902643422" fileName="EditorCell_Word.java" startLine="27" startPosition="40" endLine="28" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902657760" fileName="EditorCell_Word.java" startLine="28" startPosition="22" endLine="29" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902618009" fileName="EditorCell_Word.java" startLine="29" startPosition="23" endLine="30" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918668895405" fileName="EditorCell_Word.java" startLine="30" startPosition="34" endLine="31" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669149377" fileName="EditorCell_Word.java" startLine="31" startPosition="62" endLine="32" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3602084827117659037" fileName="EditorCell_Word.java" startLine="32" startPosition="69" endLine="33" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3602084827117662745" fileName="EditorCell_Word.java" startLine="33" startPosition="81" endLine="34" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5205698381779291460" fileName="EditorCell_Word.java" startLine="34" startPosition="83" endLine="35" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668948260" fileName="EditorCell_Word.java" startLine="35" startPosition="63" endLine="36" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918668948267" fileName="EditorCell_Word.java" startLine="36" startPosition="49" endLine="37" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668955479" fileName="EditorCell_Word.java" startLine="37" startPosition="55" endLine="38" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623253051" fileName="EditorCell_Word.java" startLine="41" startPosition="53" endLine="42" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623255681" fileName="EditorCell_Word.java" startLine="45" startPosition="43" endLine="46" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623253665" fileName="EditorCell_Word.java" startLine="49" startPosition="38" endLine="50" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623253747" fileName="EditorCell_Word.java" startLine="54" startPosition="6" endLine="55" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530247794" fileName="EditorCell_Word.java" startLine="59" startPosition="27" endLine="60" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902643441" fileName="EditorCell_Word.java" startLine="75" startPosition="33" endLine="76" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7793244833751855677" fileName="EditorCell_Word.java" startLine="81" startPosition="30" endLine="82" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7793244833751859260" fileName="EditorCell_Word.java" startLine="83" startPosition="5" endLine="84" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7793244833751859262" fileName="EditorCell_Word.java" startLine="84" startPosition="0" endLine="85" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7793244833751855738" fileName="EditorCell_Word.java" startLine="85" startPosition="57" endLine="86" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7793244833751855810" fileName="EditorCell_Word.java" startLine="87" startPosition="50" endLine="88" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7793244833751855855" fileName="EditorCell_Word.java" startLine="88" startPosition="70" endLine="89" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7793244833751860778" fileName="EditorCell_Word.java" startLine="90" startPosition="5" endLine="91" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7793244833751855744" fileName="EditorCell_Word.java" startLine="91" startPosition="0" endLine="92" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212341784" fileName="EditorCell_Word.java" startLine="95" startPosition="41" endLine="96" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4950521006212341804" fileName="EditorCell_Word.java" startLine="97" startPosition="60" endLine="98" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4950521006212341799" fileName="EditorCell_Word.java" startLine="99" startPosition="12" endLine="100" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4950521006212341808" fileName="EditorCell_Word.java" startLine="101" startPosition="5" endLine="102" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902659879" fileName="EditorCell_Word.java" startLine="106" startPosition="36" endLine="107" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059122" fileName="EditorCell_Word.java" startLine="113" startPosition="36" endLine="114" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059125" fileName="EditorCell_Word.java" startLine="114" startPosition="35" endLine="115" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623311731" fileName="EditorCell_Word.java" startLine="118" startPosition="53" endLine="119" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623311733" fileName="EditorCell_Word.java" startLine="119" startPosition="35" endLine="120" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7453862918669059150" fileName="EditorCell_Word.java" startLine="122" startPosition="5" endLine="123" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623311455" fileName="EditorCell_Word.java" startLine="126" startPosition="42" endLine="127" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623311463" fileName="EditorCell_Word.java" startLine="128" startPosition="25" endLine="129" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623311471" fileName="EditorCell_Word.java" startLine="129" startPosition="47" endLine="130" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4702832764623311487" fileName="EditorCell_Word.java" startLine="131" startPosition="31" endLine="132" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623311546" fileName="EditorCell_Word.java" startLine="133" startPosition="7" endLine="134" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623311505" fileName="EditorCell_Word.java" startLine="134" startPosition="48" endLine="135" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4702832764623311510" fileName="EditorCell_Word.java" startLine="135" startPosition="27" endLine="136" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059045" fileName="EditorCell_Word.java" startLine="140" startPosition="43" endLine="141" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669059051" fileName="EditorCell_Word.java" startLine="142" startPosition="25" endLine="143" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669059059" fileName="EditorCell_Word.java" startLine="144" startPosition="25" endLine="145" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669059065" fileName="EditorCell_Word.java" startLine="146" startPosition="32" endLine="147" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059077" fileName="EditorCell_Word.java" startLine="148" startPosition="9" endLine="149" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059083" fileName="EditorCell_Word.java" startLine="149" startPosition="43" endLine="150" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669059088" fileName="EditorCell_Word.java" startLine="150" startPosition="29" endLine="151" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5487618617262510517" fileName="EditorCell_Word.java" startLine="156" startPosition="39" endLine="157" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669167811" fileName="EditorCell_Word.java" startLine="157" startPosition="48" endLine="158" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918668959868" fileName="EditorCell_Word.java" startLine="159" startPosition="25" endLine="160" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918668959851" fileName="EditorCell_Word.java" startLine="160" startPosition="66" endLine="161" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668960047" fileName="EditorCell_Word.java" startLine="161" startPosition="29" endLine="162" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918668959884" fileName="EditorCell_Word.java" startLine="167" startPosition="43" endLine="168" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7453862918669146622" fileName="EditorCell_Word.java" startLine="173" startPosition="38" endLine="174" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669146678" fileName="EditorCell_Word.java" startLine="174" startPosition="81" endLine="175" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669115861" fileName="EditorCell_Word.java" startLine="176" startPosition="12" endLine="177" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669116235" fileName="EditorCell_Word.java" startLine="181" startPosition="40" endLine="182" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7453862918669116245" fileName="EditorCell_Word.java" startLine="182" startPosition="30" endLine="183" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7453862918669116242" fileName="EditorCell_Word.java" startLine="183" startPosition="65" endLine="184" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4443338901581803154" fileName="EditorCell_Word.java" startLine="188" startPosition="27" endLine="189" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="4443338901581803160" fileName="EditorCell_Word.java" startLine="189" startPosition="83" endLine="190" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="4443338901581803150" fileName="EditorCell_Word.java" startLine="190" startPosition="76" endLine="191" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1735233166553443229" fileName="EditorCell_Word.java" startLine="195" startPosition="42" endLine="196" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751961281" fileName="EditorCell_Word.java" startLine="200" startPosition="56" endLine="201" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751965475" fileName="EditorCell_Word.java" startLine="201" startPosition="55" endLine="202" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7793244833751961267" fileName="EditorCell_Word.java" startLine="202" startPosition="54" endLine="203" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751965508" fileName="EditorCell_Word.java" startLine="204" startPosition="30" endLine="205" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7793244833751965616" fileName="EditorCell_Word.java" startLine="205" startPosition="52" endLine="206" endPosition="197" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751967233" fileName="EditorCell_Word.java" startLine="206" startPosition="197" endLine="207" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751965613" fileName="EditorCell_Word.java" startLine="208" startPosition="5" endLine="209" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6159071989902664626" fileName="EditorCell_Word.java" startLine="213" startPosition="67" endLine="214" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902679437" fileName="EditorCell_Word.java" startLine="218" startPosition="110" endLine="219" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902679451" fileName="EditorCell_Word.java" startLine="221" startPosition="29" endLine="222" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902679455" fileName="EditorCell_Word.java" startLine="224" startPosition="5" endLine="225" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6159071989902679624" fileName="EditorCell_Word.java" startLine="226" startPosition="27" endLine="227" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6159071989902679472" fileName="EditorCell_Word.java" startLine="228" startPosition="5" endLine="229" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="233" startPosition="36" endLine="234" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="235" startPosition="5" endLine="236" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4950521006212341797" fileName="EditorCell_Word.java" startLine="99" startPosition="10" endLine="101" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7453862918669115967" fileName="EditorCell_Word.java" startLine="176" startPosition="10" endLine="178" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7793244833751855674" fileName="EditorCell_Word.java" startLine="80" startPosition="35" endLine="83" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="257181264606093388" fileName="EditorCell_Word.java" startLine="130" startPosition="47" endLine="133" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="257181264606093451" fileName="EditorCell_Word.java" startLine="145" startPosition="50" endLine="148" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902664619" fileName="EditorCell_Word.java" startLine="212" startPosition="120" endLine="215" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6159071989902679446" fileName="EditorCell_Word.java" startLine="220" startPosition="52" endLine="223" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902679463" fileName="EditorCell_Word.java" startLine="225" startPosition="85" endLine="228" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="232" startPosition="124" endLine="235" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4702832764623253045" fileName="EditorCell_Word.java" startLine="40" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setIndentLayoutNewLine#(Z)V" />
+    <nodeInfo nodeId="4702832764623255655" fileName="EditorCell_Word.java" startLine="44" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNewLine#(Z)V" />
+    <nodeInfo nodeId="4702832764623253670" fileName="EditorCell_Word.java" startLine="50" startPosition="76" endLine="54" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530247800" fileName="EditorCell_Word.java" startLine="60" startPosition="34" endLine="64" endPosition="6" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623253803" fileName="EditorCell_Word.java" startLine="67" startPosition="45" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7793244833751855747" fileName="EditorCell_Word.java" startLine="86" startPosition="75" endLine="90" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918669058978" fileName="EditorCell_Word.java" startLine="112" startPosition="43" endLine="116" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4702832764623311729" fileName="EditorCell_Word.java" startLine="117" startPosition="47" endLine="121" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902643434" fileName="EditorCell_Word.java" startLine="73" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canPasteText#()Z" />
+    <nodeInfo nodeId="4950521006212341787" fileName="EditorCell_Word.java" startLine="96" startPosition="22" endLine="101" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902659872" fileName="EditorCell_Word.java" startLine="104" startPosition="0" endLine="109" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7453862918669167821" fileName="EditorCell_Word.java" startLine="158" startPosition="46" endLine="163" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918668959879" fileName="EditorCell_Word.java" startLine="165" startPosition="0" endLine="170" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getParent#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
+    <nodeInfo nodeId="1735233166553443200" fileName="EditorCell_Word.java" startLine="193" startPosition="0" endLine="198" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="synchronizeViewWithModel#()V" />
+    <nodeInfo nodeId="7793244833751962684" fileName="EditorCell_Word.java" startLine="203" startPosition="37" endLine="208" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6159071989902679441" fileName="EditorCell_Word.java" startLine="219" startPosition="99" endLine="224" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918669115883" fileName="EditorCell_Word.java" startLine="172" startPosition="49" endLine="178" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918669116163" fileName="EditorCell_Word.java" startLine="180" startPosition="0" endLine="186" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextBefore#(I)Ljava/lang/String;" />
+    <nodeInfo nodeId="6159071989902664611" fileName="EditorCell_Word.java" startLine="211" startPosition="0" endLine="217" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="addPropertyDependenciesToEditor#(Ljetbrains/mps/smodel/NodeReadAccessInEditorListener;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
+    <nodeInfo nodeId="4702832764623253775" fileName="EditorCell_Word.java" startLine="66" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTextIncludingSeparator#()Ljava/lang/String;" />
+    <nodeInfo nodeId="4443338901581803098" fileName="EditorCell_Word.java" startLine="186" startPosition="0" endLine="193" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRole#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="231" startPosition="0" endLine="238" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_xru0dp_a0a71#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
+    <nodeInfo nodeId="4702832764623253595" fileName="EditorCell_Word.java" startLine="48" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="followedByNewLine#()Z" />
+    <nodeInfo nodeId="1534219577530247768" fileName="EditorCell_Word.java" startLine="57" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getText#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7453862918669059057" fileName="EditorCell_Word.java" startLine="143" startPosition="47" endLine="152" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212341752" fileName="EditorCell_Word.java" startLine="94" startPosition="0" endLine="104" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRenderedTextLine#()Ljetbrains/mps/nodeEditor/cells/TextLine;" />
+    <nodeInfo nodeId="4702832764623311461" fileName="EditorCell_Word.java" startLine="127" startPosition="51" endLine="137" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918668959844" fileName="EditorCell_Word.java" startLine="155" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7453862918669115854" fileName="EditorCell_Word.java" startLine="170" startPosition="0" endLine="180" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCaretPositionIfPossible#(I)V" />
+    <nodeInfo nodeId="7453862918669058899" fileName="EditorCell_Word.java" startLine="111" startPosition="78" endLine="122" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7453862918669179063" fileName="EditorCell_Word.java" startLine="141" startPosition="51" endLine="153" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7793244833751961260" fileName="EditorCell_Word.java" startLine="198" startPosition="0" endLine="211" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processMousePressed#(Ljava/awt/event/MouseEvent;)Z" />
+    <nodeInfo nodeId="6159071989902643401" fileName="EditorCell_Word.java" startLine="25" startPosition="0" endLine="39" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EditorCell_Word#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="4702832764623311429" fileName="EditorCell_Word.java" startLine="125" startPosition="0" endLine="139" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteFollowingCharacter#()V" />
+    <nodeInfo nodeId="6159071989902679427" fileName="EditorCell_Word.java" startLine="217" startPosition="0" endLine="231" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="create#(Ljetbrains/mps/nodeEditor/EditorContext;Ljetbrains/mps/nodeEditor/cells/ModelAccessor;Ljetbrains/mps/smodel/SNode;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
+    <nodeInfo nodeId="7793244833751855634" fileName="EditorCell_Word.java" startLine="78" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toShowCaret#()Z" />
+    <nodeInfo nodeId="7453862918669058864" fileName="EditorCell_Word.java" startLine="109" startPosition="0" endLine="125" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeTextAction#(Ljetbrains/mps/nodeEditor/CellActionType;Z)Z" />
+    <nodeInfo nodeId="7453862918669061617" fileName="EditorCell_Word.java" startLine="139" startPosition="0" endLine="155" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deletePrecedingCharacter#()V" />
+    <scopeInfo nodeId="4702832764623253050" fileName="EditorCell_Word.java" startLine="41" startPosition="53" endLine="42" endPosition="66" />
+    <scopeInfo nodeId="4702832764623255658" fileName="EditorCell_Word.java" startLine="45" startPosition="43" endLine="46" endPosition="36" />
+    <scopeInfo nodeId="6159071989902643437" fileName="EditorCell_Word.java" startLine="75" startPosition="33" endLine="76" endPosition="24" />
+    <scopeInfo nodeId="7793244833751855676" fileName="EditorCell_Word.java" startLine="81" startPosition="30" endLine="82" endPosition="18" />
+    <scopeInfo nodeId="4950521006212341803" fileName="EditorCell_Word.java" startLine="97" startPosition="60" endLine="98" endPosition="32" />
+    <scopeInfo nodeId="4950521006212341798" fileName="EditorCell_Word.java" startLine="99" startPosition="12" endLine="100" endPosition="28" />
+    <scopeInfo nodeId="6159071989902659877" fileName="EditorCell_Word.java" startLine="106" startPosition="36" endLine="107" endPosition="24" />
+    <scopeInfo nodeId="257181264606093389" fileName="EditorCell_Word.java" startLine="131" startPosition="31" endLine="132" endPosition="33" />
+    <scopeInfo nodeId="257181264606093452" fileName="EditorCell_Word.java" startLine="146" startPosition="32" endLine="147" endPosition="54" />
+    <scopeInfo nodeId="7453862918668959882" fileName="EditorCell_Word.java" startLine="167" startPosition="43" endLine="168" endPosition="52" />
+    <scopeInfo nodeId="7453862918669115968" fileName="EditorCell_Word.java" startLine="176" startPosition="12" endLine="177" endPosition="42" />
+    <scopeInfo nodeId="1735233166553443203" fileName="EditorCell_Word.java" startLine="195" startPosition="42" endLine="196" endPosition="42" />
+    <scopeInfo nodeId="6159071989902664625" fileName="EditorCell_Word.java" startLine="213" startPosition="67" endLine="214" endPosition="70" />
+    <scopeInfo nodeId="6159071989902679450" fileName="EditorCell_Word.java" startLine="221" startPosition="29" endLine="222" endPosition="52" />
+    <scopeInfo nodeId="6159071989902679467" fileName="EditorCell_Word.java" startLine="226" startPosition="27" endLine="227" endPosition="72" />
+    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="233" startPosition="36" endLine="234" endPosition="51" />
+    <scopeInfo nodeId="7793244833751855748" fileName="EditorCell_Word.java" startLine="87" startPosition="50" endLine="89" endPosition="78">
       <varInfo nodeId="7793244833751855811" varName="mlSelection" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669058979" fileName="EditorCell_Word.java" startLine="112" startPosition="36" endLine="114" endPosition="20" />
-    <scopeInfo nodeId="4702832764623311730" fileName="EditorCell_Word.java" startLine="117" startPosition="53" endLine="119" endPosition="20" />
-    <scopeInfo nodeId="7453862918669115884" fileName="EditorCell_Word.java" startLine="168" startPosition="38" endLine="170" endPosition="40">
+    <scopeInfo nodeId="7453862918669058979" fileName="EditorCell_Word.java" startLine="113" startPosition="36" endLine="115" endPosition="20" />
+    <scopeInfo nodeId="4702832764623311730" fileName="EditorCell_Word.java" startLine="118" startPosition="53" endLine="120" endPosition="20" />
+    <scopeInfo nodeId="7453862918669115884" fileName="EditorCell_Word.java" startLine="173" startPosition="38" endLine="175" endPosition="40">
       <varInfo nodeId="7453862918669146623" varName="pos" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669167822" fileName="EditorCell_Word.java" startLine="154" startPosition="25" endLine="157" endPosition="43">
+    <scopeInfo nodeId="7453862918669167822" fileName="EditorCell_Word.java" startLine="159" startPosition="25" endLine="162" endPosition="43">
       <varInfo nodeId="7453862918668959869" varName="newCaretPos" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669116166" fileName="EditorCell_Word.java" startLine="176" startPosition="40" endLine="179" endPosition="18">
+    <scopeInfo nodeId="7453862918669116166" fileName="EditorCell_Word.java" startLine="181" startPosition="40" endLine="184" endPosition="18">
       <varInfo nodeId="7453862918669116236" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="4443338901581803101" fileName="EditorCell_Word.java" startLine="183" startPosition="27" endLine="186" endPosition="14" />
-    <scopeInfo nodeId="6159071989902664618" fileName="EditorCell_Word.java" startLine="194" startPosition="120" endLine="197" endPosition="5" />
-    <scopeInfo nodeId="6159071989902664619" fileName="EditorCell_Word.java" startLine="194" startPosition="120" endLine="197" endPosition="5">
+    <scopeInfo nodeId="4443338901581803101" fileName="EditorCell_Word.java" startLine="188" startPosition="27" endLine="191" endPosition="14" />
+    <scopeInfo nodeId="7793244833751962685" fileName="EditorCell_Word.java" startLine="204" startPosition="30" endLine="207" endPosition="63">
+      <varInfo nodeId="7793244833751965509" varName="caretPos" />
+    </scopeInfo>
+    <scopeInfo nodeId="6159071989902664618" fileName="EditorCell_Word.java" startLine="212" startPosition="120" endLine="215" endPosition="5" />
+    <scopeInfo nodeId="6159071989902664619" fileName="EditorCell_Word.java" startLine="212" startPosition="120" endLine="215" endPosition="5">
       <varInfo nodeId="6159071989902664623" varName="pair" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902679445" fileName="EditorCell_Word.java" startLine="202" startPosition="52" endLine="205" endPosition="7" />
-    <scopeInfo nodeId="4702832764623253045" fileName="EditorCell_Word.java" startLine="39" startPosition="0" endLine="43" endPosition="0">
+    <scopeInfo nodeId="6159071989902679445" fileName="EditorCell_Word.java" startLine="220" startPosition="52" endLine="223" endPosition="7" />
+    <scopeInfo nodeId="4702832764623253045" fileName="EditorCell_Word.java" startLine="40" startPosition="0" endLine="44" endPosition="0">
       <varInfo nodeId="4702832764623253046" varName="value" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623255655" fileName="EditorCell_Word.java" startLine="43" startPosition="0" endLine="47" endPosition="0">
+    <scopeInfo nodeId="4702832764623255655" fileName="EditorCell_Word.java" startLine="44" startPosition="0" endLine="48" endPosition="0">
       <varInfo nodeId="4702832764623255669" varName="newLine" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253778" fileName="EditorCell_Word.java" startLine="66" startPosition="45" endLine="70" endPosition="7" />
-    <scopeInfo nodeId="7453862918669058900" fileName="EditorCell_Word.java" startLine="111" startPosition="43" endLine="115" endPosition="7" />
-    <scopeInfo nodeId="4702832764623311725" fileName="EditorCell_Word.java" startLine="116" startPosition="47" endLine="120" endPosition="7" />
-    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="214" startPosition="124" endLine="218" endPosition="0" />
-    <scopeInfo nodeId="1534219577530247771" fileName="EditorCell_Word.java" startLine="58" startPosition="27" endLine="63" endPosition="6">
+    <scopeInfo nodeId="4702832764623253778" fileName="EditorCell_Word.java" startLine="67" startPosition="45" endLine="71" endPosition="7" />
+    <scopeInfo nodeId="7453862918669058900" fileName="EditorCell_Word.java" startLine="112" startPosition="43" endLine="116" endPosition="7" />
+    <scopeInfo nodeId="4702832764623311725" fileName="EditorCell_Word.java" startLine="117" startPosition="47" endLine="121" endPosition="7" />
+    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="232" startPosition="124" endLine="236" endPosition="0" />
+    <scopeInfo nodeId="1534219577530247771" fileName="EditorCell_Word.java" startLine="59" startPosition="27" endLine="64" endPosition="6">
       <varInfo nodeId="1534219577530247795" varName="text" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902643434" fileName="EditorCell_Word.java" startLine="72" startPosition="0" endLine="77" endPosition="0" />
-    <scopeInfo nodeId="6159071989902659872" fileName="EditorCell_Word.java" startLine="103" startPosition="0" endLine="108" endPosition="0">
+    <scopeInfo nodeId="6159071989902643434" fileName="EditorCell_Word.java" startLine="73" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="6159071989902659872" fileName="EditorCell_Word.java" startLine="104" startPosition="0" endLine="109" endPosition="0">
       <varInfo nodeId="6159071989902659875" varName="text" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669059058" fileName="EditorCell_Word.java" startLine="141" startPosition="25" endLine="146" endPosition="52">
-      <varInfo nodeId="7453862918669059060" varName="text" />
-    </scopeInfo>
-    <scopeInfo nodeId="7453862918668959879" fileName="EditorCell_Word.java" startLine="160" startPosition="0" endLine="165" endPosition="0" />
-    <scopeInfo nodeId="1735233166553443200" fileName="EditorCell_Word.java" startLine="188" startPosition="0" endLine="193" endPosition="0" />
-    <scopeInfo nodeId="4702832764623253598" fileName="EditorCell_Word.java" startLine="48" startPosition="38" endLine="54" endPosition="18">
+    <scopeInfo nodeId="7453862918668959879" fileName="EditorCell_Word.java" startLine="165" startPosition="0" endLine="170" endPosition="0" />
+    <scopeInfo nodeId="1735233166553443200" fileName="EditorCell_Word.java" startLine="193" startPosition="0" endLine="198" endPosition="0" />
+    <scopeInfo nodeId="4702832764623253598" fileName="EditorCell_Word.java" startLine="49" startPosition="38" endLine="55" endPosition="18">
       <varInfo nodeId="4702832764623253666" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623311462" fileName="EditorCell_Word.java" startLine="127" startPosition="25" endLine="133" endPosition="46">
-      <varInfo nodeId="4702832764623311464" varName="caretPos" />
-      <varInfo nodeId="4702832764623311472" varName="text" />
-    </scopeInfo>
-    <scopeInfo nodeId="7453862918669115859" fileName="EditorCell_Word.java" startLine="167" startPosition="49" endLine="173" endPosition="5" />
-    <scopeInfo nodeId="7453862918669116163" fileName="EditorCell_Word.java" startLine="175" startPosition="0" endLine="181" endPosition="0">
+    <scopeInfo nodeId="7453862918669115859" fileName="EditorCell_Word.java" startLine="172" startPosition="49" endLine="178" endPosition="5" />
+    <scopeInfo nodeId="7453862918669116163" fileName="EditorCell_Word.java" startLine="180" startPosition="0" endLine="186" endPosition="0">
       <varInfo nodeId="7453862918669116215" varName="pos" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902664611" fileName="EditorCell_Word.java" startLine="193" startPosition="0" endLine="199" endPosition="0">
+    <scopeInfo nodeId="6159071989902664611" fileName="EditorCell_Word.java" startLine="211" startPosition="0" endLine="217" endPosition="0">
       <varInfo nodeId="6159071989902664614" varName="listener" />
       <varInfo nodeId="6159071989902664616" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253775" fileName="EditorCell_Word.java" startLine="65" startPosition="0" endLine="72" endPosition="0" />
-    <scopeInfo nodeId="4950521006212341755" fileName="EditorCell_Word.java" startLine="94" startPosition="41" endLine="101" endPosition="20">
+    <scopeInfo nodeId="4702832764623253775" fileName="EditorCell_Word.java" startLine="66" startPosition="0" endLine="73" endPosition="0" />
+    <scopeInfo nodeId="4950521006212341755" fileName="EditorCell_Word.java" startLine="95" startPosition="41" endLine="102" endPosition="20">
       <varInfo nodeId="4950521006212341785" varName="textLine" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918668959849" fileName="EditorCell_Word.java" startLine="151" startPosition="39" endLine="158" endPosition="5">
+    <scopeInfo nodeId="7453862918669059058" fileName="EditorCell_Word.java" startLine="144" startPosition="25" endLine="151" endPosition="52">
+      <varInfo nodeId="7453862918669059060" varName="text" />
+    </scopeInfo>
+    <scopeInfo nodeId="7453862918668959849" fileName="EditorCell_Word.java" startLine="156" startPosition="39" endLine="163" endPosition="5">
       <varInfo nodeId="7453862918669167812" varName="mlCell" />
     </scopeInfo>
-    <scopeInfo nodeId="4443338901581803098" fileName="EditorCell_Word.java" startLine="181" startPosition="0" endLine="188" endPosition="0" />
-    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="213" startPosition="0" endLine="220" endPosition="0">
+    <scopeInfo nodeId="4443338901581803098" fileName="EditorCell_Word.java" startLine="186" startPosition="0" endLine="193" endPosition="0" />
+    <scopeInfo nodeId="1735233166553443258" fileName="EditorCell_Word.java" startLine="231" startPosition="0" endLine="238" endPosition="0">
       <varInfo nodeId="1735233166553443258" varName="checkedDotOperand" />
       <varInfo nodeId="1735233166553443258" varName="checkedDotThisExpression" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669179064" fileName="EditorCell_Word.java" startLine="139" startPosition="25" endLine="147" endPosition="7">
+    <scopeInfo nodeId="4702832764623311462" fileName="EditorCell_Word.java" startLine="128" startPosition="25" endLine="136" endPosition="46">
+      <varInfo nodeId="4702832764623311464" varName="caretPos" />
+      <varInfo nodeId="4702832764623311472" varName="text" />
+    </scopeInfo>
+    <scopeInfo nodeId="4702832764623253595" fileName="EditorCell_Word.java" startLine="48" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="1534219577530247768" fileName="EditorCell_Word.java" startLine="57" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="7793244833751961265" fileName="EditorCell_Word.java" startLine="200" startPosition="56" endLine="209" endPosition="16">
+      <varInfo nodeId="7793244833751965476" varName="prevCaretPos" />
+    </scopeInfo>
+    <scopeInfo nodeId="4950521006212341752" fileName="EditorCell_Word.java" startLine="94" startPosition="0" endLine="104" endPosition="0" />
+    <scopeInfo nodeId="7453862918669179064" fileName="EditorCell_Word.java" startLine="142" startPosition="25" endLine="152" endPosition="7">
       <varInfo nodeId="7453862918669059052" varName="caretPos" />
     </scopeInfo>
-    <scopeInfo nodeId="4702832764623253595" fileName="EditorCell_Word.java" startLine="47" startPosition="0" endLine="56" endPosition="0" />
-    <scopeInfo nodeId="1534219577530247768" fileName="EditorCell_Word.java" startLine="56" startPosition="0" endLine="65" endPosition="0" />
-    <scopeInfo nodeId="4702832764623311432" fileName="EditorCell_Word.java" startLine="125" startPosition="42" endLine="134" endPosition="5">
-      <varInfo nodeId="4702832764623311456" varName="mlCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="4950521006212341752" fileName="EditorCell_Word.java" startLine="93" startPosition="0" endLine="103" endPosition="0" />
-    <scopeInfo nodeId="7453862918668959844" fileName="EditorCell_Word.java" startLine="150" startPosition="0" endLine="160" endPosition="0">
+    <scopeInfo nodeId="7453862918668959844" fileName="EditorCell_Word.java" startLine="155" startPosition="0" endLine="165" endPosition="0">
       <varInfo nodeId="7453862918668959847" varName="text" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669115854" fileName="EditorCell_Word.java" startLine="165" startPosition="0" endLine="175" endPosition="0">
+    <scopeInfo nodeId="7453862918669115854" fileName="EditorCell_Word.java" startLine="170" startPosition="0" endLine="180" endPosition="0">
       <varInfo nodeId="7453862918669115857" varName="i" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669061620" fileName="EditorCell_Word.java" startLine="137" startPosition="43" endLine="148" endPosition="5">
-      <varInfo nodeId="7453862918669059046" varName="mlCell" />
+    <scopeInfo nodeId="4702832764623311432" fileName="EditorCell_Word.java" startLine="126" startPosition="42" endLine="137" endPosition="5">
+      <varInfo nodeId="4702832764623311456" varName="mlCell" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902679436" fileName="EditorCell_Word.java" startLine="200" startPosition="110" endLine="211" endPosition="18">
+    <scopeInfo nodeId="6159071989902679436" fileName="EditorCell_Word.java" startLine="218" startPosition="110" endLine="229" endPosition="18">
       <varInfo nodeId="6159071989902679438" varName="listener" />
       <varInfo nodeId="6159071989902679456" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="6159071989902643404" fileName="EditorCell_Word.java" startLine="25" startPosition="90" endLine="37" endPosition="18">
+    <scopeInfo nodeId="6159071989902643404" fileName="EditorCell_Word.java" startLine="26" startPosition="90" endLine="38" endPosition="18">
       <varInfo nodeId="7453862918668948261" varName="km" />
       <varInfo nodeId="6159071989902618010" varName="style" />
     </scopeInfo>
-    <scopeInfo nodeId="7793244833751855637" fileName="EditorCell_Word.java" startLine="79" startPosition="35" endLine="91" endPosition="17">
+    <scopeInfo nodeId="7793244833751855637" fileName="EditorCell_Word.java" startLine="80" startPosition="35" endLine="92" endPosition="17">
       <varInfo nodeId="7793244833751855739" varName="selection" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669058871" fileName="EditorCell_Word.java" startLine="110" startPosition="78" endLine="122" endPosition="54" />
-    <scopeInfo nodeId="4702832764623311429" fileName="EditorCell_Word.java" startLine="124" startPosition="0" endLine="136" endPosition="0" />
-    <scopeInfo nodeId="6159071989902643401" fileName="EditorCell_Word.java" startLine="24" startPosition="0" endLine="38" endPosition="3">
+    <scopeInfo nodeId="7453862918669058871" fileName="EditorCell_Word.java" startLine="111" startPosition="78" endLine="123" endPosition="54" />
+    <scopeInfo nodeId="7453862918669061620" fileName="EditorCell_Word.java" startLine="140" startPosition="43" endLine="153" endPosition="5">
+      <varInfo nodeId="7453862918669059046" varName="mlCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="7793244833751961260" fileName="EditorCell_Word.java" startLine="198" startPosition="0" endLine="211" endPosition="0">
+      <varInfo nodeId="7793244833751961263" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6159071989902643401" fileName="EditorCell_Word.java" startLine="25" startPosition="0" endLine="39" endPosition="3">
       <varInfo nodeId="6159071989902643406" varName="context" />
       <varInfo nodeId="6159071989902663953" varName="modelAccessor" />
       <varInfo nodeId="6159071989902643409" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7453862918669061617" fileName="EditorCell_Word.java" startLine="136" startPosition="0" endLine="150" endPosition="0" />
-    <scopeInfo nodeId="6159071989902679427" fileName="EditorCell_Word.java" startLine="199" startPosition="0" endLine="213" endPosition="0">
+    <scopeInfo nodeId="4702832764623311429" fileName="EditorCell_Word.java" startLine="125" startPosition="0" endLine="139" endPosition="0" />
+    <scopeInfo nodeId="6159071989902679427" fileName="EditorCell_Word.java" startLine="217" startPosition="0" endLine="231" endPosition="0">
       <varInfo nodeId="6159071989902679430" varName="editorContext" />
       <varInfo nodeId="6159071989902679432" varName="modelAccessor" />
       <varInfo nodeId="6159071989902679434" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="7793244833751855634" fileName="EditorCell_Word.java" startLine="77" startPosition="0" endLine="93" endPosition="0" />
-    <scopeInfo nodeId="7453862918669058864" fileName="EditorCell_Word.java" startLine="108" startPosition="0" endLine="124" endPosition="0">
+    <scopeInfo nodeId="7793244833751855634" fileName="EditorCell_Word.java" startLine="78" startPosition="0" endLine="94" endPosition="0" />
+    <scopeInfo nodeId="7453862918669058864" fileName="EditorCell_Word.java" startLine="109" startPosition="0" endLine="125" endPosition="0">
       <varInfo nodeId="7453862918669058869" varName="allowErrors" />
       <varInfo nodeId="7453862918669058867" varName="type" />
     </scopeInfo>
-    <unitInfo nodeId="6159071989902643399" fileName="EditorCell_Word.java" startLine="22" startPosition="0" endLine="221" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <scopeInfo nodeId="7453862918669061617" fileName="EditorCell_Word.java" startLine="139" startPosition="0" endLine="155" endPosition="0" />
+    <unitInfo nodeId="6159071989902643399" fileName="EditorCell_Word.java" startLine="23" startPosition="0" endLine="239" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
   </root>
   <root nodeId="6159071989902688620" modelId="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)">
     <nodeInfo nodeId="1264234391953165189" fileName="MultilineText.java" startLine="16" startPosition="28" endLine="17" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
@@ -971,7 +993,7 @@
     <nodeInfo nodeId="6159071989902659909" fileName="EditorCell_Multiline.java" startLine="29" startPosition="40" endLine="30" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineText" />
     <nodeInfo nodeId="8291359990510678262" fileName="EditorCell_Multiline.java" startLine="32" startPosition="93" endLine="33" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="8291359990510680171" fileName="EditorCell_Multiline.java" startLine="33" startPosition="56" endLine="34" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623265404" fileName="EditorCell_Multiline.java" startLine="34" startPosition="31" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="1212807527450851795" fileName="EditorCell_Multiline.java" startLine="34" startPosition="31" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="6159071989902685313" fileName="EditorCell_Multiline.java" startLine="35" startPosition="0" endLine="36" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="6159071989902689373" fileName="EditorCell_Multiline.java" startLine="38" startPosition="57" endLine="39" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2748325995411844309" fileName="EditorCell_Multiline.java" startLine="40" startPosition="48" endLine="41" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

@@ -39,7 +39,9 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.TabAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordPasteAction" />
+    <classNode dependClassName="java.awt.event.MouseEvent" />
     <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
