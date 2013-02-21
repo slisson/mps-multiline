@@ -13,6 +13,9 @@ import jetbrains.mps.nodeEditor.EditorCellKeyMap;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.selection.Selection;
 import jetbrains.mps.nodeEditor.cells.TextLine;
+import jetbrains.mps.nodeEditor.cells.EditorCell;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Label;
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.StringEscapeUtils;
 import java.awt.event.MouseEvent;
 import jetbrains.mps.smodel.NodeReadAccessInEditorListener;
@@ -111,12 +114,36 @@ public class EditorCell_Word extends EditorCell_Property {
   public boolean executeTextAction(CellActionType type, boolean allowErrors) {
     if (type == CellActionType.BACKSPACE) {
       if (getCaretPosition() == 0) {
-        deletePrecedingCharacter();
+        if (isCursorAtMultilineStart()) {
+          EditorCell prevLeaf = getPrevLeaf();
+          if (prevLeaf != null) {
+            if (prevLeaf instanceof EditorCell_Label) {
+              EditorCell_Label labelCell = ((EditorCell_Label) prevLeaf);
+              labelCell.setCaretPositionIfPossible(StringUtils.length(labelCell.getText()));
+            }
+            getEditorContext().getNodeEditorComponent().getSelectionManager().setSelection(prevLeaf);
+            prevLeaf.executeAction(CellActionType.BACKSPACE);
+          }
+        } else {
+          deletePrecedingCharacter();
+        }
         return true;
       }
     } else if (type == CellActionType.DELETE) {
       if (getCaretPosition() == getText().length()) {
-        deleteFollowingCharacter();
+        if (isCursorAtMultilineEnd()) {
+          EditorCell nextLeaf = getNextLeaf();
+          if (nextLeaf != null) {
+            if (nextLeaf instanceof EditorCell_Label) {
+              EditorCell_Label labelCell = ((EditorCell_Label) nextLeaf);
+              labelCell.setCaretPositionIfPossible(0);
+            }
+            getEditorContext().getNodeEditorComponent().getSelectionManager().setSelection(nextLeaf);
+            nextLeaf.executeAction(CellActionType.DELETE);
+          }
+        } else {
+          deleteFollowingCharacter();
+        }
         return true;
       }
     }
@@ -135,6 +162,24 @@ public class EditorCell_Word extends EditorCell_Property {
       mlCell.setText(text);
       mlCell.setCaretPosition(caretPos, true);
     }
+  }
+
+  public boolean isCursorAtMultilineStart() {
+    EditorCell_Multiline mlCell = this.getParent();
+    if (mlCell == null) {
+      return false;
+    }
+    int caretPos = mlCell.getCaretPosition();
+    return caretPos == 0;
+  }
+
+  public boolean isCursorAtMultilineEnd() {
+    EditorCell_Multiline mlCell = this.getParent();
+    if (mlCell == null) {
+      return false;
+    }
+    int caretPos = mlCell.getCaretPosition();
+    return caretPos == StringUtils.length(mlCell.getText());
   }
 
   private void deletePrecedingCharacter() {
@@ -193,7 +238,7 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public void synchronizeViewWithModel() {
-    check_xru0dp_a0a71(getParent(), this);
+    check_xru0dp_a0a91(getParent(), this);
   }
 
   @Override
@@ -229,7 +274,7 @@ public class EditorCell_Word extends EditorCell_Property {
     return result;
   }
 
-  private static void check_xru0dp_a0a71(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
+  private static void check_xru0dp_a0a91(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }

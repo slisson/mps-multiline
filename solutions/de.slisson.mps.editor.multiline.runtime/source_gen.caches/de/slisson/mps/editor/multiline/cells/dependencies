@@ -49,6 +49,8 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorCellKeyMap" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Label" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.PropertyAccessor" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.TextLine" />
@@ -60,6 +62,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="jetbrains.mps.util.Pair" />
     <classNode dependClassName="org.apache.commons.lang.StringEscapeUtils" />
+    <classNode dependClassName="org.apache.commons.lang.StringUtils" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.MultilineSelection" file="MultilineSelection.java">
