@@ -29,6 +29,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.ModelAccess" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="org.apache.commons.lang.StringEscapeUtils" />
+    <classNode dependClassName="org.apache.commons.lang.StringUtils" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
   </dependency>
@@ -37,11 +38,11 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.NewLineAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectLeftRightAction" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectUpDownAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.TabAction" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.WordPasteAction" />
     <classNode dependClassName="java.awt.event.MouseEvent" />
     <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -71,7 +72,6 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.runtime.ClipboardUtils" />
     <classNode dependClassName="java.awt.Graphics2D" />
     <classNode dependClassName="java.awt.Rectangle" />
-    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Runnable" />
@@ -84,6 +84,7 @@
     <classNode dependClassName="jetbrains.mps.logging.Logger" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.CellActionType" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.CellConditions" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.CellInfo" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ParentSettings" />
@@ -125,6 +126,16 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionManager" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
+  </dependency>
+  <dependency className="de.slisson.mps.editor.multiline.cells.SelectUpDownAction" file="SelectUpDownAction.java">
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.CellConditions" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.selection.SelectionManager" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorCellAction" />
   </dependency>

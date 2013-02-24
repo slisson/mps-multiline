@@ -23,6 +23,7 @@ public class Runtime_ApplicationPlugin extends BaseApplicationPlugin {
     // actions w/o parameters 
     addAction(new SelectWordLeft_Action());
     addAction(new SelectWordRight_Action());
+    addAction(new SelectWordUp_Action());
     // groups 
   }
 

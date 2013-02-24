@@ -35,6 +35,10 @@ public class EditorCell_Word extends EditorCell_Property {
     setAction(CellActionType.INSERT_BEFORE, new NewLineAction(this));
     setAction(CellActionType.SELECT_LEFT, new SelectLeftRightAction(true, this));
     setAction(CellActionType.SELECT_RIGHT, new SelectLeftRightAction(false, this));
+    setAction(CellActionType.SELECT_UP, new SelectUpDownAction(this, true));
+    setAction(CellActionType.SELECT_PREVIOUS, new SelectUpDownAction(this, true));
+    setAction(CellActionType.SELECT_DOWN, new SelectUpDownAction(this, false));
+    setAction(CellActionType.SELECT_NEXT, new SelectUpDownAction(this, false));
     setAction(CellActionType.PASTE, new WordPasteAction(this));
     EditorCellKeyMap km = new EditorCellKeyMap();
     km.putAction("any", "VK_TAB", new TabAction(this));
@@ -147,7 +151,14 @@ public class EditorCell_Word extends EditorCell_Property {
         return true;
       }
     }
-    return super.executeTextAction(type, allowErrors);
+    boolean result = super.executeTextAction(type, allowErrors);
+    return result;
+  }
+
+  @Override
+  public boolean executeAction(CellActionType type) {
+    boolean result = super.executeAction(type);
+    return result;
   }
 
   public void deleteFollowingCharacter() {
@@ -238,17 +249,16 @@ public class EditorCell_Word extends EditorCell_Property {
 
   @Override
   public void synchronizeViewWithModel() {
-    check_xru0dp_a0a91(getParent(), this);
+    check_xru0dp_a0a02(getParent(), this);
   }
 
   @Override
   public boolean processMousePressed(MouseEvent event) {
-    LOG.info("mousePressed " + event, new Exception());
     int prevCaretPos = getParent().getCaretPosition();
     super.processMousePressed(event);
     if (event.isShiftDown()) {
       int caretPos = getParent().getCaretPosition();
-      getEditor().getSelectionManager().pushSelection(new MultilineSelection(getEditor(), getParent(), Math.min(prevCaretPos, caretPos), Math.max(prevCaretPos, caretPos), caretPos < prevCaretPos));
+      getEditor().getSelectionManager().pushSelection(new MultilineSelection(getEditor(), getParent(), prevCaretPos, caretPos));
       LOG.info("selection " + prevCaretPos + " - " + caretPos);
     }
     return true;
@@ -274,7 +284,7 @@ public class EditorCell_Word extends EditorCell_Property {
     return result;
   }
 
-  private static void check_xru0dp_a0a91(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
+  private static void check_xru0dp_a0a02(EditorCell_Multiline checkedDotOperand, EditorCell_Word checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.synchronizeViewWithModel();
     }

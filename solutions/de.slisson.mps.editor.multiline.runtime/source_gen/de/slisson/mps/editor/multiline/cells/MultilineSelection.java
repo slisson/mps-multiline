@@ -16,6 +16,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.awt.Rectangle;
 import jetbrains.mps.nodeEditor.CellActionType;
 import de.slisson.mps.editor.multiline.runtime.ClipboardUtils;
+import jetbrains.mps.nodeEditor.cells.CellConditions;
 import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.nodeEditor.selection.SelectionManager;
 import jetbrains.mps.nodeEditor.selection.Selection;
@@ -33,12 +34,13 @@ public class MultilineSelection extends AbstractSelection {
   private static final Logger LOG = Logger.getLogger(MultilineSelection.class);
   private static final String PROPERTY_SELECTION_START = "selectionStart";
   private static final String PROPERTY_SELECTION_END = "selectionEnd";
-  private static final String PROPERTY_LEFT_DIRECTION = "leftDirection";
 
   private EditorCell_Multiline myMultilineCell;
   private int mySelectionStart;
+  /**
+   * can be lower than mySelectionStart
+   */
   private int mySelectionEnd;
-  private boolean myLeftDirection;
 
   public MultilineSelection(EditorComponent editorComponent, Map<String, String> properties, CellInfo cellInfo) throws SelectionStoreException, SelectionRestoreException {
     super(editorComponent);
@@ -54,13 +56,11 @@ public class MultilineSelection extends AbstractSelection {
     int start = SelectionInfo.Util.getIntProperty(properties, PROPERTY_SELECTION_START);
     int end = SelectionInfo.Util.getIntProperty(properties, PROPERTY_SELECTION_END);
     setSelectionRange(start, end);
-    myLeftDirection = SelectionInfo.Util.getBooleanProperty(properties, PROPERTY_LEFT_DIRECTION);
   }
 
-  public MultilineSelection(@NotNull EditorComponent editorComponent, @NotNull EditorCell_Multiline multilineCell, int start, int end, boolean left) {
+  public MultilineSelection(@NotNull EditorComponent editorComponent, @NotNull EditorCell_Multiline multilineCell, int start, int end) {
     super(editorComponent);
     myMultilineCell = multilineCell;
-    myLeftDirection = left;
     setSelectionRange(start, end);
   }
 
@@ -79,11 +79,13 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public void updateVisibleSelection(int selStart, int selEnd) {
+    if (selStart > selEnd) {
+      int temp = selStart;
+      selStart = selEnd;
+      selEnd = temp;
+    }
     int wordStart = 0;
-    int caretPos = (myLeftDirection ?
-      selStart :
-      selEnd
-    );
+    int caretPos = selEnd;
     for (EditorCell_Word wordCell : Sequence.fromIterable(myMultilineCell.getWordCells())) {
       int wordLength = wordCell.getText().length();
       int wordEnd = wordStart + wordLength;
@@ -98,9 +100,9 @@ public class MultilineSelection extends AbstractSelection {
 
   public void activate() {
     updateVisibleSelection(mySelectionStart, mySelectionEnd);
-
+    updateCursorPosition();
     Rectangle firstBound = myMultilineCell.getWordCellContainingPos(mySelectionStart).getBounds();
-    Rectangle lastBounds = myMultilineCell.getWordCellContainingPos(mySelectionStart).getBounds();
+    Rectangle lastBounds = myMultilineCell.getWordCellContainingPos(mySelectionEnd).getBounds();
     getEditorComponent().scrollRectToVisible(firstBound.union(lastBounds));
     getEditorComponent().repaint();
   }
@@ -118,41 +120,70 @@ public class MultilineSelection extends AbstractSelection {
 
   public void executeAction(CellActionType type) {
     if (CellActionType.SELECT_LEFT == type || CellActionType.SELECT_RIGHT == type) {
-      if ((myLeftDirection ?
-        CellActionType.SELECT_LEFT == type :
-        CellActionType.SELECT_RIGHT == type
-      )) {
-        enlargeSelection();
-      } else {
-        reduceSelection();
-      }
+      int newEnd = (type == CellActionType.SELECT_LEFT ?
+        mySelectionEnd - 1 :
+        mySelectionEnd + 1
+      );
+      changeSelection(newEnd);
     } else if (type == CellActionType.DELETE || type == CellActionType.BACKSPACE) {
       executeDeleteSelectedText();
     } else if (type == CellActionType.COPY) {
-      String text = myMultilineCell.getText().substring(mySelectionStart, mySelectionEnd);
-      ClipboardUtils.setClipboardText(text);
+      ClipboardUtils.setClipboardText(getSelectedText());
     } else if (type == CellActionType.CUT) {
       executeAction(CellActionType.COPY);
       executeDeleteSelectedText();
     } else if (type == CellActionType.PASTE) {
-      getEditorComponent().getEditorContext().executeCommand(new Runnable() {
-        public void run() {
-          deleteSelectedText();
-          String textToInsert = ClipboardUtils.getClipboardText();
-          myMultilineCell.insertText(textToInsert);
-        }
-      });
-    } else if (type == CellActionType.LEFT || type == CellActionType.RIGHT) {
-      int caretPos = (type == CellActionType.LEFT ?
-        mySelectionStart :
-        mySelectionEnd
-      );
-      setSelectionRange(caretPos, caretPos);
-      myMultilineCell.setCaretPosition(caretPos, true);
+      pasteClipboardText();
+    } else if (type == CellActionType.SELECT_PREVIOUS || type == CellActionType.SELECT_UP) {
+      selectUpOrDown(true);
+    } else if (type == CellActionType.SELECT_NEXT || type == CellActionType.SELECT_DOWN) {
+      selectUpOrDown(false);
+    } else if (type == CellActionType.LEFT || type == CellActionType.RIGHT || type == CellActionType.DOWN || type == CellActionType.UP) {
+      clearSelection();
     } else {
       LOG.info("unhandled action: " + type);
     }
+  }
 
+  public String getSelectedText() {
+    int first = Math.min(mySelectionStart, mySelectionEnd);
+    int last = Math.max(mySelectionStart, mySelectionEnd);
+    return myMultilineCell.getText().substring(first, last);
+  }
+
+  public void clearSelection() {
+    int caretPos = mySelectionEnd;
+    setSelectionRange(caretPos, caretPos);
+    myMultilineCell.setCaretPosition(caretPos, true);
+  }
+
+  public void pasteClipboardText() {
+    getEditorComponent().getEditorContext().executeCommand(new Runnable() {
+      public void run() {
+        deleteSelectedText();
+        String textToInsert = ClipboardUtils.getClipboardText();
+        myMultilineCell.insertText(textToInsert);
+      }
+    });
+  }
+
+  public void selectUpOrDown(boolean up) {
+    EditorCell_Word cursorCell = myMultilineCell.getWordCellContainingPos(mySelectionEnd);
+    EditorCell upperOrLower = (up ?
+      cursorCell.getUpper(CellConditions.SELECTABLE, cursorCell.getCaretX()) :
+      cursorCell.getLower(CellConditions.SELECTABLE, cursorCell.getCaretX())
+    );
+    if (!(upperOrLower instanceof EditorCell_Word)) {
+      return;
+    }
+    EditorCell_Word upperOrLowerWordCell = (EditorCell_Word) upperOrLower;
+    if (upperOrLowerWordCell.getParent() != myMultilineCell) {
+      return;
+    }
+
+    upperOrLowerWordCell.setCaretX(cursorCell.getCaretX());
+    int newEnd = myMultilineCell.getTextBefore(upperOrLowerWordCell, upperOrLowerWordCell.getCaretPosition()).length();
+    changeSelection(newEnd);
   }
 
   public void executeDeleteSelectedText() {
@@ -168,50 +199,38 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public void deleteSelectedText() {
+    int first = Math.min(mySelectionStart, mySelectionEnd);
+    int last = Math.max(mySelectionStart, mySelectionEnd);
     String text = myMultilineCell.getText();
-    text = text.substring(0, mySelectionStart) + text.substring(mySelectionEnd, text.length());
+    text = text.substring(0, first) + text.substring(last, text.length());
     myMultilineCell.setText(text);
-    int prevSelectionStart = mySelectionStart;
     setSelectionRange(0, 0);
-    myMultilineCell.setCaretPosition(prevSelectionStart, true);
+    myMultilineCell.setCaretPosition(first, true);
   }
 
-  private void enlargeSelection() {
-    int newSelectionStart = mySelectionStart;
-    int newSelectionEnd = mySelectionEnd;
-    if (myLeftDirection) {
-      if (newSelectionStart > 0) {
-        newSelectionStart--;
-      }
-    } else {
-      int textLen = myMultilineCell.getText().length();
-      if (newSelectionEnd < textLen - 1) {
-        newSelectionEnd++;
-      }
-    }
-
+  private void changeSelection(int newEnd) {
     SelectionManager selectionManager = getEditorComponent().getSelectionManager();
     Selection newSelection;
-    if (newSelectionStart != mySelectionStart || newSelectionEnd != mySelectionEnd) {
-      newSelection = new MultilineSelection(getEditorComponent(), myMultilineCell, newSelectionStart, newSelectionEnd, myLeftDirection);
+    if (newEnd != mySelectionEnd) {
+      newSelection = new MultilineSelection(getEditorComponent(), myMultilineCell, mySelectionStart, newEnd);
     } else {
       newSelection = selectionManager.createSelection(myMultilineCell.getParent());
       if (newSelection instanceof SingularSelection) {
-        ((SingularSelection) newSelection).setSideSelectDirection((myLeftDirection ?
+        ((SingularSelection) newSelection).setSideSelectDirection((mySelectionStart > newEnd ?
           SingularSelection.SideSelectDirection.LEFT :
           SingularSelection.SideSelectDirection.RIGHT
         ));
       }
     }
     selectionManager.pushSelection(newSelection);
+  }
 
-    int caretPos = (myLeftDirection ?
-      mySelectionStart :
-      mySelectionEnd
-    );
-    EditorCell_Word selectedWord = myMultilineCell.getWordCellContainingPos(caretPos);
-    if (selectedWord != null) {
-      setDeepestSelection(new EditorCellLabelSelection(selectedWord), selectionManager);
+  public void updateCursorPosition() {
+    EditorCell_Word cursorCell = myMultilineCell.getWordCellContainingPos(mySelectionEnd);
+    if (cursorCell != null) {
+      myMultilineCell.setCaretPosition(mySelectionEnd);
+      SelectionManager selectionManager = getEditorComponent().getSelectionManager();
+      setDeepestSelection(new EditorCellLabelSelection(cursorCell), selectionManager);
     }
   }
 
@@ -235,7 +254,6 @@ public class MultilineSelection extends AbstractSelection {
     selectionInfo.setCellInfo(myMultilineCell.getCellInfo());
     selectionInfo.getPropertiesMap().put(PROPERTY_SELECTION_START, Integer.toString(mySelectionStart));
     selectionInfo.getPropertiesMap().put(PROPERTY_SELECTION_END, Integer.toString(mySelectionEnd));
-    selectionInfo.getPropertiesMap().put(PROPERTY_LEFT_DIRECTION, Boolean.toString(myLeftDirection));
     return selectionInfo;
   }
 
@@ -256,9 +274,6 @@ public class MultilineSelection extends AbstractSelection {
     if (mySelectionEnd != otherSelection.mySelectionEnd) {
       return false;
     }
-    if (myLeftDirection != otherSelection.myLeftDirection) {
-      return false;
-    }
     return true;
   }
 
@@ -274,10 +289,7 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public int getCaretPosition() {
-    return (myLeftDirection ?
-      mySelectionStart :
-      mySelectionEnd
-    );
+    return mySelectionEnd;
   }
 
   public EditorCell_Word getCellContainingCaret() {

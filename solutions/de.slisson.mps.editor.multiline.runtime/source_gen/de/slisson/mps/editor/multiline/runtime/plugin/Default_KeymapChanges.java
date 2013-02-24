@@ -12,6 +12,7 @@ public class Default_KeymapChanges extends BaseKeymapChanges {
     // simple 
     addSimpleShortcut("de.slisson.mps.editor.multiline.runtime.plugin.SelectWordLeft_Action", getShortcut("shift LEFT"));
     addSimpleShortcut("de.slisson.mps.editor.multiline.runtime.plugin.SelectWordRight_Action", getShortcut("shift RIGHT"));
+    addSimpleShortcut("de.slisson.mps.editor.multiline.runtime.plugin.SelectWordUp_Action", getShortcut("shift UP"));
     // simple parameterized 
     // complex 
   }

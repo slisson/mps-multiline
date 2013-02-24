@@ -32,14 +32,14 @@ public class SelectLeftRightAction extends EditorCellAction {
     EditorCell_Multiline parent = myWordCell.getParent();
     int index = Sequence.fromIterable(parent.getWordCells()).indexOf(myWordCell);
     int wordStart = myWordCell.getParent().getTextBefore(myWordCell, 0).length();
-    int selectionStart = myWordCell.getSelectionStart() + wordStart;
-    int selectionEnd = myWordCell.getSelectionEnd() + wordStart;
-    if (myLeft) {
-      --selectionStart;
-    } else {
-      ++selectionEnd;
-    }
-
-    selectionManager.pushSelection(new MultilineSelection(myWordCell.getEditor(), parent, selectionStart, selectionEnd, myLeft));
+    int selectionStart = ((myLeft ?
+      myWordCell.getSelectionEnd() :
+      myWordCell.getSelectionStart()
+    )) + wordStart;
+    int selectionEnd = ((myLeft ?
+      myWordCell.getSelectionStart() - 1 :
+      myWordCell.getSelectionEnd() + 1
+    )) + wordStart;
+    selectionManager.pushSelection(new MultilineSelection(myWordCell.getEditor(), parent, selectionStart, selectionEnd));
   }
 }

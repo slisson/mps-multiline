@@ -20,6 +20,7 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
+import org.apache.commons.lang.StringUtils;
 import java.util.ArrayList;
 
 public class EditorCell_Multiline extends EditorCell_Collection {
@@ -213,6 +214,14 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return textBefore.toString();
   }
 
+  public int getCellStartPosition(EditorCell_Word wordCell) {
+    return getAbsoluteTextPosition(wordCell, 0);
+  }
+
+  public int getAbsoluteTextPosition(EditorCell_Word wordCell, int relativePos) {
+    return StringUtils.length(getTextBefore(wordCell, relativePos));
+  }
+
   public Iterable<EditorCell_Word> getCellsBefore(EditorCell_Word cell) {
     List<EditorCell_Word> result = ListSequence.fromList(new ArrayList<EditorCell_Word>());
     int cellNum = getCellNumber(cell);
@@ -243,7 +252,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0u(newText);
+    newText = check_v798xa_a0a0w(newText);
     myMultilineText.setText(newText);
     modelToView();
   }
@@ -266,7 +275,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   @Override
   public void addCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0y(check_v798xa_a0a0a0a0a42(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0ab(check_v798xa_a0a0a0a0a62(cell)));
 
     }
     super.addCellAt(i, cell, b);
@@ -277,21 +286,21 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  private static String check_v798xa_a0a0u(String checkedDotOperand) {
+  private static String check_v798xa_a0a0w(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0y(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0ab(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a42(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a62(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
