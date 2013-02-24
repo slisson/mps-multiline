@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="mps-multiline.build.mps-multiline" file="mps-multiline.xml" />
-</dependenciesRoot>
-
