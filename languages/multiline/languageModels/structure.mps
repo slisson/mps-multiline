@@ -8,18 +8,11 @@
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8006371471054135775">
       <property name="name" nameId="tpck.1169194664001" value="CellModel_Multiline" />
+      <property name="conceptAlias" nameId="tpce.5092175715804935370" value="{&lt;{propertyDeclaration}&gt;}\n" />
+      <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="multiline property" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpc2.1073389658414" resolveInfo="CellModel_Property" />
     </node>
   </roots>
-  <root id="8006371471054135775">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1107223377706">
-      <property name="value" nameId="tpce.1105725733873" value="{&lt;{propertyDeclaration}&gt;}\n" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1180268756546">
-      <property name="value" nameId="tpce.1105725733873" value="property" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
+  <root id="8006371471054135775" />
 </model>
 

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
+<solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" pluginKind="PLUGIN_EDITOR" compileInMPS="true" generatorOutputPath="${module}/source_gen">
   <models>
-    <modelRoot path="${solution_descriptor}/lib/diff_match_patch.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
+    <modelRoot path="${module}/lib/diff_match_patch.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/models" type="default">
+      <sourceRoot location="." />
     </modelRoot>
-    <modelRoot path="${solution_descriptor}/models" />
+    <modelRoot path="${module}/lib/commons-lang3-3.1.jar" type="java_classes" />
+    <modelRoot path="${module}/lib/commons-lang-2.6.jar" type="java_classes" />
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${solution_descriptor}/lib/diff_match_patch.jar">
-      <manager moduleId="f3061a53-9226-4cc5-a443-f952ceaf5816" className="jetbrains.mps.baseLanguage.stubs.JavaStubs" />
-    </stubModelEntry>
+    <stubModelEntry path="${module}/lib/diff_match_patch.jar" />
+    <stubModelEntry path="${module}/lib/commons-lang3-3.1.jar" />
+    <stubModelEntry path="${module}/lib/commons-lang-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)</dependency>
     <dependency reexport="false">83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)</dependency>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
   </dependencies>
