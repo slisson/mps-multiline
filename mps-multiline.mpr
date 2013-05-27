@@ -20,11 +20,12 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/languages/demolang/demolang.mpl" folder="" />
-      <modulePath path="${project}/languages/multiline/multiline.mpl" />
-      <modulePath path="${project}/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" folder="" />
-      <modulePath path="${project}/solutions/de.slisson.mps.editor.multiline.sandbox/de.slisson.mps.editor.multiline.sandbox.msd" />
-      <modulePath path="${project}/solutions/mps-multiline.build/build.msd" />
+      <modulePath path="$PROJECT_DIR$/languages/demolang/demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/multiline/multiline.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.multiline.sandbox/de.slisson.mps.editor.multiline.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps-multiline.build/build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.apache.commons.lang/org.apache.commons.lang.msd" folder="" />
     </projectModules>
     <genConfs />
   </component>
@@ -33,7 +34,7 @@
   </component>
   <component name="ProjectRootManager" version="2" />
   <component name="ProjectVersion">
-    <option name="version" value="2.5" />
+    <option name="version" value="3.0" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
