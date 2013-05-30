@@ -11,6 +11,7 @@
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="jxum" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.selection(MPS.Editor/jetbrains.mps.nodeEditor.selection@java_stub)" version="-1" />
   <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
+  <import index="mdrl" modelUID="f:java_stub#dc038ceb-b7ea-4fea-ac12-55f7400e97ba#org.apache.commons.lang3(de.slisson.mps.editor.multiline.runtime/org.apache.commons.lang3@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -20,6 +21,9 @@
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="5792856961220495273">
       <property name="name" nameId="tpck.1169194664001" value="CellUtils" />
+    </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6576321736523585258">
+      <property name="name" nameId="tpck.1169194664001" value="MultilineUtil" />
     </node>
   </roots>
   <root id="5205698381779290215">
@@ -215,6 +219,57 @@
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5792856961222505613" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5792856961220495274" />
+  </root>
+  <root id="6576321736523585258">
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="6576321736523603655">
+      <property name="name" nameId="tpck.1169194664001" value="unescapeText" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6576321736523761844" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6576321736523603658" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6576321736523603659">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6576321736523761623">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6576321736523761640">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mdrl.~StringEscapeUtils%dunescapeJava(java%dlang%dString)%cjava%dlang%dString" resolveInfo="unescapeJava" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mdrl.~StringEscapeUtils" resolveInfo="StringEscapeUtils" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6576321736526792251">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mdrl.~StringUtils%ddefaultString(java%dlang%dString)%cjava%dlang%dString" resolveInfo="defaultString" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mdrl.~StringUtils" resolveInfo="StringUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6576321736526792337">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6576321736523603683" resolveInfo="escaped" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6576321736523603683">
+        <property name="name" nameId="tpck.1169194664001" value="escaped" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6576321736523603682" />
+      </node>
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="6576321736523761801">
+      <property name="name" nameId="tpck.1169194664001" value="escapeText" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="6576321736523761840" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6576321736523761804" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6576321736523761805">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6576321736523761995">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6576321736523762045">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mdrl.~StringEscapeUtils%descapeJava(java%dlang%dString)%cjava%dlang%dString" resolveInfo="escapeJava" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mdrl.~StringEscapeUtils" resolveInfo="StringEscapeUtils" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6576321736526792661">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mdrl.~StringUtils%ddefaultString(java%dlang%dString)%cjava%dlang%dString" resolveInfo="defaultString" />
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mdrl.~StringUtils" resolveInfo="StringUtils" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6576321736526792749">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6576321736523761834" resolveInfo="unescaped" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6576321736523761834">
+        <property name="name" nameId="tpck.1169194664001" value="unescaped" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="6576321736523761833" />
+      </node>
+    </node>
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6576321736523585259" />
   </root>
 </model>
 
