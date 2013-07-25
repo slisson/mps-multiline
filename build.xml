@@ -3,8 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-multiline" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-multiline" />
-  <property name="mps_home" location="${basedir}/../../../Program Files (x86)/JetBrains/MPS 2.5" />
-  <property name="artifacts.mps" location="${mps_home}" />
+  <property name="mps.home" location="${basedir}/../../../../../../../Applications/MPS30.app" />
+  <property name="artifacts.mps" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
