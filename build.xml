@@ -28,7 +28,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>0.1.3</version>
+        <version>1.0</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
