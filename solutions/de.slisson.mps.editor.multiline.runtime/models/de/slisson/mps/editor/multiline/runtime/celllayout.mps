@@ -896,8 +896,8 @@
                           </node>
                         </node>
                         <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5696298824709760796" nodeInfo="nn">
-                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="mv2y.~PunctuationUtil" resolveInfo="PunctuationUtil" />
-                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="mv2y.~PunctuationUtil%dhasLeftGap(jetbrains%dmps%dopenapi%deditor%dcells%dEditorCell)%cboolean" resolveInfo="hasLeftGap" />
+                          <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="5696298824709761139" resolveInfo="PunctuationUtil" />
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5696298824709761266" resolveInfo="hasLeftGap" />
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1643598191259929437" nodeInfo="nn">
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5696298824709760718" resolveInfo="current" />
                           </node>
