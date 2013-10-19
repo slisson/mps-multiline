@@ -255,19 +255,22 @@
   <target name="java.compile.mps-multiline.build">
     <mkdir dir="${basedir}/solutions/mps-multiline.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mps-multiline.build" />
-    <javac destdir="${build.tmp}/java/out/mps-multiline.build" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/mps-multiline.build" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/mps-multiline.build/source_gen" />
       </src>
       <classpath />
     </javac>
+    <copy todir="${build.tmp}/java/out/mps-multiline.build">
+      <fileset dir="${basedir}/solutions/mps-multiline.build/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.slisson.mps.editor.multiline" depends="java.compile.de.slisson.mps.editor.multiline.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/multiline/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
-    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/multiline/source_gen" />
@@ -315,12 +318,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline">
+      <fileset dir="${basedir}/languages/multiline/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.slisson.mps.editor.multiline#5792856961266375224" depends="java.compile.de.slisson.mps.editor.multiline, fetchDependencies">
     <mkdir dir="${basedir}/languages/multiline/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" />
-    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/multiline/generator/source_gen" />
@@ -362,12 +368,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224">
+      <fileset dir="${basedir}/languages/multiline/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.de.slisson.mps.editor.multiline.runtime" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
-    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" fork="true" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" />
@@ -408,6 +417,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime">
+      <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">
