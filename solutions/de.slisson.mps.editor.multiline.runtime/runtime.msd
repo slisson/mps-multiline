@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" pluginKind="PLUGIN_EDITOR" compileInMPS="true" generatorOutputPath="${module}/source_gen">
   <models>
-    <modelRoot path="${module}/lib/diff_match_patch.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="diff_match_patch.jar" />
+    </modelRoot>
     <modelRoot contentPath="${module}/models" type="default">
       <sourceRoot location="." />
     </modelRoot>
-    <modelRoot path="${module}/lib/commons-lang3-3.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/commons-lang-2.6.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="commons-lang3-3.1.jar" />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/diff_match_patch.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3-3.1.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
