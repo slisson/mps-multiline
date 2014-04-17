@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-multiline" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-multiline" />
-  <property name="mps.home" location="${basedir}/../../../../../../../Applications/MPS30.app" />
+  <property name="mps.home" location="${basedir}/../../app/mps304" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -28,7 +28,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>1.0</version>
+        <version>1.0.1</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
@@ -54,7 +54,7 @@
       <fileset dir="${build.tmp}/default/mps-multiline.build.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-mps-multiline.build-models">
-      <fileset dir="${basedir}/solutions/mps-multiline.build/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${basedir}/solutions/mps-multiline.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build-src.jar">
       <fileset dir="${basedir}/solutions/mps-multiline.build/source_gen" includes="**/*.java" />
@@ -90,10 +90,10 @@
       <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-multiline-generator-template">
-      <fileset dir="${basedir}/languages/multiline/generator/template" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${basedir}/languages/multiline/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-multiline-languageModels">
-      <fileset dir="${basedir}/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${basedir}/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar">
       <fileset dir="${basedir}/languages/multiline/generator/source_gen" includes="**/*.java" />
@@ -132,7 +132,7 @@
       <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.slisson.mps.editor.multiline.runtime-models">
-      <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history" />
+      <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar">
       <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" includes="**/*.java" />
@@ -150,7 +150,7 @@
   
   <target name="fetchDependencies" />
   
-  <target name="build" depends="assemble, check" />
+  <target name="build" depends="assemble" />
   
   <target name="clean">
     <delete dir="${build.tmp}" />
@@ -243,6 +243,7 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
+      <macro name="mps.home" path="${mps.home}" />
     </generate>
   </target>
   
