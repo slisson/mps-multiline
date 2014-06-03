@@ -20,9 +20,24 @@
           <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5063083321524166008" nodeInfo="nn">
             <property name="head" nameId="3ior.8618885170173601779" value=".." />
             <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5063083321524166009" nodeInfo="nn">
-              <property name="head" nameId="3ior.8618885170173601779" value="app" />
+              <property name="head" nameId="3ior.8618885170173601779" value=".." />
               <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="340924950461189041" nodeInfo="nn">
-                <property name="head" nameId="3ior.8618885170173601779" value="mps304" />
+                <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="340924950461189397" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="340924950461189781" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="340924950461190725" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value=".." />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="340924950461191003" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="Applications" />
+                        <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="5444676801555607638" nodeInfo="nn">
+                          <property name="head" nameId="3ior.8618885170173601779" value="MPS31EAP.app" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -76,7 +91,7 @@
       </node>
       <node role="version" roleId="kdzh.6592112598314498931" type="3ior.BuildStringNotEmpty" typeId="3ior.841011766566059607" id="5063083321524165989" nodeInfo="ng">
         <node role="parts" roleId="3ior.4903714810883783243" type="3ior.BuildTextStringPart" typeId="3ior.4903714810883702019" id="5063083321524165990" nodeInfo="ng">
-          <property name="text" nameId="3ior.4903714810883755350" value="1.0.1" />
+          <property name="text" nameId="3ior.4903714810883755350" value="1.0" />
         </node>
       </node>
       <node role="content" roleId="kdzh.6592112598314499050" type="kdzh.BuildMps_IdeaPluginGroup" typeId="kdzh.6592112598314586625" id="5063083321524165991" nodeInfo="ng">
@@ -338,6 +353,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="parts" roleId="3ior.7389400916848080626" type="kdzh.BuildMps_GeneratorOptions" typeId="kdzh.4297162197620964123" id="3008937229056433373" nodeInfo="ng">
+      <property name="strict" nameId="kdzh.4297162197620978188" value="true" />
+      <property name="parallel" nameId="kdzh.4297162197620978190" value="true" />
+      <property name="parallelThreads" nameId="kdzh.4297162197620978193" value="16" />
+      <property name="inplace" nameId="kdzh.4297162197621031140" value="true" />
     </node>
   </root>
 </model>
