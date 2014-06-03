@@ -57,7 +57,7 @@
       <fileset dir="${basedir}/solutions/mps-multiline.build/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/mps-multiline.build-src.jar">
-      <fileset dir="${basedir}/solutions/mps-multiline.build/source_gen" includes="**/*.java" />
+      <fileset dir="${basedir}/solutions/mps-multiline.build/source_gen" />
       <zipfileset file="${basedir}/solutions/mps-multiline.build/build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-mps-multiline.build-models" prefix="module/models" />
     </jar>
@@ -96,8 +96,8 @@
       <fileset dir="${basedir}/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline-src.jar">
-      <fileset dir="${basedir}/languages/multiline/generator/source_gen" includes="**/*.java" />
-      <fileset dir="${basedir}/languages/multiline/source_gen" includes="**/*.java" />
+      <fileset dir="${basedir}/languages/multiline/generator/source_gen" />
+      <fileset dir="${basedir}/languages/multiline/source_gen" />
       <zipfileset file="${basedir}/languages/multiline/multiline.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-multiline-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-multiline-languageModels" prefix="module/languageModels" />
@@ -135,7 +135,7 @@
       <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/mps-multiline.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime-src.jar">
-      <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" includes="**/*.java" />
+      <fileset dir="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/source_gen" />
       <zipfileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.slisson.mps.editor.multiline.runtime-models" prefix="module/models" />
     </jar>
