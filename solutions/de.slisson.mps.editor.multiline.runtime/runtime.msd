@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="de.slisson.mps.editor.multiline.runtime" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" pluginKind="PLUGIN_EDITOR" compileInMPS="true" generatorOutputPath="${module}/source_gen">
   <models>
-    <modelRoot path="${module}/lib/diff_match_patch.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="diff_match_patch.jar" />
+    </modelRoot>
     <modelRoot contentPath="${module}/models" type="default">
       <sourceRoot location="." />
     </modelRoot>
-    <modelRoot path="${module}/lib/commons-lang3-3.1.jar" type="java_classes" />
-    <modelRoot path="${module}/lib/commons-lang-2.6.jar" type="java_classes" />
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/diff_match_patch.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang3-3.1.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -23,6 +21,7 @@
     <dependency reexport="false">a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)</dependency>
     <dependency reexport="false">83f155ff-422c-4b5a-a2f2-b459302dd215(jetbrains.mps.baseLanguage.unitTest.libs)</dependency>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
+    <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>

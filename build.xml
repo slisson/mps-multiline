@@ -3,8 +3,10 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mps-multiline" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-multiline" />
-  <property name="mps.home" location="${basedir}/../../../../../../../Applications/MPS31EAP.app" />
+  <property name="mps.home" location="${basedir}/../../app/mps304" />
+  <property name="mps-apache-commons.home" location="${basedir}/../mps-apache-commons" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.mps-apache-commons" location="${mps-apache-commons.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -28,10 +30,11 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.slisson.mps.editor.multiline</id>
         <name>MPS Multiline Property Editor Component</name>
-        <version>1.0</version>
+        <version>1.0.1</version>
         <vendor url="http://github.com/slisson/mps-multiline">Sascha Lisson</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
+        <depends>org.apache.commons</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -121,8 +124,6 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <library jar="../../lib/diff_match_patch.jar" />
-        <library jar="../../lib/commons-lang3-3.1.jar" />
-        <library jar="../../lib/commons-lang-2.6.jar" />
         <sources jar="de.slisson.mps.editor.multiline.runtime-src.jar" descriptor="runtime.msd" />
       </module>
     </echoxml>
@@ -148,7 +149,10 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
+    <unzip src="${artifacts.mps-apache-commons}/mps-plugin-org.apache.commons.zip" dest="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip" />
+  </target>
   
   <target name="build" depends="assemble" />
   
@@ -169,9 +173,10 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="16" useInplaceTransform="true" hideWarnings="false" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -233,6 +238,8 @@
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.workflow.jar" />
       <library file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.ide.build.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+      <library file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/mps-apache-commons.build.jar" />
+      <library file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/org.apache.commons.jar" />
       <chunk>
         <module file="${basedir}/languages/multiline/multiline.mpl" />
         <module file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" />
@@ -242,6 +249,7 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
+      <macro name="mps-apache-commons.home" path="${mps-apache-commons.home}" />
     </generate>
   </target>
   
@@ -251,7 +259,7 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.mps-multiline.build">
+  <target name="java.compile.mps-multiline.build" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/mps-multiline.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mps-multiline.build" />
     <javac destdir="${build.tmp}/java/out/mps-multiline.build" fork="true" includeantruntime="false" debug="true">
@@ -259,7 +267,9 @@
       <src>
         <path location="${basedir}/solutions/mps-multiline.build/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/mps-apache-commons.build.jar" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/mps-multiline.build">
       <fileset dir="${basedir}/solutions/mps-multiline.build/source_gen" excludes="**/*.java" />
@@ -288,8 +298,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
         <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/diff_match_patch.jar" />
-        <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/commons-lang3-3.1.jar" />
-        <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/commons-lang-2.6.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -391,8 +399,6 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/diff_match_patch.jar" />
-        <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/commons-lang3-3.1.jar" />
-        <fileset file="${basedir}/solutions/de.slisson.mps.editor.multiline.runtime/lib/commons-lang-2.6.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/bsh-core-2.0b4.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/cglib-nodep-2.1_3.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/hamcrest-core-1.1.jar" />
@@ -401,6 +407,10 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit3-2.5.1.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jmock-junit4-2.5.1.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/objenesis-1.0.jar" />
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/lib/commons-io-2.4.jar" />
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/lib/commons-lang3-3.3.2.jar" />
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/lib/commons-math3-3.3.jar" />
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/lib/commons-primitives-1.0.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/junit-4.11.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -412,6 +422,7 @@
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${build.tmp}/deps/mps-apache-commons/mps-plugin-org.apache.commons.zip/org.apache.commons/languages/mps-apache-commons/org.apache.commons.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime">
