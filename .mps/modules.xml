@@ -2,13 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${mbeddr.github.core.home}/code/plugins/sl-all/mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
+      <modulePath path="${mbeddr.github.core.home}/code/plugins/sl-all/mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/demolang/demolang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/multiline/multiline.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.multiline.runtime/runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.multiline.sandbox/de.slisson.mps.editor.multiline.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/mps-multiline.build/build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/../mps-apache-commons/solutions/mps-apache-commons.build/mps-apache-commons.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/../mps-apache-commons/solutions/org.apache.commons/org.apache.commons.msd" folder="" />
     </projectModules>
   </component>
 </project>
