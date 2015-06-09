@@ -25,6 +25,7 @@
     <import index="61on" ref="r:8cde5a9d-48d2-48d7-ab15-f4c27c4f498f(de.slisson.mps.editor.multiline.cellProviders)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="wap1" ref="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(de.slisson.mps.editor.multiline.structure)" implicit="true" />
+    <import index="4lbv" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.update(MPS.Editor/jetbrains.mps.openapi.editor.update@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -53,9 +54,6 @@
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -691,44 +689,28 @@
               </node>
             </node>
             <node concept="3clFbS" id="g_CeiMC" role="3clFbx">
-              <node concept="3cpWs8" id="g_CeiMD" role="3cqZAp">
-                <node concept="3cpWsn" id="g_CeiME" role="3cpWs9">
-                  <property role="TrG5h" value="opContext" />
-                  <node concept="3uibUv" id="g_CeiMF" role="1tU5fm">
-                    <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
-                  </node>
-                  <node concept="2OqwBi" id="h_XJ7bP" role="33vP2m">
-                    <node concept="37vLTw" id="1rfeXz7xt7k" role="2Oq$k0">
-                      <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
-                    </node>
-                    <node concept="liA8E" id="h_XJ7bQ" role="2OqNvi">
-                      <ref role="37wK5l" to="srng:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs8" id="g_CeiMI" role="3cqZAp">
-                <node concept="3cpWsn" id="g_CeiMJ" role="3cpWs9">
-                  <property role="TrG5h" value="manager" />
-                  <node concept="3uibUv" id="g_CeiMK" role="1tU5fm">
-                    <ref role="3uigEE" to="9a8:~EditorManager" resolve="EditorManager" />
-                  </node>
-                  <node concept="2YIFZM" id="g_CeiML" role="33vP2m">
-                    <ref role="37wK5l" to="9a8:~EditorManager.getInstanceFromContext(jetbrains.mps.smodel.IOperationContext):jetbrains.mps.nodeEditor.EditorManager" resolve="getInstanceFromContext" />
-                    <ref role="1Pybhc" to="9a8:~EditorManager" resolve="EditorManager" />
-                    <node concept="37vLTw" id="1rfeXz7xsEm" role="37wK5m">
-                      <ref role="3cqZAo" node="g_CeiME" resolve="opContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs6" id="g_CeiMO" role="3cqZAp">
                 <node concept="2OqwBi" id="h_XJ7yz" role="3cqZAk">
-                  <node concept="37vLTw" id="4hZLlsVFMyL" role="2Oq$k0">
-                    <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
+                  <node concept="2OqwBi" id="7wXnfGDXKgm" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7wXnfGDXIOE" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7wXnfGDXHkC" role="2Oq$k0">
+                        <node concept="37vLTw" id="4hZLlsVFMyL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
+                        </node>
+                        <node concept="liA8E" id="7wXnfGDXIdv" role="2OqNvi">
+                          <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7wXnfGDXJD2" role="2OqNvi">
+                        <ref role="37wK5l" to="srng:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7wXnfGDXLdK" role="2OqNvi">
+                      <ref role="37wK5l" to="4lbv:~Updater.getCurrentUpdateSession():jetbrains.mps.openapi.editor.update.UpdateSession" resolve="getCurrentUpdateSession" />
+                    </node>
                   </node>
                   <node concept="liA8E" id="h_XJ7y$" role="2OqNvi">
-                    <ref role="37wK5l" to="srng:~EditorContext.createRoleAttributeCell(java.lang.Class,jetbrains.mps.openapi.editor.cells.EditorCell,org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createRoleAttributeCell" />
+                    <ref role="37wK5l" to="4lbv:~UpdateSession.updateRoleAttributeCell(java.lang.Class,jetbrains.mps.openapi.editor.cells.EditorCell,org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="updateRoleAttributeCell" />
                     <node concept="37vLTw" id="1rfeXz7xs$X" role="37wK5m">
                       <ref role="3cqZAo" node="g_CgF5N" resolve="attributeKind" />
                     </node>

@@ -6,6 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
     <import index="9a8" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
@@ -26,6 +27,7 @@
     <import index="t3eg" ref="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="srng" ref="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="ajxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -208,7 +210,7 @@
       <node concept="3Tm1VV" id="7Pi_Fu5SfIa" role="1B3o_S" />
       <node concept="3cqZAl" id="7Pi_Fu5SfIb" role="3clF45" />
       <node concept="37vLTG" id="7Pi_Fu5SfIc" role="3clF46">
-        <property role="TrG5h" value="object" />
+        <property role="TrG5h" value="roleName" />
         <node concept="3uibUv" id="7Pi_Fu5SfId" role="1tU5fm">
           <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
         </node>
@@ -226,7 +228,7 @@
                 <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
                 <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
                 <node concept="37vLTw" id="1rfeXz7xta6" role="37wK5m">
-                  <ref role="3cqZAo" node="7Pi_Fu5SfIc" resolve="object" />
+                  <ref role="3cqZAo" node="7Pi_Fu5SfIc" resolve="roleName" />
                 </node>
               </node>
             </node>
@@ -327,9 +329,7 @@
             <node concept="1rXfSq" id="1rfeXz7xsch" role="33vP2m">
               <ref role="37wK5l" to="9a8:~AbstractCellProvider.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
             </node>
-            <node concept="3uibUv" id="51$nbrvazuU" role="1tU5fm">
-              <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
-            </node>
+            <node concept="3Tqbb2" id="7wXnfGE1XeF" role="1tU5fm" />
           </node>
         </node>
         <node concept="3cpWs6" id="7Pi_Fu5Sqmk" role="3cqZAp">
