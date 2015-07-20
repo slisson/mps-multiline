@@ -133,6 +133,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -873,6 +874,24 @@
           <node concept="3clFbS" id="4hZLlsVFVud" role="3clF47">
             <node concept="3clFbF" id="4hZLlsVFVuf" role="3cqZAp">
               <node concept="10Nm6u" id="4hZLlsVFVue" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFb_" id="2MQBX6K4y_N" role="jymVt">
+          <property role="1EzhhJ" value="false" />
+          <property role="TrG5h" value="getRoleAttributes" />
+          <property role="DiZV1" value="false" />
+          <property role="IEkAT" value="false" />
+          <node concept="3Tm1VV" id="2MQBX6K4y_O" role="1B3o_S" />
+          <node concept="3uibUv" id="2MQBX6K4y_Q" role="3clF45">
+            <ref role="3uigEE" to="e2lb:~Iterable" resolve="Iterable" />
+            <node concept="3uibUv" id="2MQBX6K4y_R" role="11_B2D">
+              <ref role="3uigEE" to="ec5l:~SNode" resolve="SNode" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="2MQBX6K4y_S" role="3clF47">
+            <node concept="3clFbF" id="2MQBX6K4y_U" role="3cqZAp">
+              <node concept="10Nm6u" id="2MQBX6K4y_T" role="3clFbG" />
             </node>
           </node>
         </node>
