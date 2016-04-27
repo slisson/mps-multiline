@@ -1,4 +1,1 @@
-mps-multiline
-=============
-
-Editor Component for MPS that supports editing of multiline string properties
+This project is now part of the mbeddr platform: http://mbeddr.com/platform.html
